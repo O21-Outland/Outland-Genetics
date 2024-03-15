@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase" Name="Outland_SvelteHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Outland_SvelteHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_SvelteHeadBase">
+		<defName>Outland_Male_Svelte</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Svelte/Male_Normal</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_SvelteHeadBase">
+		<defName>Outland_Female_Svelte</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Svelte/Female_Normal</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+</Defs>

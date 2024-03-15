@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<DamageDef ParentName="Bomb">
+		<defName>Outland_IceFreeze</defName>
+		<label>ice</label>
+		<workerClass>TabulaRasa.DamageWorker_AdvExt</workerClass>
+		<canInterruptJobs>true</canInterruptJobs>
+		<deathMessage>{0} took a chill pill.</deathMessage>
+		<harmsHealth>false</harmsHealth>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>1</defaultDamage>
+		<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+		<explosionCellFleck>Outland_IceGlow</explosionCellFleck>
+		<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Smoke</combatLogRules>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_DamageAdv">
+				<hediff>Outland_FrozenSolid</hediff>
+				<hediffSev>1</hediffSev>
+				<wholeBody>true</wholeBody>
+			</li>
+		</modExtensions>
+	  </DamageDef>
+
+</Defs>

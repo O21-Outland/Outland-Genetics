@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Feybark</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Feybark/Head</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_FeybarkHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

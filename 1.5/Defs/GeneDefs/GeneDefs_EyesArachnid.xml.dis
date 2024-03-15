@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="ArachnidGeneEyeColor" Abstract="True">
+		<displayCategory>Outland_Eyes</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>ArachnidEyeColor</li>
+		</exclusionTags>
+		<prerequisite>Outland_ArachnidHead</prerequisite>
+		<iconPath>Outland/GeneIcons/Gene_ArachnidEyes</iconPath>
+		<graphicData>
+			<color>(255, 255, 255)</color>
+			<visibleNorth>false</visibleNorth>
+			<layer>PostTattoo</layer>
+			<graphicPath>Outland/Genes/Eyes/ArachnidEyes</graphicPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Red</defName>
+		<label>red eyes (arachnid)</label>
+		<labelShortAdj>red-eyed</labelShortAdj>
+		<description>Carriers of this gene have red eyes.</description>
+		<iconColor>(173, 37, 37)</iconColor>
+		<graphicData>
+			<color>(173, 37, 37)</color>
+		</graphicData>
+		<displayOrderInCategory>8001</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Gray</defName>
+		<label>gray eyes (arachnid)</label>
+		<labelShortAdj>gray-eyed</labelShortAdj>
+		<description>Carriers of this gene have pale white-gray eyes.</description>
+		<iconColor>(124, 124, 124)</iconColor>
+		<graphicData>
+			<color>(124, 124, 124)</color>
+		</graphicData>
+		<displayOrderInCategory>8002</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Orange</defName>
+		<label>orange eyes (arachnid)</label>
+		<labelShortAdj>orange-eyed</labelShortAdj>
+		<description>Carriers of this gene have deeply orange eyes.</description>
+		<iconColor>(249, 128, 29)</iconColor>
+		<graphicData>
+			<color>(249, 128, 29)</color>
+		</graphicData>
+		<displayOrderInCategory>8003</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_LightBlue</defName>
+		<label>light blue eyes (arachnid)</label>
+		<labelShortAdj>blue-eyed</labelShortAdj>
+		<description>Carriers of this gene have light blue eyes.</description>
+		<iconColor>(58, 179, 218)</iconColor>
+		<graphicData>
+			<color>(58, 179, 218)</color>
+		</graphicData>
+		<displayOrderInCategory>8004</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Cyan</defName>
+		<label>cyan eyes (arachnid)</label>
+		<labelShortAdj>cyan-eyed</labelShortAdj>
+		<description>Carriers of this gene have cyan eyes.</description>
+		<iconColor>(22, 156, 157)</iconColor>
+		<graphicData>
+			<color>(22, 156, 157)</color>
+		</graphicData>
+		<displayOrderInCategory>8005</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Blue</defName>
+		<label>blue eyes (arachnid)</label>
+		<labelShortAdj>blue-eyed</labelShortAdj>
+		<description>Carriers of this gene have blue eyes.</description>
+		<iconColor>(60, 68, 169)</iconColor>
+		<graphicData>
+			<color>(60, 68, 169)</color>
+		</graphicData>
+		<displayOrderInCategory>8006</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Lime</defName>
+		<label>lime eyes (arachnid)</label>
+		<labelShortAdj>lime-eyed</labelShortAdj>
+		<description>Carriers of this gene have lime eyes.</description>
+		<iconColor>(128, 199, 31)</iconColor>
+		<graphicData>
+			<color>(128, 199, 31)</color>
+		</graphicData>
+		<displayOrderInCategory>8007</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Green</defName>
+		<label>green eyes (arachnid)</label>
+		<labelShortAdj>green-eyed</labelShortAdj>
+		<description>Carriers of this gene have green eyes.</description>
+		<iconColor>(93, 124, 21)</iconColor>
+		<graphicData>
+			<color>(93, 124, 21)</color>
+		</graphicData>
+		<displayOrderInCategory>8008</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Yellow</defName>
+		<label>yellow eyes (arachnid)</label>
+		<labelShortAdj>yellow-eyed</labelShortAdj>
+		<description>Carriers of this gene have yellow eyes.</description>
+		<iconColor>(255, 216, 61)</iconColor>
+		<graphicData>
+			<color>(255, 216, 61)</color>
+		</graphicData>
+		<displayOrderInCategory>8009</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Pink</defName>
+		<label>pink eyes (arachnid)</label>
+		<labelShortAdj>pink-eyed</labelShortAdj>
+		<description>Carriers of this gene have pink eyes.</description>
+		<iconColor>(243, 140, 170)</iconColor>
+		<graphicData>
+			<color>(243, 140, 170)</color>
+		</graphicData>
+		<displayOrderInCategory>8010</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Magenta</defName>
+		<label>magenta eyes (arachnid)</label>
+		<labelShortAdj>magenta-eyed</labelShortAdj>
+		<description>Carriers of this gene have magenta eyes.</description>
+		<iconColor>(198, 79, 189)</iconColor>
+		<graphicData>
+			<color>(198, 79, 189)</color>
+		</graphicData>
+		<displayOrderInCategory>8011</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Purple</defName>
+		<label>purple eyes (arachnid)</label>
+		<labelShortAdj>purple-eyed</labelShortAdj>
+		<description>Carriers of this gene have purple eyes.</description>
+		<iconColor>(137, 50, 183)</iconColor>
+		<graphicData>
+			<color>(137, 50, 183)</color>
+		</graphicData>
+		<displayOrderInCategory>8012</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_Brown</defName>
+		<label>brown eyes (arachnid)</label>
+		<labelShortAdj>brown-eyed</labelShortAdj>
+		<description>Carriers of this gene have brown eyes.</description>
+		<iconColor>(130, 84, 5)</iconColor>
+		<graphicData>
+			<color>(130, 84, 5)</color>
+		</graphicData>
+		<displayOrderInCategory>8013</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="ArachnidGeneEyeColor">
+		<defName>Outland_ArachnidEyes_White</defName>
+		<label>white eyes (arachnid)</label>
+		<labelShortAdj>white-eyed</labelShortAdj>
+		<description>Carriers of this gene have blazing white eyes.</description>
+		<iconColor>(249, 255, 255)</iconColor>
+		<graphicData>
+			<color>(249, 255, 255)</color>
+		</graphicData>
+		<displayOrderInCategory>8014</displayOrderInCategory>
+	</GeneDef>
+
+</Defs>

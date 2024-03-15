@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GeneHairStyleBase">
+		<defName>Outland_BaldMale</defName>
+		<label>no hair (male only)</label>
+		<labelShortAdj>bald</labelShortAdj>
+		<geneClass>VanillaGenesExpanded.GeneGendered</geneClass>
+		<description>Male carriers of this gene grow no hair on the head.</description>
+		<iconPath>UI/Icons/Genes/Gene_HairStyleBaldOnly</iconPath>
+		<displayOrderInCategory>9500</displayOrderInCategory>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<forGenderOnly>Male</forGenderOnly>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneHairStyleBase">
+		<defName>Outland_BaldFemale</defName>
+		<label>no hair (female only)</label>
+		<labelShortAdj>bald</labelShortAdj>
+		<description>Female carriers of this gene grow no hair on the head.</description>
+		<iconPath>UI/Icons/Genes/Gene_HairStyleBaldOnly</iconPath>
+		<displayOrderInCategory>9500</displayOrderInCategory>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<forGenderOnly>Female</forGenderOnly>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>

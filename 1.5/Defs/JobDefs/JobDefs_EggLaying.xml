@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<JobDef>
+		<defName>Outland_LayEgg</defName>
+		<driverClass>OutlandGenes.JobDriver_LayEgg</driverClass>
+		<reportString>laying egg at TargetA.</reportString>
+	</JobDef>
+
+</Defs>

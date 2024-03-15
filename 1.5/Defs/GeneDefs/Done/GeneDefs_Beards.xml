@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GeneBeardStyleBase">
+		<defName>Outland_Beard_FurryOnly</defName>
+		<label>only furry beards</label>
+		<labelShortAdj>furry</labelShortAdj>
+		<description>Male carriers of this gene experience rapid beard growth and are uncomfortable cutting their beards.</description>
+		<iconPath>UI/Icons/Genes/Gene_BeardStyleBushyOnly</iconPath>
+		<displayOrderInCategory>7601</displayOrderInCategory>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Furry</li>
+			</tags>
+		</beardTagFilter>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<OutlandGenes.SymbioteBirthLabel>Symbiote Born!</OutlandGenes.SymbioteBirthLabel>
+	<OutlandGenes.SymbioteBirthDesc>The symbiote implanted into {0} has emerged and {0} has awoken from their coma unharmed by the process.</OutlandGenes.SymbioteBirthDesc>
+
+	<OutlandGenes.ParasiteBirthLabel>Parasite Born!</OutlandGenes.ParasiteBirthLabel>
+	<OutlandGenes.ParasiteBirthDesc>The parasite implanted into {0} has emerged violently, turning {0} into a fine mist.</OutlandGenes.ParasiteBirthDesc>
+
+	<OutlandGenes.LetterLabelXenotypeImplanted>Genes reimplanted</OutlandGenes.LetterLabelXenotypeImplanted>
+	<OutlandGenes.LetterTextXenotypeImplanted>{CASTER_nameDef} has implanted a copy of {CASTER_possessive} xenogerm into {TARGET_nameDef}, passing all xenogenes onto {TARGET_objective}.\n\n{TARGET_nameDef} will be in a xenogermination coma for the next {COMADURATION} while {TARGET_possessive} body adjusts to the changes.\n\n{CASTER_nameDef} will suffer from gene loss shock for the next {SHOCKDURATION}. {CASTER_possessive} genes will also need to regrow. This process takes time. If {CASTER_nameDef} implants {CASTER_possessive} xenogerm again before {CASTER_possessive} genes have regrown, {CASTER_pronoun} will die.</OutlandGenes.LetterTextXenotypeImplanted>
+
+	<Outland.XenotypeEggLabel>{0} egg</Outland.XenotypeEggLabel>
+	<Outland.XenotypeEggDesc>An abnormally large egg that will eventually hatch into a {0} colonist.</Outland.XenotypeEggDesc>
+	<Outland.GoLayEggLabel>Lay {0} Egg</Outland.GoLayEggLabel>
+	<Outland.GoLayEggDesc>Instruct this pawn to seek out the best Egg Box they can and produce an egg that'll hatch into a {0} colonist.</Outland.GoLayEggDesc>
+	<Outland.NoEggBox>No unreserved accessible egg box available, laying on the spot instead.</Outland.NoEggBox>
+	<Outland.EggFatigueReason>This pawn has already pushed an egg the size of a raccoon out of their [REDACTED] recently, they'll need time to recover before they can do it again.</Outland.EggFatigueReason>
+	<Outland.EggSterileReason>This pawn is sterile and cannot lay an egg.</Outland.EggSterileReason>
+	<Outland.XenotypeEggHatchLabel>{0} egg hatched</Outland.XenotypeEggHatchLabel>
+	<Outland.XenotypeEggHatchLetter>A {0} egg has hatched successfully, adding a new baby to the colony! Remember to take care of them and ensure they grow up healthy.</Outland.XenotypeEggHatchLetter>
+
+	<Outland.EggLaidLabel>{0} laid an egg!</Outland.EggLaidLabel>
+	<Outland.EggLaidDesc>{0} has laid an egg due to being oviparous. Make sure to keep the egg in a safe environment, under the roof and between 0C - 50C. After some time the egg will hatch into a child. {0} will be unable to lay another egg until their body recovers from this process.</Outland.EggLaidDesc>
+	<Outland.EggHatchedLabel>{0}'s egg hatched!</Outland.EggHatchedLabel>
+	<Outland.EggHatchedDesc>{0}'s egg has hatched successfully, adding a new baby to the colony! Remember to take care of them and ensure they grow up healthy.</Outland.EggHatchedDesc>
+	<Outland.CannotEggLayer>egg layer</Outland.CannotEggLayer>
+
+</LanguageData>

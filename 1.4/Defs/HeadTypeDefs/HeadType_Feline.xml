@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_FelineMale</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Feline/Male_Head</graphicPath>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Outland_FelineFur</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_FelineFemale</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Feline/Female_Head</graphicPath>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Outland_FelineFur</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

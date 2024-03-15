@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>Outland_AllMale</defName>
+		<label>all male</label>
+		<description>Carriers of this gene are always male at birth.</description>
+		<iconPath>Outland/GeneIcons/Gene_AllMale</iconPath>
+		<displayOrderInCategory>9500</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>man</symbol>
+				</li>
+				<li>
+					<symbol>he</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Miscellaneous</displayCategory>
+		<exclusionTags>
+			<li>Gender</li>
+			<li>AG_Gender</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<forceMale>true</forceMale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_AllFemale</defName>
+		<label>all female</label>
+		<description>Carriers of this gene are always female at birth.</description>
+		<iconPath>Outland/GeneIcons/Gene_AllFemale</iconPath>
+		<displayOrderInCategory>9501</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>fem</symbol>
+				</li>
+				<li>
+					<symbol>she</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>Miscellaneous</displayCategory>
+		<exclusionTags>
+			<li>Gender</li>
+			<li>AG_Gender</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<forceFemale>true</forceFemale>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

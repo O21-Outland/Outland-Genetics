@@ -1,0 +1,1144 @@
+{
+	"files": [
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Beards.xml",
+			"bookmarks": [
+				{
+					"line": 4,
+					"column": 0,
+					"label": "only furry beards"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Abilities.xml",
+			"bookmarks": [
+				{
+					"line": 4,
+					"column": 0,
+					"label": "leaper legs"
+				},
+				{
+					"line": 25,
+					"column": 0,
+					"label": "short flight"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Antenna.xml",
+			"bookmarks": [
+				{
+					"line": 31,
+					"column": 0,
+					"label": "antenna (feather)"
+				},
+				{
+					"line": 44,
+					"column": 0,
+					"label": "antenna (leaf)"
+				},
+				{
+					"line": 57,
+					"column": 0,
+					"label": "antenna (owl)"
+				},
+				{
+					"line": 70,
+					"column": 0,
+					"label": "antenna (jointed)"
+				},
+				{
+					"line": 83,
+					"column": 0,
+					"label": "antenna (segmented)"
+				},
+				{
+					"line": 95,
+					"column": 0,
+					"label": "antenna (socketed)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Blood.xml",
+			"bookmarks": [
+				{
+					"line": 92,
+					"column": 0,
+					"label": "red blood"
+				},
+				{
+					"line": 169,
+					"column": 0,
+					"label": "black blood"
+				},
+				{
+					"line": 246,
+					"column": 0,
+					"label": "gray blood"
+				},
+				{
+					"line": 323,
+					"column": 0,
+					"label": "orange blood"
+				},
+				{
+					"line": 400,
+					"column": 0,
+					"label": "light blue blood"
+				},
+				{
+					"line": 477,
+					"column": 0,
+					"label": "cyan blood"
+				},
+				{
+					"line": 554,
+					"column": 0,
+					"label": "blue blood"
+				},
+				{
+					"line": 631,
+					"column": 0,
+					"label": "lime blood"
+				},
+				{
+					"line": 708,
+					"column": 0,
+					"label": "green blood"
+				},
+				{
+					"line": 785,
+					"column": 0,
+					"label": "yellow blood"
+				},
+				{
+					"line": 862,
+					"column": 0,
+					"label": "pink blood"
+				},
+				{
+					"line": 939,
+					"column": 0,
+					"label": "magenta blood"
+				},
+				{
+					"line": 1016,
+					"column": 0,
+					"label": "purple blood"
+				},
+				{
+					"line": 1093,
+					"column": 0,
+					"label": "brown blood"
+				},
+				{
+					"line": 1170,
+					"column": 0,
+					"label": "white blood"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Ascension.xml",
+			"bookmarks": [
+				{
+					"line": 17,
+					"column": 0,
+					"label": "ascend self"
+				},
+				{
+					"line": 31,
+					"column": 0,
+					"label": "ascend other"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Auras.xml",
+			"bookmarks": [
+				{
+					"line": 25,
+					"column": 0,
+					"label": "aura (fire)"
+				},
+				{
+					"line": 37,
+					"column": 0,
+					"label": "aura (air)"
+				},
+				{
+					"line": 49,
+					"column": 0,
+					"label": "aura (earth)"
+				},
+				{
+					"line": 61,
+					"column": 0,
+					"label": "aura (life)"
+				},
+				{
+					"line": 73,
+					"column": 0,
+					"label": "aura (water)"
+				},
+				{
+					"line": 85,
+					"column": 0,
+					"label": "aura (dark)"
+				},
+				{
+					"line": 97,
+					"column": 0,
+					"label": "aura (death)"
+				},
+				{
+					"line": 109,
+					"column": 0,
+					"label": "aura (light)"
+				},
+				{
+					"line": 121,
+					"column": 0,
+					"label": "aura (gambit)"
+				},
+				{
+					"line": 133,
+					"column": 0,
+					"label": "aura (royal)"
+				},
+				{
+					"line": 145,
+					"column": 0,
+					"label": "aura (smelly)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_BodyScale.xml",
+			"bookmarks": [
+				{
+					"line": 15,
+					"column": 0,
+					"label": "body scale (tiny)"
+				},
+				{
+					"line": 41,
+					"column": 0,
+					"label": "body scale (small)"
+				},
+				{
+					"line": 67,
+					"column": 0,
+					"label": "body scale (large)"
+				},
+				{
+					"line": 93,
+					"column": 0,
+					"label": "body scale (massive)"
+				},
+				{
+					"line": 119,
+					"column": 0,
+					"label": "body scale (squat)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Capability.xml",
+			"bookmarks": [
+				{
+					"line": 4,
+					"column": 0,
+					"label": "evasive"
+				},
+				{
+					"line": 24,
+					"column": 0,
+					"label": "unusual speech"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Ears.xml",
+			"bookmarks": [
+				{
+					"line": 28,
+					"column": 0,
+					"label": "ears (elven)"
+				},
+				{
+					"line": 62,
+					"column": 0,
+					"label": "ears (bun)"
+				},
+				{
+					"line": 96,
+					"column": 0,
+					"label": "ears (wild)"
+				},
+				{
+					"line": 131,
+					"column": 0,
+					"label": "ears (furred)"
+				},
+				{
+					"line": 167,
+					"column": 0,
+					"label": "ears (rounded)"
+				},
+				{
+					"line": 203,
+					"column": 0,
+					"label": "ears (doe)"
+				},
+				{
+					"line": 242,
+					"column": 0,
+					"label": "ears (fey)"
+				},
+				{
+					"line": 266,
+					"column": 0,
+					"label": "ears (ratty)"
+				},
+				{
+					"line": 290,
+					"column": 0,
+					"label": "ears (vigilant)"
+				},
+				{
+					"line": 314,
+					"column": 0,
+					"label": "ears (fleef)"
+				},
+				{
+					"line": 338,
+					"column": 0,
+					"label": "ears (flick)"
+				},
+				{
+					"line": 362,
+					"column": 0,
+					"label": "ears (foxie)"
+				},
+				{
+					"line": 386,
+					"column": 0,
+					"label": "ears (nyoom)"
+				},
+				{
+					"line": 410,
+					"column": 0,
+					"label": "ears (swish)"
+				},
+				{
+					"line": 434,
+					"column": 0,
+					"label": "ears (woosh)"
+				},
+				{
+					"line": 458,
+					"column": 0,
+					"label": "ears (ventral)"
+				},
+				{
+					"line": 492,
+					"column": 0,
+					"label": "ears (goblinoid)"
+				},
+				{
+					"line": 505,
+					"column": 0,
+					"label": "ears (akhkharu)"
+				},
+				{
+					"line": 518,
+					"column": 0,
+					"label": "ears (jackal)"
+				},
+				{
+					"line": 531,
+					"column": 0,
+					"label": "ears (flat pointed)"
+				},
+				{
+					"line": 544,
+					"column": 0,
+					"label": "ears (big)"
+				},
+				{
+					"line": 557,
+					"column": 0,
+					"label": "ears (flufftop)"
+				},
+				{
+					"line": 569,
+					"column": 0,
+					"label": "ears (serrated)"
+				},
+				{
+					"line": 582,
+					"column": 0,
+					"label": "ears (webbed)"
+				},
+				{
+					"line": 595,
+					"column": 0,
+					"label": "ears (teddy)"
+				},
+				{
+					"line": 607,
+					"column": 0,
+					"label": "ears (large)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Eyes.xml",
+			"bookmarks": [
+				{
+					"line": 26,
+					"column": 0,
+					"label": "orange eyes"
+				},
+				{
+					"line": 38,
+					"column": 0,
+					"label": "light blue eyes"
+				},
+				{
+					"line": 50,
+					"column": 0,
+					"label": "cyan eyes"
+				},
+				{
+					"line": 62,
+					"column": 0,
+					"label": "blue eyes"
+				},
+				{
+					"line": 74,
+					"column": 0,
+					"label": "lime eyes"
+				},
+				{
+					"line": 86,
+					"column": 0,
+					"label": "green eyes"
+				},
+				{
+					"line": 98,
+					"column": 0,
+					"label": "yellow eyes"
+				},
+				{
+					"line": 110,
+					"column": 0,
+					"label": "pink eyes"
+				},
+				{
+					"line": 122,
+					"column": 0,
+					"label": "magenta eyes"
+				},
+				{
+					"line": 134,
+					"column": 0,
+					"label": "purple eyes"
+				},
+				{
+					"line": 146,
+					"column": 0,
+					"label": "brown eyes"
+				},
+				{
+					"line": 158,
+					"column": 0,
+					"label": "white eyes"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_EyesArachnid.xml",
+			"bookmarks": [
+				{
+					"line": 26,
+					"column": 0,
+					"label": "red eyes (arachnid)"
+				},
+				{
+					"line": 38,
+					"column": 0,
+					"label": "gray eyes (arachnid)"
+				},
+				{
+					"line": 50,
+					"column": 0,
+					"label": "orange eyes (arachnid)"
+				},
+				{
+					"line": 62,
+					"column": 0,
+					"label": "light blue eyes (arachnid)"
+				},
+				{
+					"line": 74,
+					"column": 0,
+					"label": "cyan eyes (arachnid)"
+				},
+				{
+					"line": 86,
+					"column": 0,
+					"label": "blue eyes (arachnid)"
+				},
+				{
+					"line": 98,
+					"column": 0,
+					"label": "lime eyes (arachnid)"
+				},
+				{
+					"line": 110,
+					"column": 0,
+					"label": "green eyes (arachnid)"
+				},
+				{
+					"line": 122,
+					"column": 0,
+					"label": "yellow eyes (arachnid)"
+				},
+				{
+					"line": 134,
+					"column": 0,
+					"label": "pink eyes (arachnid)"
+				},
+				{
+					"line": 146,
+					"column": 0,
+					"label": "magenta eyes (arachnid)"
+				},
+				{
+					"line": 158,
+					"column": 0,
+					"label": "purple eyes (arachnid)"
+				},
+				{
+					"line": 170,
+					"column": 0,
+					"label": "brown eyes (arachnid)"
+				},
+				{
+					"line": 182,
+					"column": 0,
+					"label": "white eyes (arachnid)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_EyesMonocular.xml",
+			"bookmarks": [
+				{
+					"line": 27,
+					"column": 28,
+					"label": "red eye (monocular)"
+				},
+				{
+					"line": 39,
+					"column": 29,
+					"label": "gray eye (monocular)"
+				},
+				{
+					"line": 51,
+					"column": 31,
+					"label": "orange eye (monocular)"
+				},
+				{
+					"line": 63,
+					"column": 35,
+					"label": "light blue eye (monocular)"
+				},
+				{
+					"line": 75,
+					"column": 29,
+					"label": "cyan eye (monocular)"
+				},
+				{
+					"line": 87,
+					"column": 29,
+					"label": "blue eye (monocular)"
+				},
+				{
+					"line": 99,
+					"column": 29,
+					"label": "lime eye (monocular)"
+				},
+				{
+					"line": 111,
+					"column": 30,
+					"label": "green eye (monocular)"
+				},
+				{
+					"line": 123,
+					"column": 31,
+					"label": "yellow eye (monocular)"
+				},
+				{
+					"line": 135,
+					"column": 29,
+					"label": "pink eye (monocular)"
+				},
+				{
+					"line": 147,
+					"column": 32,
+					"label": "magenta eye (monocular)"
+				},
+				{
+					"line": 159,
+					"column": 31,
+					"label": "purple eye (monocular)"
+				},
+				{
+					"line": 171,
+					"column": 30,
+					"label": "brown eye (monocular)"
+				},
+				{
+					"line": 183,
+					"column": 30,
+					"label": "white eye (monocular)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Feet.xml",
+			"bookmarks": [
+				{
+					"line": 21,
+					"column": 20,
+					"label": "feet (hoof)"
+				},
+				{
+					"line": 64,
+					"column": 19,
+					"label": "feet (paw)"
+				},
+				{
+					"line": 107,
+					"column": 21,
+					"label": "feet (talon)"
+				},
+				{
+					"line": 165,
+					"column": 22,
+					"label": "feet (webbed)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Furs.xml",
+			"bookmarks": [
+				{
+					"line": 20,
+					"column": 0,
+					"label": "bum fluff"
+				},
+				{
+					"line": 40,
+					"column": 0,
+					"label": "chitinous skin"
+				},
+				{
+					"line": 99,
+					"column": 0,
+					"label": "chitinous skin (tinted)"
+				},
+				{
+					"line": 158,
+					"column": 0,
+					"label": "feline fur"
+				},
+				{
+					"line": 179,
+					"column": 0,
+					"label": "destiny marks"
+				},
+				{
+					"line": 218,
+					"column": 0,
+					"label": "ridged skin"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Hair.xml",
+			"bookmarks": [
+				{
+					"line": 5,
+					"column": 28,
+					"label": "no hair (male only)"
+				},
+				{
+					"line": 27,
+					"column": 0,
+					"label": "no hair (female only)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_HairColor.xml",
+			"bookmarks": [
+				{
+					"line": 13,
+					"column": 0,
+					"label": "dark red hair"
+				},
+				{
+					"line": 22,
+					"column": 0,
+					"label": "pastel orange hair"
+				},
+				{
+					"line": 31,
+					"column": 0,
+					"label": "yellow hair"
+				},
+				{
+					"line": 40,
+					"column": 0,
+					"label": "lime hair"
+				},
+				{
+					"line": 49,
+					"column": 0,
+					"label": "faded green hair"
+				},
+				{
+					"line": 58,
+					"column": 0,
+					"label": "seafoam hair"
+				},
+				{
+					"line": 67,
+					"column": 0,
+					"label": "aqua hair"
+				},
+				{
+					"line": 76,
+					"column": 0,
+					"label": "pastel blue hair"
+				},
+				{
+					"line": 85,
+					"column": 0,
+					"label": "sky blue hair"
+				},
+				{
+					"line": 94,
+					"column": 0,
+					"label": "indigo hair"
+				},
+				{
+					"line": 103,
+					"column": 0,
+					"label": "violet hair"
+				},
+				{
+					"line": 112,
+					"column": 0,
+					"label": "pastel pink hair"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Hands.xml",
+			"bookmarks": [
+				{
+					"line": 15,
+					"column": 0,
+					"label": "hands (talons)"
+				},
+				{
+					"line": 48,
+					"column": 0,
+					"label": "hands (freezing talons)"
+				},
+				{
+					"line": 82,
+					"column": 0,
+					"label": "hands (burning talons)"
+				},
+				{
+					"line": 116,
+					"column": 0,
+					"label": "hands (venom talons)"
+				},
+				{
+					"line": 150,
+					"column": 0,
+					"label": "hands (crab claw)"
+				},
+				{
+					"line": 183,
+					"column": 0,
+					"label": "hands (tentacle)"
+				},
+				{
+					"line": 204,
+					"column": 0,
+					"label": "hands (retractable blades)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Headbone.xml",
+			"bookmarks": [
+				{
+					"line": 13,
+					"column": 0,
+					"label": "plated headbone"
+				},
+				{
+					"line": 35,
+					"column": 0,
+					"label": "leafy protrusions"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Heads.xml",
+			"bookmarks": [
+				{
+					"line": 13,
+					"column": 0,
+					"label": "svelte head"
+				},
+				{
+					"line": 41,
+					"column": 0,
+					"label": "moth head"
+				},
+				{
+					"line": 60,
+					"column": 0,
+					"label": "insect head"
+				},
+				{
+					"line": 78,
+					"column": 0,
+					"label": "termite head"
+				},
+				{
+					"line": 104,
+					"column": 0,
+					"label": "draconic head"
+				},
+				{
+					"line": 146,
+					"column": 0,
+					"label": "ratty head"
+				},
+				{
+					"line": 179,
+					"column": 0,
+					"label": "monocular head"
+				},
+				{
+					"line": 209,
+					"column": 0,
+					"label": "cephalid head"
+				},
+				{
+					"line": 234,
+					"column": 0,
+					"label": "trencher head"
+				},
+				{
+					"line": 259,
+					"column": 0,
+					"label": "lesser goblinoid head"
+				},
+				{
+					"line": 270,
+					"column": 0,
+					"label": "greater goblinoid head"
+				},
+				{
+					"line": 282,
+					"column": 0,
+					"label": "canid head"
+				},
+				{
+					"line": 294,
+					"column": 0,
+					"label": "arachnid head"
+				},
+				{
+					"line": 305,
+					"column": 0,
+					"label": "feybark head"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Health.xml",
+			"bookmarks": [
+				{
+					"line": 4,
+					"column": 0,
+					"label": "regeneration"
+				},
+				{
+					"line": 47,
+					"column": 0,
+					"label": "fragile healing"
+				},
+				{
+					"line": 76,
+					"column": 0,
+					"label": "youthful"
+				},
+				{
+					"line": 120,
+					"column": 0,
+					"label": "fey ageing"
+				},
+				{
+					"line": 158,
+					"column": 0,
+					"label": "accelerated ageing"
+				},
+				{
+					"line": 193,
+					"column": 0,
+					"label": "accelerated maturation"
+				},
+				{
+					"line": 220,
+					"column": 0,
+					"label": "decelerated maturation"
+				},
+				{
+					"line": 248,
+					"column": 0,
+					"label": "winter coat"
+				},
+				{
+					"line": 280,
+					"column": 0,
+					"label": "thick skin"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Hemogenic.xml",
+			"bookmarks": [
+				{
+					"line": 4,
+					"column": 0,
+					"label": "resurrect"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Horns.xml",
+			"bookmarks": [
+				{
+					"line": 18,
+					"column": 0,
+					"label": "horns (bean)"
+				},
+				{
+					"line": 52,
+					"column": 0,
+					"label": "horns (bulb)"
+				},
+				{
+					"line": 86,
+					"column": 0,
+					"label": "horns (bull)"
+				},
+				{
+					"line": 120,
+					"column": 0,
+					"label": "horns (crescent)"
+				},
+				{
+					"line": 154,
+					"column": 0,
+					"label": "horns (crystal)"
+				},
+				{
+					"line": 188,
+					"column": 0,
+					"label": "horns (drop)"
+				},
+				{
+					"line": 222,
+					"column": 0,
+					"label": "horns (fawn)"
+				},
+				{
+					"line": 256,
+					"column": 0,
+					"label": "horns (flame)"
+				},
+				{
+					"line": 290,
+					"column": 0,
+					"label": "horns (heart)"
+				},
+				{
+					"line": 324,
+					"column": 0,
+					"label": "horns (long prong)"
+				},
+				{
+					"line": 358,
+					"column": 0,
+					"label": "horns (raffe)"
+				},
+				{
+					"line": 392,
+					"column": 0,
+					"label": "horns (ram)"
+				},
+				{
+					"line": 426,
+					"column": 0,
+					"label": "horns (row)"
+				},
+				{
+					"line": 460,
+					"column": 0,
+					"label": "horns (small uni)"
+				},
+				{
+					"line": 494,
+					"column": 0,
+					"label": "horns (strong)"
+				},
+				{
+					"line": 528,
+					"column": 0,
+					"label": "horns (antler)"
+				},
+				{
+					"line": 562,
+					"column": 0,
+					"label": "horns (cherub)"
+				},
+				{
+					"line": 596,
+					"column": 0,
+					"label": "horns (devils twist)"
+				},
+				{
+					"line": 630,
+					"column": 0,
+					"label": "horns (dragon)"
+				},
+				{
+					"line": 664,
+					"column": 0,
+					"label": "horns (king)"
+				},
+				{
+					"line": 698,
+					"column": 0,
+					"label": "horns (laurel)"
+				},
+				{
+					"line": 732,
+					"column": 0,
+					"label": "horns (large uni)"
+				},
+				{
+					"line": 766,
+					"column": 0,
+					"label": "horns (splash)"
+				},
+				{
+					"line": 800,
+					"column": 0,
+					"label": "horns (zilla ex)"
+				},
+				{
+					"line": 834,
+					"column": 0,
+					"label": "horns (benevolent)"
+				},
+				{
+					"line": 868,
+					"column": 0,
+					"label": "horns (bonfire)"
+				},
+				{
+					"line": 902,
+					"column": 0,
+					"label": "horns (forward)"
+				},
+				{
+					"line": 936,
+					"column": 0,
+					"label": "horns (rookie)"
+				},
+				{
+					"line": 970,
+					"column": 0,
+					"label": "horns (rough)"
+				},
+				{
+					"line": 1004,
+					"column": 0,
+					"label": "horns (scalloped)"
+				},
+				{
+					"line": 1038,
+					"column": 0,
+					"label": "horns (medium uni)"
+				},
+				{
+					"line": 1072,
+					"column": 0,
+					"label": "horns (spring)"
+				},
+				{
+					"line": 1106,
+					"column": 0,
+					"label": "horns (straw)"
+				},
+				{
+					"line": 1140,
+					"column": 0,
+					"label": "horns (thorn)"
+				},
+				{
+					"line": 1174,
+					"column": 0,
+					"label": "horns (two prong)"
+				},
+				{
+					"line": 1208,
+					"column": 0,
+					"label": "horns (zilla)"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/GeneDefs_Mentality.xml",
+			"bookmarks": [
+				{
+					"line": 4,
+					"column": 0,
+					"label": "familiar scent"
+				},
+				{
+					"line": 58,
+					"column": 0,
+					"label": "submissive"
+				}
+			]
+		}
+	]
+}

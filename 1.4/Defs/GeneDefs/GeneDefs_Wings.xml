@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneWingBase" Abstract="True">
+		<displayCategory>Outland_Wings</displayCategory>
+		<exclusionTags>
+			<li>Wings</li>
+		</exclusionTags>
+		<randomChosen>true</randomChosen>
+		<graphicData>
+			<drawLoc>Tailbone</drawLoc>
+			<drawScale>1.7</drawScale>
+			<drawOffsetNorth>(0, 0.2, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, -0.2, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.3, 0)</drawOffsetEast>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_None</defName>
+		<label>no wings</label>
+		<description>Carriers of this gene have no wings.</description>
+		<iconPath>Outland/Genes/Wings/Gene_NoWings</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Imp</defName>
+		<label>wings (imp)</label>
+		<description>Carriers of this gene grow a pair of fleshy wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Imp</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Imp</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Wyvern</defName>
+		<label>wings (wyvern)</label>
+		<description>Carriers of this gene grow a large pair of fleshy wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Wyvern</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Wyvern</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Devil</defName>
+		<label>wings (devil)</label>
+		<description>Carriers of this gene grow a large pair of tattered fleshy wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Devil</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Devil</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Angel</defName>
+		<label>wings (angel)</label>
+		<description>Carriers of this gene grow a large pair of feathery wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Angel</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Angel</graphicPath>
+			<colorType>Custom</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_FallenAngel</defName>
+		<label>wings (fallen angel)</label>
+		<description>Carriers of this gene grow a large pair of feathery wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Angel</iconPath>
+		<iconColor>(0.15, 0.15, 0.15)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Angel</graphicPath>
+			<colorType>Custom</colorType>
+			<color>(64, 64, 64)</color>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Fey</defName>
+		<label>wings (fey)</label>
+		<description>Carriers of this gene grow a pair of feathery wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Fey</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>5</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Fey</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_FlareRed</defName>
+		<label>wings (red flare)</label>
+		<description>Carriers of this gene grow a large pair of butterfly like wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Flare</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Flare</graphicPath>
+			<colorType>Custom</colorType>
+			<color>(163, 91, 90)</color>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_FlareBlue</defName>
+		<label>wings (blue flare)</label>
+		<description>Carriers of this gene grow a large pair of butterfly like wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Flare</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Flare</graphicPath>
+			<colorType>Custom</colorType>
+			<color>(90, 116, 161)</color>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_FlareGreen</defName>
+		<label>wings (green flare)</label>
+		<description>Carriers of this gene grow a large pair of butterfly like wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Flare</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Flare</graphicPath>
+			<colorType>Custom</colorType>
+			<color>(144, 181, 130)</color>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_GlassyBlue</defName>
+		<label>wings (glassy blue)</label>
+		<description>Carriers of this gene grow a pair of transparent insect wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Glassy</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>9</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Glassy</graphicPath>
+			<colorType>Custom</colorType>
+			<color>(133, 184, 199)</color>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Plain</defName>
+		<label>wings (plain)</label>
+		<description>Carriers of this gene grow a large pair of insect wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Plain</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Plain</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Pointed</defName>
+		<label>wings (pointed)</label>
+		<description>Carriers of this gene grow a large pair of insect wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Pointed</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Pointed</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Striped</defName>
+		<label>wings (striped)</label>
+		<description>Carriers of this gene grow a large pair of insect wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Striped</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>12</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Striped</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Roundel</defName>
+		<label>wings (roundel)</label>
+		<description>Carriers of this gene grow a large pair of insect wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Roundel</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>13</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Roundel</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Insect</defName>
+		<label>wings (insect)</label>
+		<description>Carriers of this gene grow a large pair of insect wings, which can give them ability to fly a short distance.</description>
+		<iconPath>Outland/Genes/Wings/Insectoid</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>13</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Wings/Insectoid</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+</Defs>

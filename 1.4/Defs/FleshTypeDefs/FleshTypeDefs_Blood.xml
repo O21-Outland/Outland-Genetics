@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FleshTypeDef>
+		<defName>Outland_AcidBloodWounds</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_AcidBlood</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Wounds/AG_WoundSlimeA</texture>
+			</li>
+			<li>
+				<texture>Outland/Wounds/AG_WoundSlimeB</texture>
+			</li>
+			<li>
+				<texture>Outland/Wounds/AG_WoundSlimeC</texture>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+</Defs>

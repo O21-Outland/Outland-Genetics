@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneChestBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>None</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<graphicData>
+			<drawLoc>Tailbone</drawLoc>
+			<drawScale>1.5</drawScale>
+		</graphicData>
+		<exclusionTags>
+			<li>Chest</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Male>(0, 0.01, 0)</Male>
+							<Female>(0, 0.01, 0.12)</Female>
+							<Thin>(0, 0.01, 0.05)</Thin>
+							<Hulk>(0, 0.01, 0.1)</Hulk>
+							<Fat>(0, 0.01, 0.12)</Fat>
+						</bodyTypes>
+					</south>
+					<east>
+						<bodyTypes>
+							<Male>(0, 0.01, 0)</Male>
+							<Female>(0.05, 0.01, 0.12)</Female>
+							<Thin>(0.05, 0.01, 0.05)</Thin>
+							<Hulk>(-0.1, 0.01, 0.05)</Hulk>
+							<Fat>(-0.05, 0.01, 0.12)</Fat>
+						</bodyTypes>
+					</east>
+					<west>
+						<bodyTypes>
+							<Male>(0, 0.01, 0)</Male>
+							<Female>(0.05, 0.01, 0.12)</Female>
+							<Thin>(0.05, 0.01, 0.05)</Thin>
+							<Hulk>(-0.1, 0.01, 0.05)</Hulk>
+							<Fat>(-0.05, 0.01, 0.12)</Fat>
+						</bodyTypes>
+					</west>
+				</offsets>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneChestBase">
+		<defName>Outland_Chest_Fur</defName>
+		<label>chest fur</label>
+		<description>Carriers of this gene will grow a prominent patch of fur on their chest.</description>
+		<iconPath>Outland/Genes/Chest/ChestFur</iconPath>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Chest/ChestFur</graphicPath>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		</graphicData>
+	</GeneDef>
+	
+</Defs>

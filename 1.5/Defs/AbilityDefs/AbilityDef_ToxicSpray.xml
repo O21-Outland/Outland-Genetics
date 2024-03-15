@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef>
+		<defName>Outland_ToxicSpray</defName>
+		<label>toxic spray</label>
+		<description>Spit a stream of sticky, flammable bile from the mouth. The bile can ignite anything or anyone it hits, and also form flaming pools on the ground.\n\nThe bile is generated and stored by an organ in the neck, along with a separate pouch of hypergolic reactant for ignition.</description>
+		<iconPath>Outland/GeneIcons/Gene_ToxicSpray</iconPath>
+		<cooldownTicksRange>300000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>7.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>FireSpew_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_AbilitySpray">
+				<compClass>OutlandGenes.CompAbilityEffect_ToxicSpray</compClass>
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

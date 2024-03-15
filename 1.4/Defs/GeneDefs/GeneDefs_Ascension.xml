@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="AscensionGeneBase" Abstract="True">
+		<displayCategory>Outland_XenotypeAscension</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<minAgeActive>13</minAgeActive>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_AscendSelf</defName>
+		<label>ascend self</label>
+		<description>Causes the pawn to ascend to their next genetic form when ready.\n\nWarning: This will not carry over changes to their genes made during gameplay, their current genes are wiped and the new xenotype applied, the active genes will be encouraged to remain the same if available on both xenotypes.</description>
+		<iconPath>Outland/GeneIcons/Gene_Ascend</iconPath>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<abilities>
+			<li>Outland_AscendSelf</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_AscendSelf</AbilityDef>
+		</descriptionHyperlinks>
+	</GeneDef>
+
+	<GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_AscendOther</defName>
+		<label>ascend other</label>
+		<description>Causes the target pawn to ascend to their next genetic form when ready.\n\nWarning: This will not carry over changes to their genes made during gameplay, their current genes are wiped and the new xenotype applied, the active genes will be encouraged to remain the same if available on both xenotypes.</description>
+		<iconPath>Outland/GeneIcons/Gene_Ascend</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<abilities>
+			<li>Outland_AscendOther</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_AscendOther</AbilityDef>
+		</descriptionHyperlinks>
+	</GeneDef>
+
+	<!-- <GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_EarnedAscension</defName>
+		<label>earned ascension</label>
+		<description>Carriers of this gene must earn their ascension through everyday work, proving themselves through hard work.\n\nIt's just a balance factor, don't overthink it.</description>
+		<iconPath>UI/Icons/Genes/Gene_AscendEarned</iconPath>
+		<displayOrderInCategory>2</displayOrderInCategory>
+	</GeneDef> -->
+
+</Defs>

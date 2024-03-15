@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>Outland_Voice_VibronicCall</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Outland/Voices/Vibronic/Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>14</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Outland_Voice_VibronicDeath</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Outland/Voices/Vibronic/Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>16</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Outland_Voice_VibronicWounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Outland/Voices/Vibronic/Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>16</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

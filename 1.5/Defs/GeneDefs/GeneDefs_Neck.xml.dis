@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneNeckBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>None</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<graphicData>
+			<layer>PostSkin</layer>
+			<drawNorthAfterHair>true</drawNorthAfterHair>
+			<useSkinShader>true</useSkinShader>
+			<drawLoc>HeadLower</drawLoc>
+			<drawOffsetNorth>(0, 0, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, -0.01, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, -0.01, 0)</drawOffsetEast>
+		</graphicData>
+		<exclusionTags>
+			<li>Neck</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Curly</defName>
+		<label>neck ruffle (curly)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Curly_south</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Neck/Curly</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Spikey</defName>
+		<label>neck ruffle (spikey)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Spikey_south</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Neck/Spikey</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Wavy</defName>
+		<label>neck ruffle (wavy)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Wavy_south</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Neck/Wavy</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Fuzzy</defName>
+		<label>neck ruffle (fuzzy)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Fuzzy_south</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Neck/Fuzzy</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Hair</colorType>
+			<useSkinShader>false</useSkinShader>
+		</graphicData>
+	</GeneDef>
+	
+</Defs>

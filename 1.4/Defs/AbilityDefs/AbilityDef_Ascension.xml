@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityCategoryDef>
+		<defName>Ascension</defName>
+		<displayOrder>1100</displayOrder>
+	</AbilityCategoryDef>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>Outland_AscendSelf</defName>
+		<label>ascend self</label>
+		<description>Opens the caster up to the ability to ascend to their next stage of life. Caster must be ready to ascend for this to work.</description>
+		<iconPath>Outland/GeneIcons/Gene_Ascend</iconPath>
+		<cooldownTicksRange>60000~60000</cooldownTicksRange>
+		<warmupMote>Mote_ResurrectAbility</warmupMote>
+		<warmupStartSound>Resurrect_Cast</warmupStartSound>
+		<category>Ascension</category>
+		<displayOrder>600</displayOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>3.9</range>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_AscendTarget" />
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>Outland_AscendOther</defName>
+		<label>ascend other</label>
+		<description>Opens the target pawn up to the ability to ascend to their next stage of life. Target must be ready to ascend for this to work.</description>
+		<iconPath>Outland/GeneIcons/Gene_Ascend</iconPath>
+		<cooldownTicksRange>60000~60000</cooldownTicksRange>
+		<warmupMote>Mote_ResurrectAbility</warmupMote>
+		<warmupStartSound>Resurrect_Cast</warmupStartSound>
+		<category>Ascension</category>
+		<displayOrder>600</displayOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>Resurrect_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>false</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_AscendTarget" />
+		</comps>
+	</AbilityDef>
+
+</Defs>

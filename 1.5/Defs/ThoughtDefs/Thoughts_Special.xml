@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>Outland_DarklightAffinity</defName>
+		<workerClass>OutlandGenes.ThoughtWorker_DarklightAffinity</workerClass>
+		<stages>
+			<li>
+				<label>bright light</label>
+				<description>I don't like light this bright, it makes my eyes hurt, why does something so pretty hurt me so...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>blinding light</label>
+				<description>The light is practically blinding, I can barely keep my eyes open...but I can't look away...</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SunlightSensitivity_Severe</defName>
+		<workerClass>ThoughtWorker_InSunlight</workerClass>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<requiredGenes>
+			<li>Outland_UVSensitivity_Extreme</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>sunlight sensitivity</label>
+				<description>Everything feels like it's on fire!</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

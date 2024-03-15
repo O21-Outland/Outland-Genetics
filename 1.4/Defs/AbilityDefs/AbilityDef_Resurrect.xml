@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Using internal def in case the one in Biotech is removed in future. -->
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>Outland_Resurrect</defName>
+		<label>resurrect</label>
+		<description>Use archites in the bloodstream to infuse a corpse's body with new life, repairing degenerated cell structures and kickstarting vital functions. The older and worse-preserved the corpse is, the more likely it is that they will come back with memory loss or health conditions. This ability seems to exhaust the archites somehow, so it can only be used very rarely.</description>
+		<iconPath>UI/Abilities/Resurrect</iconPath>
+		<cooldownTicksRange>6840000~7560000</cooldownTicksRange>
+		<warmupMote>Mote_ResurrectAbility</warmupMote>
+		<warmupStartSound>Resurrect_Cast</warmupStartSound>
+		<category>Sanguophage</category>
+		<displayOrder>600</displayOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>Resurrect_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>true</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_Resurrect" />
+			<li Class="CompProperties_AbilityHemogenCost">
+				<hemogenCost>0.90</hemogenCost>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

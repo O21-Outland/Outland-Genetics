@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneFeetBase" Abstract="True">
+		<displayCategory>Outland_HandsAndFeet</displayCategory>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Feet</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFeetBase">
+		<defName>Outland_HoovedFeet</defName>
+		<label>feet (hoof)</label>
+		<description>Carriers of this gene have hooves in place of feet, allowing them greater speed.</description>
+		<iconPath>Outland/GeneIcons/Gene_HoovedFeet</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<postFactor>1.1</postFactor>
+			</li>
+		</capMods>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>hoof</symbol>
+				</li>
+				<li>
+					<symbol>cow</symbol>
+				</li>
+				<li>
+					<symbol>bull</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>hoof</symbol>
+				</li>
+				<li>
+					<symbol>toe</symbol>
+				</li>
+				<li>
+					<symbol>foot</symbol>
+				</li>
+				<li>
+					<symbol>feet</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFeetBase">
+		<defName>Outland_PawFeet</defName>
+		<label>feet (paw)</label>
+		<description>Carriers of this gene have paws in place of feet, allowing them greater speed.</description>
+		<iconPath>Outland/GeneIcons/Gene_PawFeet</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<postFactor>1.1</postFactor>
+			</li>
+		</capMods>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>hoof</symbol>
+				</li>
+				<li>
+					<symbol>cow</symbol>
+				</li>
+				<li>
+					<symbol>bull</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>hoof</symbol>
+				</li>
+				<li>
+					<symbol>toe</symbol>
+				</li>
+				<li>
+					<symbol>foot</symbol>
+				</li>
+				<li>
+					<symbol>feet</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFeetBase">
+		<defName>Outland_TalonFeet</defName>
+		<label>feet (talon)</label>
+		<description>Carriers of this gene have talons in place of feet, providing them an additional powerful melee attack.</description>
+		<iconPath>Outland/GeneIcons/Gene_TalonFeet</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>talon</symbol>
+				</li>
+				<li>
+					<symbol>claw</symbol>
+				</li>
+				<li>
+					<symbol>dewclaw</symbol>
+				</li>
+				<li>
+					<symbol>raptor</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>claw</symbol>
+				</li>
+				<li>
+					<symbol>talon</symbol>
+				</li>
+				<li>
+					<symbol>toe</symbol>
+				</li>
+				<li>
+					<symbol>foot</symbol>
+				</li>
+				<li>
+					<symbol>feet</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions Inherit="False">
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_TalonFeet</hediff>
+						<bodyparts>
+							<li>Foot</li>
+							<li>Foot</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFeetBase">
+		<defName>Outland_WebbedFeet</defName>
+		<label>feet (webbed)</label>
+		<description>Carriers of this gene have webbed feet, boosting their movement speed when in water.\n\nNote: This was included accidentally and now it's too late to remove it, the code has not been done to handle removing the movement penalty in water tiles yet.</description>
+		<iconPath>Outland/GeneIcons/Gene_WebbedFeet</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>web</symbol>
+				</li>
+				<li>
+					<symbol>water</symbol>
+				</li>
+				<li>
+					<symbol>flipper</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>web</symbol>
+				</li>
+				<li>
+					<symbol>toe</symbol>
+				</li>
+				<li>
+					<symbol>foot</symbol>
+				</li>
+				<li>
+					<symbol>feet</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

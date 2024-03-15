@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_FurGeneBase" Abstract="True">
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7400</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_FurGeneBase">
+		<defName>Outland_BumFluff</defName>
+		<label>bum fluff</label>
+		<labelShortAdj>fluff-bummed</labelShortAdj>
+		<description>Carriers of this gene grow thick fur all over their legs, which protects them from cold temperatures.</description>
+		<iconPath>Outland/GeneIcons/Gene_BumFluff</iconPath>
+		<displayOrderInCategory>7401</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+		</statOffsets>
+		<selectionWeight>0</selectionWeight>
+		<fur>Outland_BumFluff</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Bum Fluff</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_ChitinousSkin</defName>
+		<label>chitinous skin</label>
+		<labelShortAdj>crabskin</labelShortAdj>
+		<description>Carriers of this gene grow a lightly armoured body covered in protective chitinous plates, giving them a crab-like appearance.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7402</displayOrderInCategory>
+		<iconPath>Outland/GeneIcons/Gene_ChitinousSkin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>Outland_Crab</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>HairStyle</li>
+			<li>Skin</li>
+			<li>Fur</li>
+			<li>BeardStyle</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<statOffsets>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+		</statOffsets>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<forcedHair>Bald</forcedHair>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<fur>Outland_ChitinousSkin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Chitinous Skin</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_FurDef">
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<useMaskForFur>true</useMaskForFur>
+			</li>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_ChitinousSkinTinted</defName>
+		<label>chitinous skin (tinted)</label>
+		<labelShortAdj>crabskin</labelShortAdj>
+		<description>Carriers of this gene grow a lightly armoured body covered in protective chitinous plates, giving them a crab-like appearance.\n\nThis is a variant where the body plates are tinted a lighter shade of the skin colour.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7403</displayOrderInCategory>
+		<iconPath>Outland/GeneIcons/Gene_ChitinousSkin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>Outland_CrabTinted</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>HairStyle</li>
+			<li>Skin</li>
+			<li>Fur</li>
+			<li>BeardStyle</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<statOffsets>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+		</statOffsets>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<forcedHair>Bald</forcedHair>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<fur>Outland_ChitinousSkinTinted</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Chitinous Skin (Tinted)</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_FurDef">
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<useMaskForFur>true</useMaskForFur>
+			</li>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<!-- <GeneDef ParentName="Outland_FurGeneBase">
+		<defName>Outland_FelineFur</defName>
+		<label>feline fur</label>
+		<labelShortAdj>feli-fluff</labelShortAdj>
+		<description>Carriers of this gene grow thin fur all over their body and have a cat like appearance.</description>
+		<iconPath>Outland/GeneIcons/Gene_FelineHead</iconPath>
+		<displayOrderInCategory>7404</displayOrderInCategory>
+		<biostatMet>0</biostatMet>
+		<forcedHeadTypes>
+			<li>Outland_FelineMale</li>
+			<li>Outland_FelineFemale</li>
+		</forcedHeadTypes>
+		<selectionWeight>0</selectionWeight>
+		<fur>Furskin</fur>
+		<skinIsHairColor>true</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<graphicData>
+			<fur>Furskin</fur>
+			<colorType>Hair</colorType>
+			<skinIsHairColor>true</skinIsHairColor>
+			<tattoosVisible>true</tattoosVisible>
+		</graphicData>
+	</GeneDef> -->
+
+	<GeneDef>
+		<defName>Outland_DestinyMarks</defName>
+		<label>destiny marks</label>
+		<description>Carriers of this gene have dark marks on their skin forming patterns. Some believe these patterns to be an indication of the carriers destiny, though nobody has been able to accurately predict anything based on reading them.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7405</displayOrderInCategory>
+		<iconPath>Outland/GeneIcons/Gene_DestinyMarks</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>Outland_DestinyMarks_MaleNormal</li>
+			<li>Outland_DestinyMarks_MalePointy</li>
+			<li>Outland_DestinyMarks_MaleWide</li>
+			<li>Outland_DestinyMarks_FemaleNormal</li>
+			<li>Outland_DestinyMarks_FemalePointy</li>
+			<li>Outland_DestinyMarks_FemaleWide</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<fur>Outland_DestinyMarks</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Destiny Marks</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_FurDef">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_RidgedSkin</defName>
+		<label>ridged skin</label>
+		<description>Carriers of this gene have ridges on their skin where bone comes close to the surface.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7405</displayOrderInCategory>
+		<iconPath>Outland/GeneIcons/Gene_RidgedSkin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<fur>Outland_RidgedSkin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Ridged Skin</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_FurDef">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_FurGeneBase">
+		<defName>Outland_Furbody</defName>
+		<label>furbody</label>
+		<labelShortAdj>furred</labelShortAdj>
+		<description>Carriers of this gene grow fur all over their body.\n\nThis is the same as Furskin, but allows for other head types.</description>
+		<iconPath>UI/Icons/Genes/Gene_Furskin</iconPath>
+		<displayOrderInCategory>7406</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<statOffsets>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		</statOffsets>
+		<fur>Furskin</fur>
+		<skinIsHairColor>true</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Furbody</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_ScaleSkin</defName>
+		<label>scaleskin</label>
+		<labelShortAdj>scaleskinned</labelShortAdj>
+		<description>Carriers of this gene grow hard scales all over their body, decreasing damage done to them.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<iconPath>Outland/GeneIcons/Gene_ScaleSkin</iconPath>
+		<displayOrderInCategory>7406</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>Outland_ScaleSkin</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<statFactors>
+			<IncomingDamageFactor>0.95</IncomingDamageFactor>
+		</statFactors>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+		<fur>Outland_ScaleSkin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>scale skin</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_FurDef">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_Scalebody</defName>
+		<label>scalebody</label>
+		<labelShortAdj>scaleskinned</labelShortAdj>
+		<description>Carriers of this gene grow scales all over their body.\n\nThis is the same as Scaleskin, but allows for other head types.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7405</displayOrderInCategory>
+		<iconPath>Outland/GeneIcons/Gene_ScaleBody</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<statFactors>
+			<IncomingDamageFactor>0.95</IncomingDamageFactor>
+		</statFactors>
+		<fur>Outland_ScaleSkin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>scale body</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_FurDef">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_InsectBody</defName>
+		<label>insect body</label>
+		<description>Carriers of this gene a body with an insect like shelled body instead of the typical human body.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7405</displayOrderInCategory>
+		<iconPath>Outland/GeneIcons/Gene_InsectBody</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<statFactors>
+			<IncomingDamageFactor>0.95</IncomingDamageFactor>
+		</statFactors>
+		<fur>Outland_InsectBody</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>insect body</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<furHidesBody>true</furHidesBody>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

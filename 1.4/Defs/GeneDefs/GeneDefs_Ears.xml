@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneEarsBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Ears</endogeneCategory>
+		<displayCategory>Outland_Ears</displayCategory>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<graphicData>
+			<layer>PostHair</layer>
+			<drawNorthAfterHair>false</drawNorthAfterHair>
+			<useSkinShader>false</useSkinShader>
+			<drawLoc>HeadTop</drawLoc>
+		</graphicData>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_ElvenEars</defName>
+		<label>ears (elven)</label>
+		<description>Carriers of this gene will grow long flat pointed ears.</description>
+		<iconPath>Outland/Genes/Ears/Elven</iconPath>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Elven</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>long</symbol>
+				</li>
+				<li>
+					<symbol>knife</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>point</symbol>
+				</li>
+				<li>
+					<symbol>sharp</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Bun</defName>
+		<label>ears (bun)</label>
+		<description>Carriers of this gene will grow long rabbit like ears.</description>
+		<iconPath>Outland/Genes/Ears/Bun</iconPath>
+		<displayOrderInCategory>7802</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Bun</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>long</symbol>
+				</li>
+				<li>
+					<symbol>bun</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>tall</symbol>
+				</li>
+				<li>
+					<symbol>bun</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Wild</defName>
+		<label>ears (wild)</label>
+		<description>Carriers of this gene will grow wild fur like ears.</description>
+		<iconPath>Outland/Genes/Ears/Wild</iconPath>
+		<displayOrderInCategory>7803</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Wild</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>wild</symbol>
+				</li>
+				<li>
+					<symbol>fuzz</symbol>
+				</li>
+				<li>
+					<symbol>fluff</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>fluff</symbol>
+				</li>
+				<li>
+					<symbol>fuzz</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Furred</defName>
+		<label>ears (furred)</label>
+		<description>Carriers of this gene will grow furred ears.</description>
+		<iconPath>Outland/Genes/Ears/Furred</iconPath>
+		<displayOrderInCategory>7804</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Furred</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>furred</symbol>
+				</li>
+				<li>
+					<symbol>fuzz</symbol>
+				</li>
+				<li>
+					<symbol>fluff</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>fluff</symbol>
+				</li>
+				<li>
+					<symbol>fuzz</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Rounded</defName>
+		<label>ears (rounded)</label>
+		<description>Carriers of this gene will grow round petal-like ears.</description>
+		<iconPath>Outland/Genes/Ears/Rounded</iconPath>
+		<displayOrderInCategory>7805</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Rounded</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>round</symbol>
+				</li>
+				<li>
+					<symbol>flower</symbol>
+				</li>
+				<li>
+					<symbol>petal</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>fluff</symbol>
+				</li>
+				<li>
+					<symbol>fuzz</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Doe</defName>
+		<label>ears (doe)</label>
+		<description>Carriers of this gene will grow deer like ears.</description>
+		<iconPath>Outland/Genes/Ears/Doe</iconPath>
+		<displayOrderInCategory>7806</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Doe</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>doe</symbol>
+				</li>
+				<li>
+					<symbol>deer</symbol>
+				</li>
+				<li>
+					<symbol>buck</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>doe</symbol>
+				</li>
+				<li>
+					<symbol>deer</symbol>
+				</li>
+				<li>
+					<symbol>buck</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Fey</defName>
+		<label>ears (fey)</label>
+		<description>Carriers of this gene will grow strange alien looking ears.</description>
+		<iconPath>Outland/Genes/Ears/Fey</iconPath>
+		<displayOrderInCategory>7807</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Fey</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>fey</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Ratty</defName>
+		<label>ears (ratty)</label>
+		<description>Carriers of this gene will grow rat-like ears.</description>
+		<iconPath>Outland/Genes/Ears/Ratty</iconPath>
+		<displayOrderInCategory>7807</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Ratty</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>rat</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Vigilant</defName>
+		<label>ears (vigilant)</label>
+		<description>Carriers of this gene will grow furred pointed ears.</description>
+		<iconPath>Outland/Genes/Ears/Vigilant</iconPath>
+		<displayOrderInCategory>7807</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Vigilant</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>vigilant</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Fleef</defName>
+		<label>ears (fleef)</label>
+		<description>Carriers of this gene will grow furred ears.</description>
+		<iconPath>Outland/Genes/Ears/Fleef</iconPath>
+		<displayOrderInCategory>7808</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Fleef</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>fleef</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Flick</defName>
+		<label>ears (flick)</label>
+		<description>Carriers of this gene will grow furred ears.</description>
+		<iconPath>Outland/Genes/Ears/Flick</iconPath>
+		<displayOrderInCategory>7809</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Flick</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>flick</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Foxie</defName>
+		<label>ears (foxie)</label>
+		<description>Carriers of this gene will grow furred ears.</description>
+		<iconPath>Outland/Genes/Ears/Foxie</iconPath>
+		<displayOrderInCategory>7810</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Foxie</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>foxie</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Nyoom</defName>
+		<label>ears (nyoom)</label>
+		<description>Carriers of this gene will grow furred ears.</description>
+		<iconPath>Outland/Genes/Ears/Nyoom</iconPath>
+		<displayOrderInCategory>7811</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Nyoom</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>nyoom</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Swish</defName>
+		<label>ears (swish)</label>
+		<description>Carriers of this gene will grow furred ears.</description>
+		<iconPath>Outland/Genes/Ears/Swish</iconPath>
+		<displayOrderInCategory>7812</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Swish</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>swish</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Woosh</defName>
+		<label>ears (woosh)</label>
+		<description>Carriers of this gene will grow furred ears.</description>
+		<iconPath>Outland/Genes/Ears/Woosh</iconPath>
+		<displayOrderInCategory>7813</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Woosh</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>woosh</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Ventral</defName>
+		<label>ears (ventral)</label>
+		<description>Carriers of this gene will grow short downward pointed ears.</description>
+		<iconPath>Outland/Genes/Ears/Intake</iconPath>
+		<displayOrderInCategory>7814</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Intake</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>pointed</symbol>
+				</li>
+				<li>
+					<symbol>vented</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>point</symbol>
+				</li>
+				<li>
+					<symbol>intake</symbol>
+				</li>
+				<li>
+					<symbol>ear</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Goblinoid</defName>
+		<label>ears (goblinoid)</label>
+		<description>Carriers of this gene will grow short droopy rounded ears.</description>
+		<iconPath>Outland/Genes/Ears/Goblinoid</iconPath>
+		<displayOrderInCategory>7815</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Goblinoid</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Akhkharu</defName>
+		<label>ears (akhkharu)</label>
+		<description>Carriers of this gene will grow pointed bat-like ears.</description>
+		<iconPath>Outland/Genes/Ears/Akhkharu</iconPath>
+		<displayOrderInCategory>7816</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Akhkharu</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Jackal</defName>
+		<label>ears (jackal)</label>
+		<description>Carriers of this gene will grow pointed jackal ears.</description>
+		<iconPath>Outland/Genes/Ears/Jackal</iconPath>
+		<displayOrderInCategory>7817</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Jackal</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_FlatPointed</defName>
+		<label>ears (flat pointed)</label>
+		<description>Carriers of this gene will grow pointed ears that come out from the head at a near horizontal angle.</description>
+		<iconPath>Outland/Genes/Ears/FlatPointed</iconPath>
+		<displayOrderInCategory>7817</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/FlatPointed</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_BigEars</defName>
+		<label>ears (big)</label>
+		<description>Carriers of this gene will grow long pointed ears that come out from the head at a near horizontal angle.</description>
+		<iconPath>Outland/Genes/Ears/BigEars</iconPath>
+		<displayOrderInCategory>7818</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/BigEars</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Flufftop</defName>
+		<label>ears (flufftop)</label>
+		<description>Carriers of this gene will grow long furry ears that come out from the head at a near horizontal angle.</description>
+		<iconPath>Outland/Genes/Ears/Flufftop</iconPath>
+		<displayOrderInCategory>7819</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Flufftop</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Serrated</defName>
+		<label>ears (serrated)</label>
+		<description>Carriers of this gene will grow pointed ears with a serrated edge to them.</description>
+		<iconPath>Outland/Genes/Ears/Serrated</iconPath>
+		<displayOrderInCategory>7820</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Serrated</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Webbed</defName>
+		<label>ears (webbed)</label>
+		<description>Carriers of this gene will grow pointed ears with a webbed edge to them.</description>
+		<iconPath>Outland/Genes/Ears/Webbed</iconPath>
+		<displayOrderInCategory>7821</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Webbed</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Teddy</defName>
+		<label>ears (teddy)</label>
+		<description>Carriers of this gene will grow almost teddy bear like ears.</description>
+		<iconPath>Outland/Genes/Ears/Teddy</iconPath>
+		<displayOrderInCategory>7822</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Teddy</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneEarsBase">
+		<defName>Outland_Ears_Large</defName>
+		<label>ears (large)</label>
+		<description>Carriers of this gene will grow oversized human ears.</description>
+		<iconPath>Outland/Genes/Ears/Large</iconPath>
+		<displayOrderInCategory>7823</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Ears/Large</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+</Defs>

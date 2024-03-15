@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneAntennaBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Ears</endogeneCategory>
+		<displayCategory>Outland_Ears</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<graphicData>
+			<layer>PostHeadgear</layer>
+			<drawNorthAfterHair>false</drawNorthAfterHair>
+			<useSkinShader>false</useSkinShader>
+			<drawLoc>HeadTop</drawLoc>
+			<drawOffsetNorth>(0, -0.2, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.1, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.2, 0)</drawOffsetEast>
+		</graphicData>
+		<exclusionTags>
+			<li>Antenna</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneAntennaBase">
+		<defName>Outland_Antenna_Feather</defName>
+		<label>antenna (feather)</label>
+		<description>Carriers of this gene will grow a pair of moth-like antenna from their head.</description>
+		<iconPath>Outland/Genes/Antenna/Feather</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Antenna/Feather</graphicPath>
+			<useSkinShader>false</useSkinShader>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneAntennaBase">
+		<defName>Outland_Antenna_Leaf</defName>
+		<label>antenna (leaf)</label>
+		<description>Carriers of this gene will grow a pair of moth-like antenna from their head.</description>
+		<iconPath>Outland/Genes/Antenna/Leaf</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Antenna/Leaf</graphicPath>
+			<useSkinShader>false</useSkinShader>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneAntennaBase">
+		<defName>Outland_Antenna_Owl</defName>
+		<label>antenna (owl)</label>
+		<description>Carriers of this gene will grow a pair of moth-like antenna from their head.</description>
+		<iconPath>Outland/Genes/Antenna/Owl</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Antenna/Owl</graphicPath>
+			<useSkinShader>false</useSkinShader>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneAntennaBase">
+		<defName>Outland_Antenna_Jointed</defName>
+		<label>antenna (jointed)</label>
+		<description>Carriers of this gene will grow a pair of bee-like antenna from their head.</description>
+		<iconPath>Outland/Genes/Antenna/Jointed</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Antenna/Jointed</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneAntennaBase">
+		<defName>Outland_Antenna_Segmented</defName>
+		<label>antenna (segmented)</label>
+		<description>Carriers of this gene will grow a pair of ant-like antenna from their head.</description>
+		<iconPath>Outland/Genes/Antenna/Segmented</iconPath>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Antenna/Segmented</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneAntennaBase">
+		<defName>Outland_Antenna_Socketed</defName>
+		<label>antenna (socketed)</label>
+		<description>Carriers of this gene will grow a pair of termite-like antenna from their head.</description>
+		<iconPath>Outland/Genes/Antenna/Socketed</iconPath>
+		<displayOrderInCategory>7906</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Antenna/Socketed</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+	
+</Defs>

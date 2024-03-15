@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneTemplateDef Name="Outland_GenePassionBase" Abstract="True">
+		<geneClass>Gene</geneClass>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+		<exclusionTagPrefix>Passion</exclusionTagPrefix>
+		<geneTemplateType>Skill</geneTemplateType>
+		<displayCategory>Outland_Passions</displayCategory>
+		<selectionWeight>0.2</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneTemplateDef>
+
+	<GeneTemplateDef ParentName="Outland_GenePassionBase">
+		<defName>Outland_PassionDrop</defName>
+		<label>{0} apathy</label>
+		<description>The carrier will have no passion in {0}.</description>
+		<labelShortAdj>apathetic</labelShortAdj>
+		<iconPath>UI/Icons/Genes/Skills/{0}/PassionDrop</iconPath>
+		<passionModType>DropAll</passionModType>
+		<displayOrderOffset>50</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneTemplateDef>
+
+	<GeneTemplateDef ParentName="Outland_GenePassionBase">
+		<defName>Outland_PassionAdd</defName>
+		<label>{0} passion</label>
+		<description>The carrier will have increased passion in {0}. Increases the passion by one, will not go above maximum.</description>
+		<labelShortAdj>passionate</labelShortAdj>
+		<iconPath>UI/Icons/Genes/Skills/{0}/PassionAdd</iconPath>
+		<passionModType>AddOneLevel</passionModType>
+		<displayOrderOffset>50</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneTemplateDef>
+
+</Defs>

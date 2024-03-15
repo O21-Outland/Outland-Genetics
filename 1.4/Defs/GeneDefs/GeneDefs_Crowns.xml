@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneHeadboneCrownBase" ParentName="GeneHeadboneBase" Abstract="True">
+		<graphicData>
+			<drawOffsetNorth>(0, -0.2, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.1, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.2, 0)</drawOffsetEast>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownArcuate</defName>
+		<label>crown (arcuate)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Arcuate</iconPath>
+		<displayOrderInCategory>8000</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Arcuate</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownClaws</defName>
+		<label>crown (claws)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Claws</iconPath>
+		<displayOrderInCategory>8001</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Claws</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownHandles</defName>
+		<label>crown (handles)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Handles</iconPath>
+		<displayOrderInCategory>8002</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Handles</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownPredacious</defName>
+		<label>crown (predacious)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Predacious</iconPath>
+		<displayOrderInCategory>8004</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Predacious</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownReptile</defName>
+		<label>crown (reptile)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Reptile</iconPath>
+		<displayOrderInCategory>8005</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Reptile</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownSpinous</defName>
+		<label>crown (spinous)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Spinous</iconPath>
+		<displayOrderInCategory>8006</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Spinous</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownHalberd</defName>
+		<label>crown (halberd)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Halberd</iconPath>
+		<displayOrderInCategory>8007</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Halberd</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneCrownBase">
+		<defName>Outland_Headbone_CrownPhalanx</defName>
+		<label>crown (phalanx)</label>
+		<description>Carriers of this gene grow a crown of horns from their head.</description>
+		<iconPath>Outland/Genes/Crowns/Phalanx</iconPath>
+		<displayOrderInCategory>8008</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Crowns/Phalanx</graphicPath>
+			<layer>PostSkin</layer>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+</Defs>

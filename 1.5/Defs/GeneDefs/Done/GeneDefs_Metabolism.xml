@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="OutlandMetabolismGeneBase" Abstract="True">
+		<iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+		<displayCategory>Outland_Metabolism</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Neg7Metabolism</defName>
+		<label>-7 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely low metabolism. This decreases overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<biostatMet>-7</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Neg6Metabolism</defName>
+		<label>-6 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely low metabolism. This decreases overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<biostatMet>-6</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Neg5Metabolism</defName>
+		<label>-5 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely low metabolism. This decreases overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7802</displayOrderInCategory>
+		<biostatMet>-5</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Neg4Metabolism</defName>
+		<label>-4 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely low metabolism. This decreases overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7803</displayOrderInCategory>
+		<biostatMet>-4</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Neg3Metabolism</defName>
+		<label>-3 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely low metabolism. This decreases overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7804</displayOrderInCategory>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Neg2Metabolism</defName>
+		<label>-2 metabolism</label>
+		<labelShortAdj>low-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have a poor metabolism. This improves decreases genetic and metabolic quality.</description>
+		<displayOrderInCategory>7805</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Neg1Metabolism</defName>
+		<label>-1 metabolism</label>
+		<labelShortAdj>decreased-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have a slightly worse metabolism. This decreases overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7806</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Pos1Metabolism</defName>
+		<label>+1 metabolism</label>
+		<labelShortAdj>improved-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have a slightly better metabolism. This improves overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7807</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Pos2Metabolism</defName>
+		<label>+2 metabolism</label>
+		<labelShortAdj>high-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have a high metabolism. This improves overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7808</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Pos3Metabolism</defName>
+		<label>+3 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely high metabolism. This improves overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7809</displayOrderInCategory>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Pos4Metabolism</defName>
+		<label>+4 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely high metabolism. This improves overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7810</displayOrderInCategory>
+		<biostatMet>4</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Pos5Metabolism</defName>
+		<label>+5 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely high metabolism. This improves overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7811</displayOrderInCategory>
+		<biostatMet>5</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Pos6Metabolism</defName>
+		<label>+6 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely high metabolism. This improves overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7812</displayOrderInCategory>
+		<biostatMet>6</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="OutlandMetabolismGeneBase">
+		<defName>Outland_Pos7Metabolism</defName>
+		<label>+7 metabolism</label>
+		<labelShortAdj>extreme-metabolic</labelShortAdj>
+		<description>Carriers of this gene naturally have am extremely high metabolism. This improves overall genetic and metabolic quality.</description>
+		<displayOrderInCategory>7813</displayOrderInCategory>
+		<biostatMet>7</biostatMet>
+	</GeneDef>
+
+</Defs>

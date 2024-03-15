@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<OutlandGenes.AscensionGeneTemplateDef>
+		<defName>Outland_XenotypeAscension</defName>
+		<label>{0} ascension</label>
+		<labelShortAdj>{0} ascension</labelShortAdj>
+		<description>Carriers of this gene are capable of ascending into a {0} xenotype after earning it through their normal everyday work. When ready, they need to either cast Ascend Self or have another cast Ascend Other on them (depending on which is available).</description>
+		<geneClass>OutlandGenes.Gene_XenotypeAscension</geneClass>
+		<minAgeActive>13</minAgeActive>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+		<exclusionTagPrefix>Outland_XenotypeAscension</exclusionTagPrefix>
+		<displayCategory>Outland_XenotypeAscension</displayCategory>
+		<displayOrderOffset>3</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</OutlandGenes.AscensionGeneTemplateDef>
+
+</Defs>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Outland_Fangs</defName>
+		<label>fangs</label>
+		<labelNoun>a set of fangs</labelNoun>
+		<description>A set of natural fangs.</description>
+		<descriptionHyperlinks>
+			<GeneDef>Outland_Teeth_Fangs</GeneDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fangs</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>2</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Outland_BurnFangs</defName>
+		<label>burn fangs</label>
+		<labelNoun>a set of burn fangs</labelNoun>
+		<description>A set of natural burn fangs.</description>
+		<descriptionHyperlinks>
+			<GeneDef>Outland_Teeth_FangsBurning</GeneDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>burn fangs</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>2</cooldownTime>
+						<extraMeleeDamages>
+							<li>
+								<def>Flame</def>
+								<amount>10</amount>
+								<chance>0.5</chance>
+							</li>
+						</extraMeleeDamages>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Outland_FreezeFangs</defName>
+		<label>freeze fangs</label>
+		<labelNoun>a set of freeze fangs</labelNoun>
+		<description>A set of natural freeze fangs.</description>
+		<descriptionHyperlinks>
+			<GeneDef>Outland_Teeth_FangsFreezing</GeneDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>freeze fangs</label>
+						<capacities>
+							<li>Outland_FreezeBite</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>2</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Outland_VenomFangs</defName>
+		<label>venom fangs</label>
+		<labelNoun>a set of venom fangs</labelNoun>
+		<description>A set of natural venom fangs.</description>
+		<descriptionHyperlinks>
+			<GeneDef>Outland_Teeth_FangsVenom</GeneDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>venom fangs</label>
+						<capacities>
+							<li>ToxicBite</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>2</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

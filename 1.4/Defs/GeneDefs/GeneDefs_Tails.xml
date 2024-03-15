@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneTailBase" ParentName="GeneTailBase" Abstract="True">
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<graphicData>
+			<colorType>Skin</colorType>
+			<drawOffsetNorth>(0.1, 0.25, -0.25)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.1, -0.1, -0.25)</drawOffsetSouth>
+			<drawOffsetEast>(-0.5, -0.1, -0.15)</drawOffsetEast>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Pointed</defName>
+		<label>tail (pointed)</label>
+		<description>Carriers of this gene grow a prehensile tail which increases manipulation slightly.</description>
+		<iconPath>Outland/Genes/Tails/Common/Pointed</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.05</offset>
+			</li>
+		</capMods>
+		<biostatMet>-1</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Pointed</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Imp</defName>
+		<label>tail (imp)</label>
+		<description>Carriers of this gene grow a prehensile tail which increases manipulation slightly.</description>
+		<iconPath>Outland/Genes/Tails/Common/ImpTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.05</offset>
+			</li>
+		</capMods>
+		<biostatMet>-1</biostatMet>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/ImpTail</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Curly</defName>
+		<label>tail (curly)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Curly</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Curly</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Flame</defName>
+		<label>tail (flame)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Flame</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Flame</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Flop</defName>
+		<label>tail (flop)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Flop</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Flop</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Fluffage</defName>
+		<label>tail (fluffage)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Fluffage</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Fluffage</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Hook</defName>
+		<label>tail (hook)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Hook</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7906</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Hook</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Kink</defName>
+		<label>tail (kink)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Kink</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7907</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Kink</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Layered</defName>
+		<label>tail (layered)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Layered</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7908</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Layered</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Leathery</defName>
+		<label>tail (leathery)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Leathery</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7909</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Leathery</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Pom</defName>
+		<label>tail (pom)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Pom</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7910</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Pom</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Rolled</defName>
+		<label>tail (rolled)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Rolled</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7911</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Rolled</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Spray</defName>
+		<label>tail (spray)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Spray</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7912</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Spray</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Torrent</defName>
+		<label>tail (torrent)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Torrent</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7913</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Torrent</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Plated</defName>
+		<label>tail (plated)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Plated</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7914</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Plated</graphicPath>
+			<colorType>Skin</colorType>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Ratty</defName>
+		<label>tail (ratty)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Ratty</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7915</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Ratty</graphicPath>
+			<colorType>Custom</colorType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTailBase">
+		<defName>Outland_Tail_Furball</defName>
+		<label>tail (furball)</label>
+		<description>Carriers of this gene grow a purely cosmetic tail.</description>
+		<iconPath>Outland/Genes/Tails/Common/Furball</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>7916</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Tails/Common/Furball</graphicPath>
+			<colorType>Hair</colorType>
+		</graphicData>
+	</GeneDef>
+
+</Defs>

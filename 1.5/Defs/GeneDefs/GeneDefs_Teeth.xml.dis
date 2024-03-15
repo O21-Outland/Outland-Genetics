@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneTeethBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>None</endogeneCategory>
+		<displayCategory>Outland_Teeth</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<graphicData>
+			<layer>PostHair</layer>
+			<drawNorthAfterHair>false</drawNorthAfterHair>
+			<useSkinShader>false</useSkinShader>
+			<drawLoc>HeadTop</drawLoc>
+			<colorType>Custom</colorType>
+			<color>(255, 255, 255)</color>
+			<!-- <drawOffsetNorth>(0, -0.2, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.1, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.2, 0)</drawOffsetEast> -->
+		</graphicData>
+		<exclusionTags>
+			<li>Teeth</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_None</defName>
+		<label>human teeth</label>
+		<description>Carriers of this gene have a set of normal human teeth.</description>
+		<iconPath>Outland/GeneIcons/Gene_HumanTeeth</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_Fangs</defName>
+		<label>teeth (fangs)</label>
+		<description>Carriers of this gene have a pair of fangs providing them a strong bite attack.</description>
+		<iconPath>Outland/GeneIcons/Gene_Fangs</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_Fangs</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_FangsVenom</defName>
+		<label>teeth (venom fangs)</label>
+		<description>Carriers of this gene have a pair of fangs providing them a venomous bite attack.</description>
+		<iconPath>Outland/GeneIcons/Gene_VenomFangs</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_VenomFangs</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_FangsBurning</defName>
+		<label>teeth (burning fangs)</label>
+		<description>Carriers of this gene have a pair of fangs providing them a searing hot bite attack.</description>
+		<iconPath>Outland/GeneIcons/Gene_BurningFangs</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_BurnFangs</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_FangsFreezing</defName>
+		<label>teeth (freezing fangs)</label>
+		<description>Carriers of this gene have a pair of fangs providing them a hyperthermic bite attack.</description>
+		<iconPath>Outland/GeneIcons/Gene_FreezingFangs</iconPath>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_FreezeFangs</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_TusksSmall</defName>
+		<label>teeth (small tusks)</label>
+		<description>Carriers of this gene have a pair of tusks protruding from their bottom row of teeth.</description>
+		<iconPath>Outland/Genes/Teeth/TusksSmall</iconPath>
+		<displayOrderInCategory>7906</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Teeth/TusksSmall</graphicPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_TusksLarge</defName>
+		<label>teeth (large tusks)</label>
+		<description>Carriers of this gene have a pair of large tusks protruding from their bottom row of teeth.</description>
+		<iconPath>Outland/Genes/Teeth/TusksLarge</iconPath>
+		<displayOrderInCategory>7907</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Teeth/TusksLarge</graphicPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Teeth_Mandibles</defName>
+		<label>teeth (mandibles)</label>
+		<description>Carriers of this gene have a large pair of insectoid mandibles.</description>
+		<iconPath>Outland/Genes/Teeth/Mandibles</iconPath>
+		<displayOrderInCategory>7908</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Teeth/Mandibles</graphicPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>

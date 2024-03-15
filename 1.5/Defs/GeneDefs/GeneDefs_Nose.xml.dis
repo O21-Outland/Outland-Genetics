@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneNoseBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Nose</endogeneCategory>
+		<displayCategory>Outland_FacialFeatures</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Nose</li>
+		</exclusionTags>
+		<graphicData>
+			<drawLoc>HeadMiddle</drawLoc>
+			<colorType>Skin</colorType>
+			<visibleNorth>false</visibleNorth>
+			<useSkinShader>false</useSkinShader>
+			<layer>PostSkin</layer>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_Goblinoid</defName>
+		<label>goblinoid nose</label>
+		<description>Carriers of this gene have a cute drop shaped nose.</description>
+		<iconPath>Outland/Genes/Noses/Goblinoid</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Noses/Goblinoid</graphicPath>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_Akhkharu</defName>
+		<label>akhkharu nose</label>
+		<description>Carriers of this gene have a sharp pointed bat-like nose.</description>
+		<iconPath>Outland/Genes/Noses/Akhkharu</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Noses/Akhkharu</graphicPath>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_BigNose</defName>
+		<label>big nose</label>
+		<description>Carriers of this gene have a large pink nose.</description>
+		<iconPath>Outland/Genes/Noses/BigNose</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Noses/BigNose</graphicPath>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_NoseSlits</defName>
+		<label>nasal slits</label>
+		<description>Carriers of this gene have slits in place of a nose.</description>
+		<iconPath>Outland/Genes/Noses/NoseSlits</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Noses/NoseSlits</graphicPath>
+		</graphicData>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_Leathery</defName>
+		<label>leathery nose</label>
+		<description>Carriers of this gene have a bulging leathery nose.</description>
+		<iconPath>Outland/Genes/Noses/Leathery</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<graphicData>
+			<graphicPath>Outland/Genes/Noses/Leathery</graphicPath>
+		</graphicData>
+	</GeneDef>
+
+</Defs>

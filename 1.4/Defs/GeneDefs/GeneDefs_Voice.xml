@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneVoiceBase" ParentName="GeneVoiceBase" Abstract="True">
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Beastly</defName>
+		<label>beastly voice</label>
+		<description>Carriers have an animal-like roaring voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceBeastly</iconPath>
+		<displayOrderInCategory>9100</displayOrderInCategory>
+		<soundCall>Outland_Voice_BeastlyCall</soundCall>
+		<soundDeath>Outland_Voice_BeastlyDeath</soundDeath>
+		<soundWounded>Outland_Voice_BeastlyWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Clicker</defName>
+		<label>clicker voice</label>
+		<description>Carriers have a strange clicking voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceClicker</iconPath>
+		<displayOrderInCategory>9101</displayOrderInCategory>
+		<soundCall>Outland_Voice_ClickerCall</soundCall>
+		<soundDeath>Outland_Voice_ClickerDeath</soundDeath>
+		<soundWounded>Outland_Voice_ClickerWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Demonic</defName>
+		<label>demonic voice</label>
+		<description>Carriers have a demonic roaring voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceDemonic</iconPath>
+		<displayOrderInCategory>9102</displayOrderInCategory>
+		<soundCall>Outland_Voice_DemonicCall</soundCall>
+		<soundDeath>Outland_Voice_DemonicDeath</soundDeath>
+		<soundWounded>Outland_Voice_DemonicWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Draconic</defName>
+		<label>draconic voice</label>
+		<description>Carriers have an animal-like roaring voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceDraconic</iconPath>
+		<displayOrderInCategory>9103</displayOrderInCategory>
+		<soundCall>Outland_Voice_DraconicCall</soundCall>
+		<soundDeath>Outland_Voice_DraconicDeath</soundDeath>
+		<soundWounded>Outland_Voice_DraconicWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Ethereal</defName>
+		<label>ethereal voice</label>
+		<description>Carriers have an unusual ethereal voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceEthereal</iconPath>
+		<displayOrderInCategory>9104</displayOrderInCategory>
+		<soundCall>Outland_Voice_EtherealCall</soundCall>
+		<soundDeath>Outland_Voice_EtherealDeath</soundDeath>
+		<soundWounded>Outland_Voice_EtherealWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Ghoulish</defName>
+		<label>ghoulish voice</label>
+		<description>Carriers have a creepy roaring voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceGhoulish</iconPath>
+		<displayOrderInCategory>9105</displayOrderInCategory>
+		<soundCall>Outland_Voice_GhoulishCall</soundCall>
+		<soundDeath>Outland_Voice_GhoulishDeath</soundDeath>
+		<soundWounded>Outland_Voice_GhoulishWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Groany</defName>
+		<label>groany voice</label>
+		<description>Carriers have a rumbling groaning voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceGroany</iconPath>
+		<displayOrderInCategory>9106</displayOrderInCategory>
+		<soundCall>Outland_Voice_GroanyCall</soundCall>
+		<soundDeath>Outland_Voice_GroanyDeath</soundDeath>
+		<soundWounded>Outland_Voice_GroanyWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Insect</defName>
+		<label>insect voice</label>
+		<description>Carriers have a screechy insect voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceInsect</iconPath>
+		<displayOrderInCategory>9107</displayOrderInCategory>
+		<soundCall>Outland_Voice_InsectCall</soundCall>
+		<soundDeath>Outland_Voice_InsectDeath</soundDeath>
+		<soundWounded>Outland_Voice_InsectWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Undead</defName>
+		<label>undead voice</label>
+		<description>Carriers have a discontent groaning voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceUndead</iconPath>
+		<displayOrderInCategory>9108</displayOrderInCategory>
+		<soundCall>Outland_Voice_UndeadCall</soundCall>
+		<soundDeath>Outland_Voice_UndeadDeath</soundDeath>
+		<soundWounded>Outland_Voice_UndeadWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Vibronic</defName>
+		<label>vibronic voice</label>
+		<description>Carriers have a strangely vibrating voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceVibronic</iconPath>
+		<displayOrderInCategory>9109</displayOrderInCategory>
+		<soundCall>Outland_Voice_VibronicCall</soundCall>
+		<soundDeath>Outland_Voice_VibronicDeath</soundDeath>
+		<soundWounded>Outland_Voice_VibronicWounded</soundWounded>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneVoiceBase">
+		<defName>Outland_Voice_Wolfy</defName>
+		<label>wolfy voice</label>
+		<description>Carriers have an animal-like roaring voice.</description>
+		<iconPath>Outland/GeneIcons/Gene_VoiceWolfy</iconPath>
+		<displayOrderInCategory>9110</displayOrderInCategory>
+		<soundCall>Outland_Voice_WolfyCall</soundCall>
+		<soundDeath>Outland_Voice_WolfyDeath</soundDeath>
+		<soundWounded>Outland_Voice_WolfyWounded</soundWounded>
+	</GeneDef>
+
+</Defs>

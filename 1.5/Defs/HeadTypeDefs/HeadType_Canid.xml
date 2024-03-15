@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase" Name="Outland_CanidHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Outland_CanidHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_CanidHeadBase">
+		<defName>Outland_Male_Canid</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Canid/Male_Normal</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_CanidHeadBase">
+		<defName>Outland_Female_Canid</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Canid/Female_Normal</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+</Defs>

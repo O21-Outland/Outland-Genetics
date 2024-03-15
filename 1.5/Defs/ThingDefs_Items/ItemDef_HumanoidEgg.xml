@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef>
+		<defName>Outland_HumanoidEgg</defName>
+		<label>humanoid egg (fert.)</label>
+		<description>Fertilized humanoid egg. Given the time to develop in safety, a baby will hatch from it.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Outland/Items/XenoEgg_Baseliner</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>1</stackLimit>
+		<tickerType>Normal</tickerType>
+		<tradeability>None</tradeability>
+		<thingCategories>
+			<li>Outland_HumanoidEggs</li>
+		</thingCategories>
+		<statBases>
+			<Beauty>-4</Beauty>
+			<Mass>0.3</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<MarketValue>300</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>50</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+			<li Class="OutlandGenes.CompProperties_HumanoidHatcher">
+				<daysToHatch>14</daysToHatch>
+			</li>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+	</ThingDef>
+
+</Defs>

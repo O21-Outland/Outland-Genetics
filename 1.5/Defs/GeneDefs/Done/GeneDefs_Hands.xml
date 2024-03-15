@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneHandsBase" Abstract="True">
+		<displayCategory>Outland_HandsAndFeet</displayCategory>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<biostatCpx>1</biostatCpx>
+		<exclusionTags>
+			<li>Hands</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHandsBase">
+		<defName>Outland_Hands_Talons</defName>
+		<label>hands (talons)</label>
+		<description>Carriers of this gene have sharp talons on the end of their fingers providing them sharp damage in melee combat.</description>
+		<iconPath>Outland/GeneIcons/Gene_TalonHands</iconPath>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Adds hediffs to the pawns hands, giving a bonus attack which does sharp damage.</li>
+		</customEffectDescriptions>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.95</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_Talons</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHandsBase">
+		<defName>Outland_Hands_FreezingTalons</defName>
+		<label>hands (freezing talons)</label>
+		<description>Carriers of this gene have sharp talons on the end of their fingers providing them sharp damage in melee combat. The talons naturally supercool when adrenaline starts flowing, providing hypothermic damage when attacking.</description>
+		<iconPath>Outland/GeneIcons/Gene_FreezingClaws</iconPath>
+		<displayOrderInCategory>7802</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+		<customEffectDescriptions>
+			<li>Adds hediffs to the pawns hands, giving a bonus attack which does sharp damage.</li>
+			<li>Bonus attack also applies freezing damage to the target.</li>
+		</customEffectDescriptions>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.95</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_FreezeTalons</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHandsBase">
+		<defName>Outland_Hands_BurningTalons</defName>
+		<label>hands (burning talons)</label>
+		<description>Carriers of this gene have sharp talons on the end of their fingers providing them sharp damage in melee combat. The talons naturally superheat when adrenaline starts flowing, providing burn damage when attacking.</description>
+		<iconPath>Outland/GeneIcons/Gene_BurningClaws</iconPath>
+		<displayOrderInCategory>7803</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+		<customEffectDescriptions>
+			<li>Adds hediffs to the pawns hands, giving a bonus attack which does sharp damage.</li>
+			<li>Bonus attack also applies burning damage to the target.</li>
+		</customEffectDescriptions>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.95</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_BurnTalons</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHandsBase">
+		<defName>Outland_Hands_VenomTalons</defName>
+		<label>hands (venom talons)</label>
+		<description>Carriers of this gene have sharp talons on the end of their fingers providing them sharp damage in melee combat. The talons naturally start excreting venom when adrenaline starts flowing, providing toxic damage when attacking.</description>
+		<iconPath>Outland/GeneIcons/Gene_VenomClaws</iconPath>
+		<displayOrderInCategory>7804</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+		<customEffectDescriptions>
+			<li>Adds hediffs to the pawns hands, giving a bonus attack which does sharp damage.</li>
+			<li>Bonus attack also applies tox damage to the target.</li>
+		</customEffectDescriptions>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.95</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_VenomTalons</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHandsBase">
+		<defName>Outland_Hands_CrabClaw</defName>
+		<label>hands (crab claw)</label>
+		<description>Carriers of this gene have crab-like claws in place of hands. They can do massive damage in a fight but it makes them fairly useless outside of that.</description>
+		<iconPath>Outland/GeneIcons/Gene_CrabHands</iconPath>
+		<displayOrderInCategory>7805</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+		<customEffectDescriptions>
+			<li>Adds hediffs to the pawns hands, giving a bonus attack which does increased sharp damage.</li>
+		</customEffectDescriptions>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.5</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_CrabClaw</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHandsBase">
+		<defName>Outland_Hands_Tentacle</defName>
+		<label>hands (tentacle)</label>
+		<description>Carriers of this gene have tentacles in place of hands. They provide an increased manipulation capability.</description>
+		<iconPath>Outland/GeneIcons/Gene_TentacleHands</iconPath>
+		<displayOrderInCategory>7806</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>1.1</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHandsBase">
+		<defName>Outland_Hands_RetractableBlades</defName>
+		<label>hands (retractable blades)</label>
+		<description>Carriers of this gene have retractable blades that extend from between the knucles. The ability to retract them keeps them out of the way and so doesn't have the debuff of reducing manipulation.</description>
+		<iconPath>Outland/GeneIcons/Gene_RetractableBlades</iconPath>
+		<displayOrderInCategory>7807</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+		<customEffectDescriptions>
+			<li>Adds hediffs to the pawns hands, giving a bonus attack which does sharp damage.</li>
+			<li>Unlike other hand options which add a bonus attack, these do not have a manipulation debuff.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Outland_RetractableBlades</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>

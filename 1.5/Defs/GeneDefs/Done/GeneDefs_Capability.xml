@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>Outland_Evasive</defName>
+		<label>evasive</label>
+		<description>Carriers of this gene are capable of quicker reaction times allowing them to evade melee attacks more easily.</description>
+		<iconPath>Outland/GeneIcons/Gene_Evasive</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<MeleeDodgeChance>10</MeleeDodgeChance>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_UnusualSpeech</defName>
+		<label>unusual speech</label>
+		<description>Carriers of this gene have an unusual way of talking, making it difficult for them to communicate with others.</description>
+		<iconPath>Outland/GeneIcons/Gene_UnusualSpeech</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<statOffsets>
+			<SocialImpact>-0.2</SocialImpact>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

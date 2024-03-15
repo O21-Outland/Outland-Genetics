@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GeneJawBase" Name="Outland_GeneHeadBase" Abstract="True">
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_SvelteHead</defName>
+		<label>svelte head</label>
+		<description>Carriers of this gene have an elegant and slender appearance in their face and head.</description>
+		<iconPath>Outland/GeneIcons/Gene_SvelteHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Male_Svelte</li>
+			<li>Outland_Female_Svelte</li>
+		</forcedHeadTypes>
+		<statOffsets>
+			<PawnBeauty>1</PawnBeauty>
+		</statOffsets>
+		<displayOrderInCategory>9701</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>svelte</symbol>
+				</li>
+				<li>
+					<symbol>elegant</symbol>
+				</li>
+				<li>
+					<symbol>slender</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_MothHead</defName>
+		<label>moth head</label>
+		<description>Carriers of this gene have a moth-like appearance in their face and head.\n\nNote: This head type has sexual dimorphism, meaning male and female heads differ. It's not a bug, it's intended.</description>
+		<iconPath>Outland/GeneIcons/Gene_MothHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Male_Moth</li>
+			<li>Outland_Female_Moth</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9702</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>moth</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_InsectHead</defName>
+		<label>insect head</label>
+		<description>Carriers of this gene have a insect-like appearance in their face and head.</description>
+		<iconPath>Outland/GeneIcons/Gene_InsectHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Insect</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9703</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>insect</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_TermiteHead</defName>
+		<label>termite head</label>
+		<description>Carriers of this gene have a termite-like appearance in their face and head, while they appear to lack eyes they do in fact have them, they're just covered in a layer of skin making it difficult for them to see out.</description>
+		<iconPath>Outland/GeneIcons/Gene_TermiteHead</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<forcedHeadTypes>
+			<li>Outland_Termite</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9704</displayOrderInCategory>
+		<capMods>
+			<li>
+				<capacity>Sight</capacity>
+				<offset>-0.5</offset>
+			</li>
+		</capMods>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>insect</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_DraconicHead</defName>
+		<label>draconic head</label>
+		<description>Carriers of this gene have a muzzled head shape, reminiscent of a dragons head.</description>
+		<iconPath>Outland/GeneIcons/Gene_DraconicHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Draconic</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9705</displayOrderInCategory>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>dragon</symbol>
+				</li>
+				<li>
+					<symbol>wyvern</symbol>
+				</li>
+				<li>
+					<symbol>drake</symbol>
+				</li>
+				<li>
+					<symbol>kobold</symbol>
+				</li>
+				<li>
+					<symbol>devil</symbol>
+				</li>
+				<li>
+					<symbol>demon</symbol>
+				</li>
+				<li>
+					<symbol>scamp</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_RattyHead</defName>
+		<label>ratty head</label>
+		<description>Carriers of this gene have a pointed muzzle head shape, reminiscent of a rats head.</description>
+		<iconPath>Outland/GeneIcons/Gene_RatHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Ratty</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9706</displayOrderInCategory>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>rat</symbol>
+				</li>
+				<li>
+					<symbol>mouse</symbol>
+				</li>
+				<li>
+					<symbol>oppossum</symbol>
+				</li>
+				<li>
+					<symbol>mole</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_MonocularHead</defName>
+		<label>monocular head</label>
+		<description>Carriers of this gene have a gaunt alien looking head with a singular eye.</description>
+		<iconPath>Outland/GeneIcons/Gene_MonocularHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Monocular</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>EyeColor</li>
+		</exclusionTags>
+		<displayOrderInCategory>9707</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>mono</symbol>
+				</li>
+				<li>
+					<symbol>ocular</symbol>
+				</li>
+				<li>
+					<symbol>eye</symbol>
+				</li>
+				<li>
+					<symbol>iris</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_CephalomorphHead</defName>
+		<label>cephalid head</label>
+		<description>Carriers of this gene have an moist slippery appearance in their face and head.</description>
+		<iconPath>Outland/GeneIcons/Gene_CephalomorphHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Male_Cephalomorph</li>
+			<li>Outland_Female_Cephalomorph</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9708</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>cephalo</symbol>
+				</li>
+				<li>
+					<symbol>moist</symbol>
+				</li>
+				<li>
+					<symbol>squid</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_TrencherHead</defName>
+		<label>trencher head</label>
+		<description>Carriers of this gene have an oily scaled appearance in their face and head.</description>
+		<iconPath>Outland/GeneIcons/Gene_TrencherHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Male_Trencher</li>
+			<li>Outland_Female_Trencher</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9709</displayOrderInCategory>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>trench</symbol>
+				</li>
+				<li>
+					<symbol>fish</symbol>
+				</li>
+				<li>
+					<symbol>scale</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_LesserGoblinoidHead</defName>
+		<label>lesser goblinoid head</label>
+		<description>Carriers of this gene have a distinctly goblinoid head with minimal features.</description>
+		<iconPath>Outland/GeneIcons/Gene_LesserGoblinoidHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_None_Goblinoid</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9710</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_GreaterGoblinoidHead</defName>
+		<label>greater goblinoid head</label>
+		<description>Carriers of this gene have a distinctly goblinoid head with more human features.</description>
+		<iconPath>Outland/GeneIcons/Gene_GreaterGoblinoidHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Male_Goblinoid</li>
+			<li>Outland_Female_Goblinoid</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9711</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_CanidHead</defName>
+		<label>canid head</label>
+		<description>Carriers of this gene have a canine appearance in their face and head.</description>
+		<iconPath>Outland/GeneIcons/Gene_CanidHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Male_Canid</li>
+			<li>Outland_Female_Canid</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9712</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_ArachnidHead</defName>
+		<label>arachnid head</label>
+		<description>Carriers of this gene have a spider-like head with multiple sets of eyes.</description>
+		<iconPath>Outland/GeneIcons/Gene_ArachnidHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Arachnid</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9713</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_FeybarkHead</defName>
+		<label>feybark head</label>
+		<description>Carriers of this gene have a branching wooden looking head.</description>
+		<iconPath>Outland/GeneIcons/Gene_FeybarkHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Feybark</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9714</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_FelineHead</defName>
+		<label>feline head</label>
+		<description>Carriers of this gene have a cat like feline head.</description>
+		<iconPath>Outland/GeneIcons/Gene_FelineHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_FelineMale</li>
+			<li>Outland_FelineFemale</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9715</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadBase">
+		<defName>Outland_BovineHead</defName>
+		<label>bovine head</label>
+		<description>Carriers of this gene have a thick muzzle head shape, reminiscent of a cow head.</description>
+		<iconPath>Outland/GeneIcons/Gene_BovineHead</iconPath>
+		<forcedHeadTypes>
+			<li>Outland_Bovine</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>9716</displayOrderInCategory>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+	</GeneDef>
+
+</Defs>

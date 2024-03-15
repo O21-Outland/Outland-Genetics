@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_BodyScaleBase" Abstract="True">
+		<exclusionTags>
+			<li>BodySize</li>
+		</exclusionTags>
+		<displayCategory>Outland_BodyScale</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_BodyScaleBase">
+		<defName>Outland_BodyScale_Tiny</defName>
+		<label>body scale (tiny)</label>
+		<description>Carriers of this gene have a much smaller body scale than usual, bringing some overall stat changes.</description>
+		<iconPath>Outland/GeneIcons/Gene_ScaleTiny</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<statFactors>
+			<MoveSpeed>1.2</MoveSpeed>
+			<Mass>0.8</Mass>
+			<MeatAmount>0.8</MeatAmount>
+			<LeatherAmount>0.8</LeatherAmount>
+			<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+			<MeleeHitChance>0.8</MeleeHitChance>
+			<MeleeDodgeChance>1.1</MeleeDodgeChance>
+			<CarryingCapacity>0.8</CarryingCapacity>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(0.7,0.7)</bodyScaleFactor>
+				<headScaleFactor>(0.7,0.7)</headScaleFactor>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_BodyScaleBase">
+		<defName>Outland_BodyScale_Small</defName>
+		<label>body scale (small)</label>
+		<description>Carriers of this gene have a smaller body scale than usual, bringing some overall stat changes.</description>
+		<iconPath>Outland/GeneIcons/Gene_ScaleSmall</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<statFactors>
+			<MoveSpeed>1.1</MoveSpeed>
+			<Mass>0.9</Mass>
+			<MeatAmount>0.9</MeatAmount>
+			<LeatherAmount>0.9</LeatherAmount>
+			<WorkSpeedGlobal>1.05</WorkSpeedGlobal>
+			<MeleeHitChance>0.8</MeleeHitChance>
+			<MeleeDodgeChance>1.05</MeleeDodgeChance>
+			<CarryingCapacity>0.9</CarryingCapacity>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(0.85,0.85)</bodyScaleFactor>
+				<headScaleFactor>(0.85,0.85)</headScaleFactor>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_BodyScaleBase">
+		<defName>Outland_BodyScale_Large</defName>
+		<label>body scale (large)</label>
+		<description>Carriers of this gene have a larger body scale than usual, bringing some overall stat changes.</description>
+		<iconPath>Outland/GeneIcons/Gene_ScaleLarge</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+			<Mass>1.1</Mass>
+			<MeatAmount>1.1</MeatAmount>
+			<LeatherAmount>1.1</LeatherAmount>
+			<MeleeDamageFactor>1.05</MeleeDamageFactor>
+			<WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+			<IncomingDamageFactor>0.95</IncomingDamageFactor>
+			<CarryingCapacity>1.1</CarryingCapacity>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(1.15,1.15)</bodyScaleFactor>
+				<headScaleFactor>(1.15,1.15)</headScaleFactor>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_BodyScaleBase">
+		<defName>Outland_BodyScale_Massive</defName>
+		<label>body scale (massive)</label>
+		<description>Carriers of this gene have a much larger body scale than usual, bringing some overall stat changes.</description>
+		<iconPath>Outland/GeneIcons/Gene_ScaleMassive</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<statFactors>
+			<MoveSpeed>0.8</MoveSpeed>
+			<Mass>1.2</Mass>
+			<MeatAmount>1.2</MeatAmount>
+			<LeatherAmount>1.2</LeatherAmount>
+			<MeleeDamageFactor>1.1</MeleeDamageFactor>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+			<IncomingDamageFactor>0.9</IncomingDamageFactor>
+			<CarryingCapacity>1.4</CarryingCapacity>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(1.3,1.3)</bodyScaleFactor>
+				<headScaleFactor>(1.3,1.3)</headScaleFactor>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_BodyScaleBase">
+		<defName>Outland_BodyScale_Squat</defName>
+		<label>body scale (squat)</label>
+		<description>Carriers of this gene have a short, wide body. This makes them a little more robust but slightly reduces movement speed.</description>
+		<iconPath>Outland/GeneIcons/Gene_ScaleSquat</iconPath>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<statFactors>
+			<MoveSpeed>0.9</MoveSpeed>
+			<IncomingDamageFactor>0.9</IncomingDamageFactor>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(0.95, 0.85)</bodyScaleFactor>
+				<headScaleFactor>(0.95, 0.85)</headScaleFactor>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<!-- <GeneDef ParentName="Outland_BodyScaleBase">
+		<defName>Outland_BodyScale_Slender</defName>
+		<label>body scale (slender)</label>
+		<description>Carriers of this gene have a tall, thin body. This makes them a little less robust but increases movement speed.</description>
+		<iconPath>Outland/GeneIcons/Gene_ScaleSquat</iconPath>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<statFactors>
+			<MoveSpeed>1.1</MoveSpeed>
+			<IncomingDamageFactor>1.1</IncomingDamageFactor>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(1.2, 0.9)</bodyScaleFactor>
+				<headScaleFactor>(1, 1)</headScaleFactor>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+
+</Defs>

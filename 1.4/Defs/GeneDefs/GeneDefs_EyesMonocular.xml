@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="MonocularGeneEyeColor" Abstract="True">
+		<displayCategory>Outland_Eyes</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>MonocularEyeColor</li>
+		</exclusionTags>
+		<prerequisite>Outland_MonocularHead</prerequisite>
+		<iconPath>Outland/GeneIcons/Gene_MonocularEye</iconPath>
+		<graphicData>
+			<color>(255, 255, 255)</color>
+			<visibleNorth>false</visibleNorth>
+			<layer>PostTattoo</layer>
+			<graphicPath>Outland/Genes/Eyes/MonocularEye</graphicPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Red</defName>
+		<label>red eye (monocular)</label>
+		<labelShortAdj>red-eyed</labelShortAdj>
+		<description>Carriers of this gene have a red eye.</description>
+		<iconColor>(173, 37, 37)</iconColor>
+		<graphicData>
+			<color>(173, 37, 37)</color>
+		</graphicData>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Gray</defName>
+		<label>gray eye (monocular)</label>
+		<labelShortAdj>gray-eyed</labelShortAdj>
+		<description>Carriers of this gene have a pale white-gray eye.</description>
+		<iconColor>(124, 124, 124)</iconColor>
+		<graphicData>
+			<color>(124, 124, 124)</color>
+		</graphicData>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Orange</defName>
+		<label>orange eye (monocular)</label>
+		<labelShortAdj>orange-eyed</labelShortAdj>
+		<description>Carriers of this gene have a orange eye.</description>
+		<iconColor>(249, 128, 29)</iconColor>
+		<graphicData>
+			<color>(249, 128, 29)</color>
+		</graphicData>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_LightBlue</defName>
+		<label>light blue eye (monocular)</label>
+		<labelShortAdj>blue-eyed</labelShortAdj>
+		<description>Carriers of this gene have a light blue eye.</description>
+		<iconColor>(58, 179, 218)</iconColor>
+		<graphicData>
+			<color>(58, 179, 218)</color>
+		</graphicData>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Cyan</defName>
+		<label>cyan eye (monocular)</label>
+		<labelShortAdj>cyan-eyed</labelShortAdj>
+		<description>Carriers of this gene have a cyan eye.</description>
+		<iconColor>(22, 156, 157)</iconColor>
+		<graphicData>
+			<color>(22, 156, 157)</color>
+		</graphicData>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Blue</defName>
+		<label>blue eye (monocular)</label>
+		<labelShortAdj>blue-eyed</labelShortAdj>
+		<description>Carriers of this gene have a blue eye.</description>
+		<iconColor>(60, 68, 169)</iconColor>
+		<graphicData>
+			<color>(60, 68, 169)</color>
+		</graphicData>
+		<displayOrderInCategory>7906</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Lime</defName>
+		<label>lime eye (monocular)</label>
+		<labelShortAdj>lime-eyed</labelShortAdj>
+		<description>Carriers of this gene have a lime eye.</description>
+		<iconColor>(128, 199, 31)</iconColor>
+		<graphicData>
+			<color>(128, 199, 31)</color>
+		</graphicData>
+		<displayOrderInCategory>7907</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Green</defName>
+		<label>green eye (monocular)</label>
+		<labelShortAdj>green-eyed</labelShortAdj>
+		<description>Carriers of this gene have a green eye.</description>
+		<iconColor>(93, 124, 21)</iconColor>
+		<graphicData>
+			<color>(93, 124, 21)</color>
+		</graphicData>
+		<displayOrderInCategory>7908</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Yellow</defName>
+		<label>yellow eye (monocular)</label>
+		<labelShortAdj>yellow-eyed</labelShortAdj>
+		<description>Carriers of this gene have a yellow eye.</description>
+		<iconColor>(255, 216, 61)</iconColor>
+		<graphicData>
+			<color>(255, 216, 61)</color>
+		</graphicData>
+		<displayOrderInCategory>7909</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Pink</defName>
+		<label>pink eye (monocular)</label>
+		<labelShortAdj>pink-eyed</labelShortAdj>
+		<description>Carriers of this gene have a pink eye.</description>
+		<iconColor>(243, 140, 170)</iconColor>
+		<graphicData>
+			<color>(243, 140, 170)</color>
+		</graphicData>
+		<displayOrderInCategory>7910</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Magenta</defName>
+		<label>magenta eye (monocular)</label>
+		<labelShortAdj>magenta-eyed</labelShortAdj>
+		<description>Carriers of this gene have a magenta eye.</description>
+		<iconColor>(198, 79, 189)</iconColor>
+		<graphicData>
+			<color>(198, 79, 189)</color>
+		</graphicData>
+		<displayOrderInCategory>7911</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Purple</defName>
+		<label>purple eye (monocular)</label>
+		<labelShortAdj>purple-eyed</labelShortAdj>
+		<description>Carriers of this gene have a purple eye.</description>
+		<iconColor>(137, 50, 183)</iconColor>
+		<graphicData>
+			<color>(137, 50, 183)</color>
+		</graphicData>
+		<displayOrderInCategory>7912</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_Brown</defName>
+		<label>brown eye (monocular)</label>
+		<labelShortAdj>brown-eyed</labelShortAdj>
+		<description>Carriers of this gene have a brown eye.</description>
+		<iconColor>(130, 84, 5)</iconColor>
+		<graphicData>
+			<color>(130, 84, 5)</color>
+		</graphicData>
+		<displayOrderInCategory>7913</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="MonocularGeneEyeColor">
+		<defName>Outland_MonocularEye_White</defName>
+		<label>white eye (monocular)</label>
+		<labelShortAdj>white-eyed</labelShortAdj>
+		<description>Carriers of this gene have a blazing white eye.</description>
+		<iconColor>(249, 255, 255)</iconColor>
+		<graphicData>
+			<color>(249, 255, 255)</color>
+		</graphicData>
+		<displayOrderInCategory>7914</displayOrderInCategory>
+	</GeneDef>
+
+</Defs>

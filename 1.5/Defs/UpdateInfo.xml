@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TabulaRasa.UpdateDef Name="OutlandGeneticsBaseUpdate" Abstract="true">
+		<banner>UpdateInfo/O21Outland</banner>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2910172297</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+			<li>
+				<linkLabel>Outland Collection</linkLabel>
+				<linkUrl>https://steamcommunity.com/workshop/filedetails/?id=2755526603</linkUrl>
+			</li>
+		</links>
+	</TabulaRasa.UpdateDef>
+	
+	<!-- <TabulaRasa.UpdateDef>
+		<defName>Outland_Genetics_15112023</defName>
+		<date>2023/11/15</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- TODO Furred Collar
+- TODO New Headbone "Frills" with variations
+- TODO New Headbone "Quills" with variations
+- TODO Arachnid Thorax
+- TODO Arachnid Legs</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef> -->
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_06032024</defName>
+		<date>2024/03/06</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- Insect Wings
+- Silver, Gold and Copper Skin
+- New Headbone type "Crown" with several variations
+- Ability: Lightning Spray (Works like an EMP wave)
+- Ability: Toxic Spray (Tox Gas)
+- Ability: Freezing Spray (Freezes Pawns Temporarily)</text>
+			</li>
+			<li>
+				<header>Fixes</header>
+				<text>- Pawns with All Male/All Female genes should now generate properly.
+- Several typo fixes.
+- Some descriptions are now clearer.</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_30112023</defName>
+		<date>2023/11/30</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- Back Feathers (Black and White)</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_24112023</defName>
+		<date>2023/11/24</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- Bovine Head
+- Beaks (Hooked, pointed, short)</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_14112023</defName>
+		<date>2023/11/14</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- New Ears (Large)
+- Back feathers
+- Facial tendrils
+- Insect Body</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_07112023</defName>
+		<date>2023/11/07</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- Scaleskin (furskin but scales)
+- Scalebody (scaleskin without a forced head type)
+- Insect body</text>
+			</li>
+			<li>
+				<header>Changes</header>
+				<text>- Fixed missing icon for Calming Pheromones</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_06112023</defName>
+		<date>2023/11/06</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- Furbody (furskin without a forced head type)
+- New Ears (Teddy)
+- New Nose (Leathery)
+- Calming Pheromones (makes non-matching xenotypes like the carrier more)</text>
+			</li>
+			<li>
+				<header>Changes</header>
+				<text>- Humanoid/Xenotype eggs now have their own storage category so they aren't included in food recipes.
+- Xenotype Eggs will now be laid on the spot if no appropriate, reachable egg box can be found.
+- Xenotype Egg laying now takes into account fertility, hiding the gizmo on sterile pawns.
+- Humanoid/Xenotype eggs now properly show the amount of time remaining for different pregnancy rates.</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_05112023</defName>
+		<date>2023/11/05</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- New Tails (Pointed, Furball)
+- New Ears (Webbed)
+- New Wings (Fallen Angel, Devil)
+- Chest Fur</text>
+			</li>
+			<li>
+				<header>Changes</header>
+				<text>- Retextured angel wings</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_311023</defName>
+		<date>2023/10/31</date>
+		<contentList>
+			<li>
+				<header>Additions</header>
+				<text>- Arachnid Head gene
+- Arachnid Eyes genes (includes color genes for the eye color)
+- Feybark Head gene
+- Ear genes (flat pointed, big, flufftop and serrated)
+- Nose genes (big and nasal slits)
+- Squat body scale gene
+- Destiny Marks skin gene (natural markings across body and head)
+- Kind Eyes gene (makes others more likely to like the carrier)
+- Furry Beards gene (Furskin beards but without the furskin needed)
+- Leafy Protrusions gene (replaces hair with leaves)
+- Feline Fur gene (Furskin but with a cat-like head)
+- Recessed Eyes (visual gene for eyes, works with eye colors)
+- Egg-layer gene (instead of being pregnant, unlike the asexual one already in the mod)
+- Familiar scent (makes matching xenotypes friendlier with one another)
+- Pregnancy rate genes (affects the times for eggs and implanting reproduction methods too!)
+- Maturation rate genes (faster and slower)
+- Fey Ageing (age normally up to 18, then aging gradually slows till 28 when it stops completely)
+- Ridged Skin (ridges on both the body and face)
+- More Metabolism offset genes</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<!-- 
+		TODO:
+		- Chromatophores (camo ability)
+		- Moss Eater (plus growable moss to eat, pawns hunger is filled as long as their moss need is full)
+		- [Moss Eater] Huck Moss (spits a ball of moss to halt an enemy temporarily)
+		- [Moss Eater] Moss flame (spits a ball of moss ignited by reactive acids, essentially a fireball)
+		- [Moss Eater] Glow Moss (spits glob of moss on the floor mixed with reactive juices, functionally a light source)
+		- [Moss Eater] Moss Drain (uses up stored moss daily, with low and high forms)
+	-->
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_31072023</defName>
+		<date>2023/07/31</date>
+		<contentList>
+			<li>
+				<header>Additions:</header>
+				<text>- Chitinous Skin - Crabby looking skin gene, comes with two variants, white underbelly and tinted underbelly.</text>
+				<image>Outland/UpdateImages/CrabSkin</image>
+			</li>
+			<li>
+				<header>Fixes:</header>
+				<text>- You can no longer command non-colonist xenotype egg layers to squeeze one out.
+- A letter similar to that of a normal birth will now display when a xenotype egg hatches.</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FurDef>
+		<defName>Outland_BumFluff</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Outland/Genes/Skins/BumFluff/BumFluff_Male</Male>
+			<Female>Outland/Genes/Skins/BumFluff/BumFluff_Female</Female>
+			<Hulk>Outland/Genes/Skins/BumFluff/BumFluff_Hulk</Hulk>
+			<Fat>Outland/Genes/Skins/BumFluff/BumFluff_Fat</Fat>
+			<Thin>Outland/Genes/Skins/BumFluff/BumFluff_Thin</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/Naked_FurChild</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/Naked_FurChild</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+</Defs>

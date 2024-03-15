@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<SoundDef>
+		<defName>Outland_Spell_MysticismFail</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Outland/Spells/MysticismFail</clipPath>
+					</li>
+				</grains>
+				<volumeRange>17~25</volumeRange>
+				<pitchRange>0.936413~1.275543</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

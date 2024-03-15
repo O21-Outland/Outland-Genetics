@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>Outland_ParasiticImplantation</defName>
+		<label>parasitic implantation</label>
+		<description>Implants the target pawn with offspring that will violently burst from them after an incubation period as long as the host survives that long.\n\nNote: This kills the pawn and is considered an attack, you may want to be careful who you target. To be clear, there will be no pawn to resurrect after this either, they'll be dispersed as a fine mist.</description>
+		<iconPath>Outland/GeneIcons/Gene_ParasiticImplantation</iconPath>
+		<cooldownTicksRange>840000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<warmupStartSound>Resurrect_Cast</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>Resurrect_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>false</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_GiveHediffImplanted">
+				<hediff>Outland_ParasiticImplant</hediff>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>Outland_SymbioticImplantation</defName>
+		<label>symbiotic implantation</label>
+		<description>Implants the target pawn with offspring that will emerge safely from them after an incubation period as long as the host survives that long.\n\nNote: This won't kill the target but it will put them into a coma for the duration of the incubation.</description>
+		<iconPath>Outland/GeneIcons/Gene_SymbioticImplantation</iconPath>
+		<cooldownTicksRange>840000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<warmupStartSound>Resurrect_Cast</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>Resurrect_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>false</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_GiveHediffImplanted">
+				<hediff>Outland_SymbioticImplant</hediff>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- <AbilityDef ParentName="AbilityTouchBase">
+		<defName>Outland_ConsumingTransformation</defName>
+		<label>consuming transformation</label>
+		<description>Carriers of this gene reproduce by implanting their young inside the head of another pawn. The victim will be fine for a few days before they begin to fall into a coma and eventually replaced both mentally and physically by another. Instead of a newborn baby, the new pawn will be the age the victim was, maintains the same traits that the victim had, along with much of the skills they had.</description>
+		<iconPath>Outland/GeneIcons/Gene_ConsumingTransformation</iconPath>
+		<cooldownTicksRange>840000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<warmupStartSound>Resurrect_Cast</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>Resurrect_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>false</canTargetCorpses>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_GiveHediffImplanted">
+				<hediff>Outland_ConsumingTransformationImplant</hediff>
+			</li>
+		</comps>
+	</AbilityDef> -->
+
+</Defs>

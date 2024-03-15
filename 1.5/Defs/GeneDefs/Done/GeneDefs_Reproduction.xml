@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_ReproductionBase" Abstract="True">
+		<displayCategory>Reproduction</displayCategory>
+		<exclusionTags>
+			<li>Egglaying</li>
+			<li>AG_Egglaying</li>
+			<li>Reproduction</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_ReproductionBase">
+		<defName>Outland_EggLayer</defName>
+		<label>egg layer</label>
+		<description>Carriers of this gene reproduce by laying an egg rather than typical pregnancy.</description>
+		<iconPath>Outland/Items/XenoEgg_Baseliner</iconPath>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<biostatMet>0</biostatMet>
+		<descriptionHyperlinks>
+			<ThingDef>Outland_HumanoidEgg</ThingDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_ReproductionBase">
+		<defName>Outland_ParasiticImplantation</defName>
+		<label>parasitic implantation</label>
+		<description>Carriers of this gene reproduce by implanting their young inside another pawn. The capabilities of the victim are gradually lowered as the 'pregnancy' progresses, until the child bursts violently from them, killing the victim instantly.\n\nNote: This does not factor the implantee into genes at all, that's fully intended, they're being used as an incubator not a mate.</description>
+		<iconPath>Outland/GeneIcons/Gene_ParasiticImplantation</iconPath>
+		<sterilize>true</sterilize>
+		<biostatMet>-1</biostatMet>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<abilities>
+			<li>Outland_ParasiticImplantation</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_ParasiticImplantation</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_ReproductionBase">
+		<defName>Outland_SymbioticImplantation</defName>
+		<label>symbiotic implantation</label>
+		<description>Carriers of this gene reproduce by implanting their young inside another pawn. The victim falls into a coma shortly after this and remains in that state till the child emerges painlessly from them. The victim will survive this process, but they won't be happy about it.\n\nNote: This does not factor the implantee into genes at all, that's fully intended, they're being used as an incubator not a mate.</description>
+		<iconPath>Outland/GeneIcons/Gene_SymbioticImplantation</iconPath>
+		<sterilize>true</sterilize>
+		<biostatMet>-2</biostatMet>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<abilities>
+			<li>Outland_SymbioticImplantation</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_SymbioticImplantation</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="FertilityBase">
+		<defName>Outland_LowFertility</defName>
+		<label>low fertility</label>
+		<description>Carriers of this gene can reproduce but are half as likely to.</description>
+		<iconPath>Outland/GeneIcons/Gene_LowFertility</iconPath>
+		<sterilize>false</sterilize>
+		<biostatMet>1</biostatMet>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<statFactors>
+			<Fertility>0.5</Fertility>
+		</statFactors>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="FertilityBase">
+		<defName>Outland_Breedable</defName>
+		<label>breedable</label>
+		<description>Carriers of this gene are more fertile and have an increased libido, making them highly likely to produce offspring.</description>
+		<iconPath>Outland/GeneIcons/Gene_Breedable</iconPath>
+		<sterilize>false</sterilize>
+		<biostatMet>0</biostatMet>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<statFactors>
+			<Fertility>1.5</Fertility>
+		</statFactors>
+		<lovinMTBFactor>0.75</lovinMTBFactor>
+		<exclusionTags>
+			<li>Libido</li>
+		</exclusionTags>
+		<customEffectDescriptions>
+			<li>Increases the chance of lovin' slightly.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<!-- <GeneDef ParentName="Outland_ReproductionBase">
+		<defName>Outland_ConsumingTransformation</defName>
+		<label>consuming transformation</label>
+		<description>Carriers of this gene reproduce by implanting their young inside the head of another pawn. The victim will be fine for a few days before they begin to fall into a coma and eventually are replaced both mentally and physically by another. The new pawn maintains the same traits that the victim had, along with skills.</description>
+		<iconPath>Outland/GeneIcons/Gene_ConsumingTransformation</iconPath>
+		<sterilize>true</sterilize>
+		<biostatMet>-3</biostatMet>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<abilities>
+			<li>Outland_ConsumingTransformation</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_ConsumingTransformation</AbilityDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+
+	<!-- <GeneDef>
+		<defName>Outland_Kleptogenesis</defName>
+		<label>kleptogenesis</label>
+		<description>Birth giving carriers of this gene will produce offspring that shares the same genes as they do exclusively with the exception of a single random gene from their mate. This is also capable of inheriting genes that are not typically inherited.</description>
+		<iconPath>Outland/GeneIcons/Gene_GeneKlepto</iconPath>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>7921</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+
+	<!-- <GeneDef>
+		<defName>Outland_AssertiveGenes</defName>
+		<label>assertive genes</label>
+		<description>Carriers of this gene will produce offspring with the same genes as they have exclusively, ignoring the genes of the mate. If the mate also has this gene then they the offspring has the normal inheritance behaviour.</description>
+		<iconPath>Outland/GeneIcons/Gene_GeneKlepto</iconPath>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>7922</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+	
+	<GeneDef>
+		<defName>Outland_DeceleratedPregnancy</defName>
+		<label>decelerated pregnancy</label>
+		<description>Carriers of this gene take twice as long for a pregnancy to complete, this even applies to eggs they are an egg layer.\n\nNote: Affects all Outland reproduction options!</description>
+		<iconPath>Outland/GeneIcons/Gene_DeceleratedPregnancy</iconPath>
+		<biostatMet>1</biostatMet>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>7923</displayOrderInCategory>
+		<exclusionTags>
+			<li>Gestation</li>
+			<li>AG_Gestation</li>
+			<li>AG_Fertility</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<pregnancySpeedFactor>0.5</pregnancySpeedFactor>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Outland_AcceleratedPregnancy</defName>
+		<label>accelerated pregnancy</label>
+		<description>Carriers of this gene take half as long for a pregnancy to complete, this even applies to eggs they are an egg layer.\n\nNote: Affects all Outland reproduction options!</description>
+		<iconPath>Outland/GeneIcons/Gene_AcceleratedPregnancy</iconPath>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>7924</displayOrderInCategory>
+		<exclusionTags>
+			<li>Gestation</li>
+			<li>AG_Gestation</li>
+			<li>AG_Fertility</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<pregnancySpeedFactor>2</pregnancySpeedFactor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>
