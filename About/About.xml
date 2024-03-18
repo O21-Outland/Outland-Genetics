@@ -4,7 +4,7 @@
 	<description>Adds an excessive amount of genes, largely cosmetic, some functional, some archite! Some massively OP! But those would never spawn on pawns without another mod making it happen so they're all opt-in, there's even included mod options so you can control what is able to show up in genepacks, from this or any other mod! This is standalone and does not require Outland - Core but genes may be included that are made with it in mind.</description>
 	<author>Neronix17</author>
 	<packageId>Neronix17.Outland.Genetics</packageId>
-	<modIconPath>Outland/ModIcon</modIconPath>
+	<modIconPath IgnoreIfNoMatchingField="True">Outland/ModIcon</modIconPath>
 	<url>https://www.patreon.com/neronix17</url>
 	<supportedVersions>
 		<li>1.4</li>
