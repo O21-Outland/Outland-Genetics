@@ -107,9 +107,9 @@
     <Compile Include="Comps\Comp_GiveHediffImplanted.cs" />
     <Compile Include="Comps\Comp_HumanoidHatcher.cs" />
     <Compile Include="Damages\DamageWorker_Freezing.cs" />
-    <Compile Include="Defs\XenoEggGeneTemplateDef.cs" />
+    <Compile Include="Defs\XenoReproductionGeneTemplateDef.cs" />
     <Compile Include="Defs\XenoImplanterGeneTemplateDef.cs" />
-    <Compile Include="Genes\Gene_XenoEggLayer.cs" />
+    <Compile Include="Genes\Gene_AsexualReproduction.cs" />
     <Compile Include="Genes\Gene_BurningSunlight.cs" />
     <Compile Include="Genes\Gene_Empathic.cs" />
     <Compile Include="Harmony\Patch_DefGenerator_GenerateImpliedDefs_PreResolve.cs" />

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneNoseBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Nose</endogeneCategory>
+		<displayCategory>Outland_FacialFeatures</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Nose</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_Goblinoid</defName>
+		<label>goblinoid nose</label>
+		<description>Carriers of this gene have a cute drop shaped nose.</description>
+		<iconPath>Outland/Genes/Noses/Goblinoid</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Noses/Goblinoid</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>66</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_Akhkharu</defName>
+		<label>akhkharu nose</label>
+		<description>Carriers of this gene have a sharp pointed bat-like nose.</description>
+		<iconPath>Outland/Genes/Noses/Akhkharu</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Noses/Akhkharu</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>66</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_BigNose</defName>
+		<label>big nose</label>
+		<description>Carriers of this gene have a large pink nose.</description>
+		<iconPath>Outland/Genes/Noses/BigNose</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Noses/BigNose</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>66</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_NoseSlits</defName>
+		<label>nasal slits</label>
+		<description>Carriers of this gene have slits in place of a nose.</description>
+		<iconPath>Outland/Genes/Noses/NoseSlits</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Noses/NoseSlits</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>66</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNoseBase">
+		<defName>Outland_Nose_Leathery</defName>
+		<label>leathery nose</label>
+		<description>Carriers of this gene have a bulging leathery nose.</description>
+		<iconPath>Outland/Genes/Noses/Leathery</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Noses/Leathery</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>66</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+</Defs>

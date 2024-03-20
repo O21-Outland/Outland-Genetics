@@ -9,7 +9,7 @@ using Verse;
 
 namespace OutlandGenes
 {
-    public class XenoEggGeneTemplateDef : Def
+    public class XenoReproductionGeneTemplateDef : Def
 	{
 		public Type geneClass = typeof(Gene);
 

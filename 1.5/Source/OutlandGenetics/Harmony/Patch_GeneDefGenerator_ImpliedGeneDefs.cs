@@ -51,7 +51,7 @@ namespace OutlandGenes
                     results.Add(CreateXenoTypeImplanterDef(def, xenoDef, xenoDef.index * 1000));
                 }
             }
-            foreach (XenoEggGeneTemplateDef def in DefDatabase<XenoEggGeneTemplateDef>.AllDefs)
+            foreach (XenoReproductionGeneTemplateDef def in DefDatabase<XenoReproductionGeneTemplateDef>.AllDefs)
             {
                 List<XenotypeDef> blacklist = new List<XenotypeDef> { };
                 foreach (XenotypeDef xenoDef in DefDatabase<XenotypeDef>.AllDefs)
@@ -129,7 +129,7 @@ namespace OutlandGenes
             return geneDef;
         }
 
-        public static GeneDef CreateXenoEggGeneDef(XenoEggGeneTemplateDef template, XenotypeDef xenotype, int displayOrder)
+        public static GeneDef CreateXenoEggGeneDef(XenoReproductionGeneTemplateDef template, XenotypeDef xenotype, int displayOrder)
         {
             GeneDef geneDef = new GeneDef
             {

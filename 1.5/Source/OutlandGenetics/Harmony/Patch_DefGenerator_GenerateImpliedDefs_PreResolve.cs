@@ -89,7 +89,7 @@ namespace OutlandGenes
 
         public static IEnumerable<ThingDef> ImpliedThingDefs()
         {
-            foreach (XenoEggGeneTemplateDef def in DefDatabase<XenoEggGeneTemplateDef>.AllDefs)
+            foreach (XenoReproductionGeneTemplateDef def in DefDatabase<XenoReproductionGeneTemplateDef>.AllDefs)
             {
                 List<XenotypeDef> blacklist = new List<XenotypeDef> { };
                 foreach (XenotypeDef xenoDef in DefDatabase<XenotypeDef>.AllDefs)
@@ -108,7 +108,7 @@ namespace OutlandGenes
             }
         }
 
-        public static ThingDef CreateXenotypeEgg(XenoEggGeneTemplateDef template, XenotypeDef xenotype, int displayOrder)
+        public static ThingDef CreateXenotypeEgg(XenoReproductionGeneTemplateDef template, XenotypeDef xenotype, int displayOrder)
         {
             DefModExt_GeneSpecifics modExt = xenotype.GetModExtension<DefModExt_GeneSpecifics>();
             ThingDef thing = new ThingDef

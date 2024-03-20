@@ -10,7 +10,7 @@ using Verse.AI;
 
 namespace OutlandGenes
 {
-    public class Gene_XenoEggLayer : Gene
+    public class Gene_AsexualReproduction : Gene
     {
         public override IEnumerable<Gizmo> GetGizmos()
         {

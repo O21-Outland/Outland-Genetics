@@ -8,17 +8,6 @@
 		<displayOrderInCategory>7900</displayOrderInCategory>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<randomChosen>true</randomChosen>
-		<graphicData>
-			<layer>PostHair</layer>
-			<drawNorthAfterHair>false</drawNorthAfterHair>
-			<useSkinShader>false</useSkinShader>
-			<drawLoc>HeadTop</drawLoc>
-			<colorType>Custom</colorType>
-			<color>(255, 255, 255)</color>
-			<!-- <drawOffsetNorth>(0, -0.2, 0)</drawOffsetNorth>
-			<drawOffsetSouth>(0, 0.1, 0)</drawOffsetSouth>
-			<drawOffsetEast>(0, 0.2, 0)</drawOffsetEast> -->
-		</graphicData>
 		<exclusionTags>
 			<li>Teeth</li>
 		</exclusionTags>
@@ -138,11 +127,32 @@
 		<defName>Outland_Teeth_TusksSmall</defName>
 		<label>teeth (small tusks)</label>
 		<description>Carriers of this gene have a pair of tusks protruding from their bottom row of teeth.</description>
-		<iconPath>Outland/Genes/Teeth/TusksSmall</iconPath>
+		<iconPath>Outland/Genes/Face/PointedBeak</iconPath>
 		<displayOrderInCategory>7906</displayOrderInCategory>
-		<graphicData>
-			<graphicPath>Outland/Genes/Teeth/TusksSmall</graphicPath>
-		</graphicData>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/PointedBeak</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>false</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
@@ -157,9 +167,30 @@
 		<description>Carriers of this gene have a pair of large tusks protruding from their bottom row of teeth.</description>
 		<iconPath>Outland/Genes/Teeth/TusksLarge</iconPath>
 		<displayOrderInCategory>7907</displayOrderInCategory>
-		<graphicData>
-			<graphicPath>Outland/Genes/Teeth/TusksLarge</graphicPath>
-		</graphicData>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Teeth/TusksLarge</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>false</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
@@ -174,9 +205,30 @@
 		<description>Carriers of this gene have a large pair of insectoid mandibles.</description>
 		<iconPath>Outland/Genes/Teeth/Mandibles</iconPath>
 		<displayOrderInCategory>7908</displayOrderInCategory>
-		<graphicData>
-			<graphicPath>Outland/Genes/Teeth/Mandibles</graphicPath>
-		</graphicData>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Teeth/Mandibles</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>false</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
@@ -184,5 +236,104 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-	
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Beak_Hooked</defName>
+		<label>beak (hooked)</label>
+		<description>Carriers of this gene grow a beak in place of a normal mouth.</description>
+		<iconPath>Outland/Genes/Face/Beak</iconPath>
+		<displayOrderInCategory>7909</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/Beak</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>false</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Beak_ShortBeak</defName>
+		<label>beak (short)</label>
+		<description>Carriers of this gene grow a short beak in place of a normal mouth.</description>
+		<iconPath>Outland/Genes/Face/ShortBeak</iconPath>
+		<displayOrderInCategory>7910</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/ShortBeak</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>false</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneTeethBase">
+		<defName>Outland_Beak_PointedBeak</defName>
+		<label>beak (pointed)</label>
+		<description>Carriers of this gene grow a pointed beak in place of a normal mouth.</description>
+		<iconPath>Outland/Genes/Face/PointedBeak</iconPath>
+		<displayOrderInCategory>7911</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/PointedBeak</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Custom</colorType>
+				<color>(255, 255, 255)</color>
+				<useRottenColor>false</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
 </Defs>

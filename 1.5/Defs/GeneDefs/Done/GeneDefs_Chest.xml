@@ -8,10 +8,6 @@
 		<displayOrderInCategory>7900</displayOrderInCategory>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<randomChosen>true</randomChosen>
-		<graphicData>
-			<drawLoc>Tailbone</drawLoc>
-			<drawScale>1.5</drawScale>
-		</graphicData>
 		<exclusionTags>
 			<li>Chest</li>
 		</exclusionTags>
@@ -20,29 +16,29 @@
 				<offsets>
 					<south>
 						<bodyTypes>
-							<Male>(0, 0.01, 0)</Male>
-							<Female>(0, 0.01, 0.12)</Female>
-							<Thin>(0, 0.01, 0.05)</Thin>
-							<Hulk>(0, 0.01, 0.1)</Hulk>
-							<Fat>(0, 0.01, 0.12)</Fat>
+							<Male>(0, 0, 0)</Male>
+							<Female>(0, 0, 0.12)</Female>
+							<Thin>(0, 0, 0.05)</Thin>
+							<Hulk>(0, 0, 0.1)</Hulk>
+							<Fat>(0, 0, 0.12)</Fat>
 						</bodyTypes>
 					</south>
 					<east>
 						<bodyTypes>
-							<Male>(0, 0.01, 0)</Male>
-							<Female>(0.05, 0.01, 0.12)</Female>
-							<Thin>(0.05, 0.01, 0.05)</Thin>
-							<Hulk>(-0.1, 0.01, 0.05)</Hulk>
-							<Fat>(-0.05, 0.01, 0.12)</Fat>
+							<Male>(0, 0, 0)</Male>
+							<Female>(0.05, 0, 0.12)</Female>
+							<Thin>(0.05, 0, 0.05)</Thin>
+							<Hulk>(-0.1, 0, 0.05)</Hulk>
+							<Fat>(-0.05, 0, 0.12)</Fat>
 						</bodyTypes>
 					</east>
 					<west>
 						<bodyTypes>
-							<Male>(0, 0.01, 0)</Male>
-							<Female>(0.05, 0.01, 0.12)</Female>
-							<Thin>(0.05, 0.01, 0.05)</Thin>
-							<Hulk>(-0.1, 0.01, 0.05)</Hulk>
-							<Fat>(-0.05, 0.01, 0.12)</Fat>
+							<Male>(0, 0, 0)</Male>
+							<Female>(0.05, 0, 0.12)</Female>
+							<Thin>(0.05, 0, 0.05)</Thin>
+							<Hulk>(-0.1, 0, 0.05)</Hulk>
+							<Fat>(-0.05, 0, 0.12)</Fat>
 						</bodyTypes>
 					</west>
 				</offsets>
@@ -58,11 +54,32 @@
 		<description>Carriers of this gene will grow a prominent patch of fur on their chest.</description>
 		<iconPath>Outland/Genes/Chest/ChestFur</iconPath>
 		<displayOrderInCategory>7801</displayOrderInCategory>
-		<graphicData>
-			<graphicPath>Outland/Genes/Chest/ChestFur</graphicPath>
-			<colorType>Hair</colorType>
-			<useSkinShader>false</useSkinShader>
-		</graphicData>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Outland/Genes/Chest/ChestFur</texPath>
+				<colorType>Hair</colorType>
+				<useSkinShader>false</useSkinShader>
+				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataSouth>
+						<layer>15</layer>
+					</dataSouth>
+					<dataEast>
+						<layer>15</layer>
+					</dataEast>
+					<dataWest>
+						<layer>15</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 	
 </Defs>
