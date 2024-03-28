@@ -32,6 +32,25 @@ namespace OutlandGenes
 					Comp_HumanoidHatcher comp = egg.TryGetComp<Comp_HumanoidHatcher>();
 					if(comp != null)
                     {
+						if(__instance.pawn.genes.GenesListForReading.Any(g => g.def.defName.Contains("Outland_XenoReproduction")))
+                        {
+							List<XenotypeDef> xenotypes = new List<XenotypeDef>();
+							foreach(Gene gene in __instance.pawn.genes.GenesListForReading)
+                            {
+								DefModExt_Xenotype modExt = gene.def.GetModExtension<DefModExt_Xenotype>();
+								if (modExt != null)
+                                {
+                                    if (!xenotypes.Contains(modExt.xenotypeDef))
+									{
+										xenotypes.Add(modExt.xenotypeDef);
+									}
+                                }
+                            }
+                            if (!xenotypes.NullOrEmpty())
+							{
+								comp.potentialXenotypes = xenotypes;
+							}
+                        }
 						comp.progressSpeed = progressSpeed;
                     }
 					// Make temporarily sterile.

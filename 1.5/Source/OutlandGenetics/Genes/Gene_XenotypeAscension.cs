@@ -17,8 +17,6 @@ namespace OutlandGenes
             if (!pawn.health.hediffSet.HasHediff(OutlandGenesDefOf.Outland_XenotypeAscender))
             {
                 Hediff_XenotypeAscender hediff = (Hediff_XenotypeAscender)HediffMaker.MakeHediff(OutlandGenesDefOf.Outland_XenotypeAscender, pawn, null);
-                hediff.targetXenotype = DefDatabase<XenotypeDef>.GetNamed(def.defName.Replace("Outland_XenotypeAscension_", ""));
-
                 pawn.health.AddHediff(hediff);
             }
         }

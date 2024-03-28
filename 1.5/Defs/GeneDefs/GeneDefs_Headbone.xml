@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneHeadboneBase" ParentName="GeneHeadboneBase" Abstract="True">
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneBase">
+		<defName>Outland_Headbone_ArmouredPlates</defName>
+		<label>plated headbone</label>
+		<description>Carriers of this gene grow armoured plates on their head.</description>
+		<iconPath>Outland/Genes/Horns/Headplates/Plated</iconPath>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Headplates/Plated</texPath>
+				<color>(138, 104, 78)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>HairStyle</li>
+		</exclusionTags>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneBase">
+		<defName>Outland_Headbone_Leafy</defName>
+		<label>leafy protrusions</label>
+		<description>Carriers of this gene grow a cluster of leaves on their head in place of hair.</description>
+		<iconPath>Outland/Genes/Leaves/Leaves01_south</iconPath>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Outland/Genes/Leaves/Leaves01</li>
+					<li>Outland/Genes/Leaves/Leaves02</li>
+					<li>Outland/Genes/Leaves/Leaves03</li>
+				</texPaths>
+				<colorType>Hair</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>HairStyle</li>
+		</exclusionTags>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+	</GeneDef>
+
+</Defs>

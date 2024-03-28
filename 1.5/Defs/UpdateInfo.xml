@@ -32,6 +32,29 @@
 	</TabulaRasa.UpdateDef> -->
 
 	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_01042024</defName>
+		<date>2024/04/01</date>
+		<contentList>
+			<li>
+				<header>1.5 Changes</header>
+				<text>With RimWorld 1.5 the opportunity to change things with minimal impact has finally arrived, I've been waiting for a major version update to do these for so many months now.</text>
+			</li>
+			<li>
+				<header>Reproduction Gene Overhaul</header>
+				<text>Genes relating to reproduction have seen significant changes, asexual reproduction is now its own gene, which adds a gizmo to trigger pregnancy (or whatever their method of reproduction is) at will with a fatigue hediff preventing it being overused. Xenotype Reproduction is replacing Xenotype Egg Laying, allowing you to have multiple xenotypes defined as potential results where it'll choose one at random, and is compatible with normal pregnancy methods not just asexual egg laying now. Parasitic/Symbiotic implantation also uses the Xenotype Reproduction Genes, however reproduction methods from other mods are unlikely to be compatible.</text>
+			</li>
+			<li>
+				<header>Skin Colour Reduction</header>
+				<text>I've removed all the existing skin colours and replaced them, the ones there before had far too many that were too similar to others and was sorely lacking in some ways, that was my own fault for thinking it'd be a good idea to imitate the vanilla ColorDefs for them. The new selection should be a hefty improvement over the old.</text>
+			</li>
+			<li>
+				<header>Ascension Gene Overhaul</header>
+				<text>A smaller but still substantial overhaul to the Ascension genes has also been done, now you can have multiple, and choose which one they'll ascend to in the hediff with a dropdown, it'll be random if one isn't chosen. There's also now additional genes for increasing and decreasing life experience gain, as well as skipping that part of the mechanic entirely.</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
 		<defName>Outland_Genetics_06032024</defName>
 		<date>2024/03/06</date>
 		<contentList>

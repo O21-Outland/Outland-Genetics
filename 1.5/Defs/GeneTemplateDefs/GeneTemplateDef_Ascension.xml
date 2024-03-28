@@ -9,7 +9,7 @@
 		<geneClass>OutlandGenes.Gene_XenotypeAscension</geneClass>
 		<minAgeActive>13</minAgeActive>
 		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
-		<exclusionTagPrefix>Outland_XenotypeAscension</exclusionTagPrefix>
+		<!-- <exclusionTagPrefix>Outland_XenotypeAscension</exclusionTagPrefix> -->
 		<displayCategory>Outland_XenotypeAscension</displayCategory>
 		<displayOrderOffset>3</displayOrderOffset>
 		<biostatCpx>1</biostatCpx>

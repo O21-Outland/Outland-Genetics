@@ -214,5 +214,23 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+	
+	<GeneDef>
+		<defName>Outland_AsexualReproduction</defName>
+		<label>asexual reproduction</label>
+		<description>Carriers of this gene can reproduce asexually, allowing them to begin a pregnancy or lay eggs at will without a partner.</description>
+		<iconPath>Outland/GeneIcons/Gene_AsexualReproduction</iconPath>
+		<geneClass>OutlandGenes.Gene_AsexualReproduction</geneClass>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>7925</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<pregnancySpeedFactor>2</pregnancySpeedFactor>
+			</li>
+		</modExtensions>
+	</GeneDef>
 
 </Defs>

@@ -20,11 +20,6 @@ namespace OutlandGenes
             {
                 DefGenerator.AddImpliedDef(item);
             }
-
-            foreach (ThingDef item in ImpliedThingDefs())
-            {
-                DefGenerator.AddImpliedDef(item);
-            }
         }
 
         public static IEnumerable<AbilityDef> ImpliedAbilityDefs()
@@ -85,85 +80,6 @@ namespace OutlandGenes
                 }
             };
             return ability;
-        }
-
-        public static IEnumerable<ThingDef> ImpliedThingDefs()
-        {
-            foreach (XenoReproductionGeneTemplateDef def in DefDatabase<XenoReproductionGeneTemplateDef>.AllDefs)
-            {
-                List<XenotypeDef> blacklist = new List<XenotypeDef> { };
-                foreach (XenotypeDef xenoDef in DefDatabase<XenotypeDef>.AllDefs)
-                {
-                    if (blacklist.Contains(xenoDef))
-                    {
-                        continue;
-                    }
-                    DefModExt_GeneSpecifics modExt = xenoDef.GetModExtension<DefModExt_GeneSpecifics>();
-                    if(modExt != null && modExt.xenoEggBlacklist)
-                    {
-                        continue;
-                    }
-                    yield return CreateXenotypeEgg(def, xenoDef, xenoDef.index * 1000);
-                }
-            }
-        }
-
-        public static ThingDef CreateXenotypeEgg(XenoReproductionGeneTemplateDef template, XenotypeDef xenotype, int displayOrder)
-        {
-            DefModExt_GeneSpecifics modExt = xenotype.GetModExtension<DefModExt_GeneSpecifics>();
-            ThingDef thing = new ThingDef
-            {
-                defName = xenotype.defName + "_XenoEgg",
-                label = "Outland.XenotypeEggLabel".Translate(xenotype.label).Formatted(),
-                description = "Outland.XenotypeEggDesc".Translate(xenotype.label).Formatted(),
-                thingClass = typeof(ThingWithComps),
-                graphicData = new GraphicData()
-                {
-                    texPath = modExt?.xenoEggTexturePath ?? "Outland/Items/XenoEgg_Baseliner",
-                    shaderType = ShaderTypeDefOf.Cutout,
-                    graphicClass = typeof(Graphic_Single)
-                },
-                category = ThingCategory.Item,
-                drawerType = DrawerType.MapMeshOnly,
-                resourceReadoutPriority = ResourceCountPriority.Middle,
-                useHitPoints = true,
-                selectable = true,
-                tradeability = Tradeability.None,
-                altitudeLayer = AltitudeLayer.Item,
-                stackLimit = 1,
-                tickerType = TickerType.Normal,
-                thingCategories = new List<ThingCategoryDef>() { OutlandGenesDefOf.Outland_HumanoidEggs },
-                statBases = new List<StatModifier>()
-                {
-                    new StatModifier() { stat = StatDefOf.Beauty, value = -4 },
-                    new StatModifier() { stat = StatDefOf.Mass, value = 0.3f },
-                    new StatModifier() { stat = StatDefOf.Flammability, value = 0.7f },
-                    new StatModifier() { stat = StatDefOf.DeteriorationRate, value = 2 },
-                    new StatModifier() { stat = StatDefOf.MarketValue, value = 300 }
-                },
-                comps = new List<CompProperties>()
-                {
-                    new CompProperties_Forbiddable(),
-                    new CompProperties_TemperatureRuinable()
-                    {
-                        minSafeTemperature = 0,
-                        maxSafeTemperature = 50,
-                        progressPerDegreePerTick = 0.00003f
-                    },
-                    new CompProperties_XenotypeHatcher()
-                    {
-                        hatcherPawn = PawnKindDefOf.Colonist,
-                        hatcherXenotype = xenotype,
-                        hatcherDaystoHatch = 14
-                    }
-                },
-                alwaysHaulable = true,
-                drawGUIOverlay = true,
-                rotatable = false,
-                pathCost = 14,
-                allowedArchonexusCount = 1
-            };
-            return thing;
         }
     }
 }

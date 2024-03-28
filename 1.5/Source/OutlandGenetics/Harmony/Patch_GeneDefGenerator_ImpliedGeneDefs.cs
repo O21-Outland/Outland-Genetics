@@ -65,7 +65,7 @@ namespace OutlandGenes
                     {
                         continue;
                     }
-                    results.Add(CreateXenoEggGeneDef(def, xenoDef, xenoDef.index * 1000));
+                    results.Add(CreateXenoReproductionGeneDef(def, xenoDef, xenoDef.index * 1000));
                 }
             }
             return results;
@@ -129,7 +129,7 @@ namespace OutlandGenes
             return geneDef;
         }
 
-        public static GeneDef CreateXenoEggGeneDef(XenoReproductionGeneTemplateDef template, XenotypeDef xenotype, int displayOrder)
+        public static GeneDef CreateXenoReproductionGeneDef(XenoReproductionGeneTemplateDef template, XenotypeDef xenotype, int displayOrder)
         {
             GeneDef geneDef = new GeneDef
             {
@@ -147,7 +147,8 @@ namespace OutlandGenes
                 minAgeActive = template.minAgeActive,
                 modContentPack = template.modContentPack,
                 modExtensions = template.modExtensions,
-                canGenerateInGeneSet = false
+                canGenerateInGeneSet = false,
+                customEffectDescriptions = template.customEffectDescriptions,
             };
             geneDef.modExtensions.Add(new DefModExt_Xenotype() { xenotypeDef = xenotype });
             if (!template.exclusionTagPrefix.NullOrEmpty())

@@ -24,6 +24,8 @@ namespace OutlandGenes
 
         public XenotypeDef xenotype;
 
+        public List<XenotypeDef> potentialXenotypes;
+
         public CompTemperatureRuinable tempComp;
 
         public float progressSpeed = 1f;
@@ -54,11 +56,21 @@ namespace OutlandGenes
             Scribe_Deep.Look(ref geneSet, "geneSet");
             Scribe_Values.Look(ref hatched, "hatched");
             Scribe_Values.Look(ref progressSpeed, "progressSpeed");
+            Scribe_Collections.Look(ref potentialXenotypes, "potentialXenotypes");
+        }
+
+        public XenotypeDef GetXenotype()
+        {
+            if(potentialXenotypes.NullOrEmpty())
+            {
+                return xenotype;
+            }
+            return potentialXenotypes.RandomElement();
         }
 
         public void GenerateChild()
         {
-            PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: xenotype, forcedEndogenes: (geneSet != null) ? geneSet.genes : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
+            PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: GetXenotype(), forcedEndogenes: (geneSet != null) ? geneSet.genes : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
             hatchee = PawnGenerator.GeneratePawn(request);
             if (mother != null && father != null)
             {
@@ -71,7 +83,7 @@ namespace OutlandGenes
             }
             else if (PregnancyUtility.TryGetInheritedXenotype(mother, father, out var xenotype))
             {
-                hatchee.genes?.SetXenotypeDirect(xenotype);
+                hatchee.genes?.SetXenotypeDirect(GetXenotype());
             }
             else if (PregnancyUtility.ShouldByHybrid(mother, father))
             {

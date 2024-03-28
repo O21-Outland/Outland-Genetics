@@ -15,10 +15,13 @@
 	<Outland.GoLayEggLabel>Lay {0} Egg</Outland.GoLayEggLabel>
 	<Outland.GoLayEggDesc>Instruct this pawn to seek out the best Egg Box they can and produce an egg that'll hatch into a {0} colonist.</Outland.GoLayEggDesc>
 	<Outland.NoEggBox>No unreserved accessible egg box available, laying on the spot instead.</Outland.NoEggBox>
-	<Outland.EggFatigueReason>This pawn has already pushed an egg the size of a raccoon out of their [REDACTED] recently, they'll need time to recover before they can do it again.</Outland.EggFatigueReason>
+	<Outland.EggFatigueReason>This pawn is fatigued from laying an egg too recently to do so again right now.</Outland.EggFatigueReason>
+	<Outland.AlreadyPregnantReason>This pawn is already pregnant, one at a time is enough.</Outland.AlreadyPregnantReason>
 	<Outland.EggSterileReason>This pawn is sterile and cannot lay an egg.</Outland.EggSterileReason>
 	<Outland.XenotypeEggHatchLabel>{0} egg hatched</Outland.XenotypeEggHatchLabel>
 	<Outland.XenotypeEggHatchLetter>A {0} egg has hatched successfully, adding a new baby to the colony! Remember to take care of them and ensure they grow up healthy.</Outland.XenotypeEggHatchLetter>
+	<Outland.BeginPregnancy>Begin Pregnancy</Outland.BeginPregnancy>
+	<Outland.BeginPregnancyDesc>This pawn is capable of asexual reproduction and can begin pregnancy (or however they reproduce) at will.</Outland.BeginPregnancyDesc>
 
 	<Outland.EggLaidLabel>{0} laid an egg!</Outland.EggLaidLabel>
 	<Outland.EggLaidDesc>{0} has laid an egg due to being oviparous. Make sure to keep the egg in a safe environment, under the roof and between 0C - 50C. After some time the egg will hatch into a child. {0} will be unable to lay another egg until their body recovers from this process.</Outland.EggLaidDesc>

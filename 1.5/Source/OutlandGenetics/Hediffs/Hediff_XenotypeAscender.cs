@@ -36,8 +36,26 @@ namespace OutlandGenes
             }
         }
 
+        public void SetRandomTargetXenotype()
+        {
+            List<XenotypeDef> potentialXenotypes = new List<XenotypeDef>();
+            foreach(Gene gene in pawn.genes.GenesListForReading)
+            {
+                if (gene.def.defName.Contains("Outland_XenotypeAscension_"))
+                {
+                    XenotypeDef potentialXenotype = DefDatabase<XenotypeDef>.GetNamed(gene.def.defName.Replace("Outland_XenotypeAscension_", ""));
+                    if(potentialXenotype != null && !potentialXenotypes.Contains(potentialXenotype))
+                    {
+                        potentialXenotypes.Add(potentialXenotype);
+                    }
+                }
+            }
+            targetXenotype = potentialXenotypes.RandomElement();
+        }
+
         public void Ascend()
         {
+            if(targetXenotype == null) { SetRandomTargetXenotype(); }
             List<Gene> list3 = pawn.genes.Endogenes;
             for (int num = list3.Count - 1; num >= 0; num--)
             {

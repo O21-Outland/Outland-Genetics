@@ -25,6 +25,8 @@ namespace OutlandGenes
 
 		public float selectionWeight = 1f;
 
+		public List<string> customEffectDescriptions = new List<string>();
+
 		[MustTranslate]
 		public string labelShortAdj;
 
