@@ -10,6 +10,9 @@
 		<minAgeActive>13</minAgeActive>
 		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
 		<!-- <exclusionTagPrefix>Outland_XenotypeAscension</exclusionTagPrefix> -->
+		<customEffectDescriptions>
+			<li>The Ascend Self and Ascend Other abilities come from their own genes, this doesn't add either ability.</li>
+		</customEffectDescriptions>
 		<displayCategory>Outland_XenotypeAscension</displayCategory>
 		<displayOrderOffset>3</displayOrderOffset>
 		<biostatCpx>1</biostatCpx>

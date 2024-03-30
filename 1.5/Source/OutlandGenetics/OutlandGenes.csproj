@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Lib.Harmony.2.3.2\lib\net472\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.3.3\lib\net472\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
@@ -113,6 +113,7 @@
     <Compile Include="Genes\Gene_BurningSunlight.cs" />
     <Compile Include="Genes\Gene_Empathic.cs" />
     <Compile Include="Harmony\Patch_DefGenerator_GenerateImpliedDefs_PreResolve.cs" />
+    <None Include="Harmony\Patch_GeneUtility_SameHeritableXenotype.cs" />
     <None Include="Harmony\Patch_PregnancyUtility_TryGetInheritedXenotype.cs" />
     <Compile Include="Harmony\Patch_PawnGenerator_GeneratePawnRelations.cs" />
     <Compile Include="Harmony\Patch_Hediff_Pregnant_Tick.cs" />

@@ -8,21 +8,29 @@ using UnityEngine;
 using Verse;
 
 using HarmonyLib;
+using System.Reflection;
 
 namespace OutlandGenes
 {
-	[HarmonyPatch(typeof(PregnancyUtility), "TryGetInheritedXenotype")]
+    [StaticConstructorOnStartup]
 	public static class Patch_PregnancyUtility_TryGetInheritedXenotype
 	{
-		[HarmonyPostfix]
-		public static void Postfix(ref bool __result, Pawn mother, Pawn father, ref XenotypeDef xenotype)
+        static Patch_PregnancyUtility_TryGetInheritedXenotype()
+        {
+            MethodBase tryGetInheritedXenotypeInfo = AccessTools.Method(typeof(PregnancyUtility), "TryGetInheritedXenotype");
+            HarmonyMethod postfixInfo = AccessTools.Method(typeof(Patch_PregnancyUtility_TryGetInheritedXenotype), "Postfix");
+            OutlandGenesMod.harmonyInstance.Patch(tryGetInheritedXenotypeInfo, null, postfixInfo, null, null);
+        }
+
+		public static void Postfix(Pawn mother, Pawn father, ref XenotypeDef xenotype, ref bool __result)
 		{
+            LogUtil.LogMessage("Attempting Inherited Xenotype Patch");
             if (mother != null && mother.genes != null)
             {
                 if (mother.genes.GenesListForReading.Any(g => g.def.defName.Contains("Outland_XenoReproduction")))
                 {
                     List<XenotypeDef> xenotypes = new List<XenotypeDef>();
-                    foreach (Gene gene in mother.genes.GenesListForReading)
+                    foreach (Gene gene in mother.genes.GenesListForReading.Where(g => g.def.defName.Contains("Outland_XenoReproduction")))
                     {
                         DefModExt_Xenotype modExt = gene.def.GetModExtension<DefModExt_Xenotype>();
                         if (modExt != null)
@@ -37,6 +45,7 @@ namespace OutlandGenes
                     {
                         xenotype = (xenotypes.RandomElement());
                         __result = true;
+                        LogUtil.LogMessage("Successful Inherited Xenotype Patch");
                     }
                 }
             }

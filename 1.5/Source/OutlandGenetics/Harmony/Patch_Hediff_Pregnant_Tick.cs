@@ -32,25 +32,6 @@ namespace OutlandGenes
 					Comp_HumanoidHatcher comp = egg.TryGetComp<Comp_HumanoidHatcher>();
 					if(comp != null)
                     {
-						if(__instance.pawn.genes.GenesListForReading.Any(g => g.def.defName.Contains("Outland_XenoReproduction")))
-                        {
-							List<XenotypeDef> xenotypes = new List<XenotypeDef>();
-							foreach(Gene gene in __instance.pawn.genes.GenesListForReading)
-                            {
-								DefModExt_Xenotype modExt = gene.def.GetModExtension<DefModExt_Xenotype>();
-								if (modExt != null)
-                                {
-                                    if (!xenotypes.Contains(modExt.xenotypeDef))
-									{
-										xenotypes.Add(modExt.xenotypeDef);
-									}
-                                }
-                            }
-                            if (!xenotypes.NullOrEmpty())
-							{
-								comp.potentialXenotypes = xenotypes;
-							}
-                        }
 						comp.progressSpeed = progressSpeed;
                     }
 					// Make temporarily sterile.
@@ -77,17 +58,40 @@ namespace OutlandGenes
 			comp.mother = mother;
 			if (mother?.genes?.xenotype == father?.genes?.xenotype)
 			{
-				comp.xenotype = mother.genes.xenotype;
+				comp.xenotypeDef = mother.genes.xenotype;
 			}
 			else
 			{
-				comp.xenotype = XenotypeDefOf.Baseliner;
+				comp.xenotypeDef = XenotypeDefOf.Baseliner;
 			}
 			if (father != null)
 			{
 				comp.father = father;
 			}
-			comp.geneSet = geneSet;
+			//if (mother.genes.GenesListForReading.Any(g => g.def.defName.Contains("Outland_XenoReproduction")))
+			//{
+			//	List<XenotypeDef> xenotypes = new List<XenotypeDef>();
+			//	foreach (Gene gene in mother.genes.GenesListForReading.Where(g => g.def.defName.Contains("Outland_XenoReproduction")))
+			//	{
+			//		DefModExt_Xenotype modExt = gene.def.GetModExtension<DefModExt_Xenotype>();
+			//		if (modExt != null)
+			//		{
+			//			if (!xenotypes.Contains(modExt.xenotypeDef))
+			//			{
+			//				xenotypes.Add(modExt.xenotypeDef);
+			//			}
+			//		}
+			//	}
+			//	if (!xenotypes.NullOrEmpty())
+			//	{
+			//		comp.xenotypeDef = xenotypes.RandomElement();
+			//		comp.geneSet = new GeneSet() { genes = comp.xenotypeDef.genes };
+			//	}
+			//}
+   //         else
+			{
+				comp.geneSet = geneSet;
+			}
 
 			return thing;
 		}

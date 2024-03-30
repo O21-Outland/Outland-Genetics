@@ -24,7 +24,7 @@ namespace OutlandGenes
                 Rect card = new Rect(0f, curY, rect.width, 0f);
 
                 float textHeight = 20f;
-                card.height = 8f + textHeight + 18f + ((Prefs.DevMode && DebugSettings.godMode) ? textHeight : 0f);
+                card.height = 8f + (hediff.HasAnyEarnedAscensionGene ? textHeight + 18f : 0f) + (hediff.PotentialXenotypes.Count > 1 ? textHeight : 0f) + ((Prefs.DevMode && DebugSettings.godMode) ? textHeight : 0f);
 
                 Widgets.DrawMenuSection(card);
 

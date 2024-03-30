@@ -119,7 +119,8 @@ namespace OutlandGenes
                 minAgeActive = template.minAgeActive,
                 modContentPack = template.modContentPack,
                 modExtensions = template.modExtensions,
-                canGenerateInGeneSet = false
+                canGenerateInGeneSet = false,
+                customEffectDescriptions = template.customEffectDescriptions,
             };
             geneDef.modExtensions.Add(new DefModExt_Xenotype() { xenotypeDef = xenotype });
             if (!template.exclusionTagPrefix.NullOrEmpty())

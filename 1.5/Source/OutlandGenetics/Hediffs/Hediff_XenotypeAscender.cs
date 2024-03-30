@@ -13,7 +13,7 @@ namespace OutlandGenes
     {
         public float currentExp = 0f;
 
-        public bool CanAscend => currentExp >= 1f;
+        public bool CanAscend => !HasAnyEarnedAscensionGene || currentExp >= 1f;
 
         public override void ExposeData()
         {
@@ -24,33 +24,70 @@ namespace OutlandGenes
 
         public XenotypeDef targetXenotype = null;
 
+        public List<XenotypeDef> PotentialXenotypes
+        {
+            get
+            {
+                List<XenotypeDef> potentialXenotypes = new List<XenotypeDef>();
+                foreach (Gene gene in pawn.genes.GenesListForReading)
+                {
+                    if (gene.def.defName.Contains("Outland_XenotypeAscension_"))
+                    {
+                        XenotypeDef potentialXenotype = DefDatabase<XenotypeDef>.GetNamed(gene.def.defName.Replace("Outland_XenotypeAscension_", ""));
+                        if (potentialXenotype != null && !potentialXenotypes.Contains(potentialXenotype))
+                        {
+                            potentialXenotypes.Add(potentialXenotype);
+                        }
+                    }
+                }
+                return potentialXenotypes;
+            }
+        }
+
+        public bool HasAnyEarnedAscensionGene
+        {
+            get
+            {
+                return pawn.GeneActive(OutlandGenesDefOf.Outland_EasyEarnedAscension) || pawn.GeneActive(OutlandGenesDefOf.Outland_EarnedAscension) || pawn.GeneActive(OutlandGenesDefOf.Outland_HardEarnedAscension);
+            }
+        }
+
         public void GiveExp(float exp)
         {
-            if (currentExp + exp > 1f)
+            exp *= OutlandGenesMod.settings.earnedAscensionExperienceFactor;
+
+            bool flag = false;
+            if (pawn.GeneActive(OutlandGenesDefOf.Outland_HardEarnedAscension))
             {
-                currentExp = 1f;
+                exp *= 0.5f;
+                flag = true;
             }
-            else
+            else if (pawn.GeneActive(OutlandGenesDefOf.Outland_EasyEarnedAscension))
             {
-                currentExp += exp;
+                exp *= 2.0f;
+                flag = true;
+            }
+            else if (pawn.GeneActive(OutlandGenesDefOf.Outland_EarnedAscension))
+            {
+                flag = true;
+            }
+
+            if (flag)
+            {
+                if (currentExp + exp > 1f)
+                {
+                    currentExp = 1f;
+                }
+                else
+                {
+                    currentExp += exp;
+                }
             }
         }
 
         public void SetRandomTargetXenotype()
         {
-            List<XenotypeDef> potentialXenotypes = new List<XenotypeDef>();
-            foreach(Gene gene in pawn.genes.GenesListForReading)
-            {
-                if (gene.def.defName.Contains("Outland_XenotypeAscension_"))
-                {
-                    XenotypeDef potentialXenotype = DefDatabase<XenotypeDef>.GetNamed(gene.def.defName.Replace("Outland_XenotypeAscension_", ""));
-                    if(potentialXenotype != null && !potentialXenotypes.Contains(potentialXenotype))
-                    {
-                        potentialXenotypes.Add(potentialXenotype);
-                    }
-                }
-            }
-            targetXenotype = potentialXenotypes.RandomElement();
+            targetXenotype = PotentialXenotypes.RandomElement();
         }
 
         public void Ascend()
@@ -92,6 +129,18 @@ namespace OutlandGenes
                 }
             }
             return false;
+        }
+        
+        public IEnumerable<FloatMenuOption> GetXenotypePotentialTargets()
+        {
+            foreach (XenotypeDef xeno in PotentialXenotypes)
+            {
+                yield return new FloatMenuOption(xeno.LabelCap, delegate ()
+                {
+                    targetXenotype = xeno;
+                });
+            }
+            yield break;
         }
     }
 }

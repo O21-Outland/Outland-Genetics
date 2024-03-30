@@ -16,6 +16,7 @@ namespace OutlandGenes
     {
         public static OutlandGenesMod mod;
         public static OutlandGenesSettings settings;
+        public static Harmony harmonyInstance;
 
         public OutlandGenesSettingsPage currentPage = OutlandGenesSettingsPage.General;
         public Vector2 optionsScrollPosition;
@@ -36,8 +37,8 @@ namespace OutlandGenes
 
             File.WriteAllText(VersionDir, CurrentVersion);
 
-            Harmony harmony = new Harmony("Neronix17.Outland.Genes");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            harmonyInstance = new Harmony("Neronix17.Outland.Genes");
+            harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         public override string SettingsCategory() => "Outland - Genetics";

@@ -21,30 +21,41 @@ namespace OutlandGenes
 
         public static ThoughtDef Outland_Empathic;
 
-        public static HediffDef Outland_EndogermLossShock;
-        public static HediffDef Outland_EndogermReplicating;
-        public static HediffDef Outland_EndogerminationComa;
-        public static HediffDef Outland_XenotypeAscender;
-        public static HediffDef Outland_EggPouch;
-        public static HediffDef Outland_EggFatigue;
+        public static HediffDef 
+            Outland_EndogermLossShock,
+            Outland_EndogermReplicating,
+            Outland_EndogerminationComa,
+            Outland_XenotypeAscender,
+            Outland_EggPouch,
+            Outland_EggFatigue;
 
-        public static GeneDef Outland_CalmingPheromones;
-        public static GeneDef Outland_DarklightAffinity;
-        public static GeneDef Outland_KindEyes;
-        public static GeneDef Outland_FamiliarScent;
-        public static GeneDef Outland_EggLayer;
-        public static GeneDef Outland_AllMale, Outland_AllFemale;
+        public static GeneDef 
+            Outland_CalmingPheromones,
+            Outland_DarklightAffinity,
+            Outland_KindEyes,
+            Outland_FamiliarScent,
+            Outland_EggLayer,
+            Outland_AllMale,
+            Outland_AllFemale,
+            Outland_EasyEarnedAscension,
+            Outland_EarnedAscension,
+            Outland_HardEarnedAscension;
 
-        public static SoundDef ReimplantXenogerm_Cast;
+        public static SoundDef 
+            ReimplantXenogerm_Cast;
 
-        public static EffecterDef Implant_Xenogerm;
+        public static EffecterDef 
+            Implant_Xenogerm;
 
-        public static JobDef CastAbilityOnThingMelee;
-        public static JobDef Outland_LayEgg;
-        public static JobDef Outland_FrozenInIce;
+        public static JobDef 
+            CastAbilityOnThingMelee,
+            Outland_LayEgg,
+            Outland_FrozenInIce;
 
-        public static ThingCategoryDef Outland_HumanoidEggs;
+        public static ThingCategoryDef 
+            Outland_HumanoidEggs;
 
-        public static DamageDef Outland_IceFreeze;
+        public static DamageDef 
+            Outland_IceFreeze;
     }
 }

@@ -10,6 +10,10 @@
 	<OutlandGenes.LetterLabelXenotypeImplanted>Genes reimplanted</OutlandGenes.LetterLabelXenotypeImplanted>
 	<OutlandGenes.LetterTextXenotypeImplanted>{CASTER_nameDef} has implanted a copy of {CASTER_possessive} xenogerm into {TARGET_nameDef}, passing all xenogenes onto {TARGET_objective}.\n\n{TARGET_nameDef} will be in a xenogermination coma for the next {COMADURATION} while {TARGET_possessive} body adjusts to the changes.\n\n{CASTER_nameDef} will suffer from gene loss shock for the next {SHOCKDURATION}. {CASTER_possessive} genes will also need to regrow. This process takes time. If {CASTER_nameDef} implants {CASTER_possessive} xenogerm again before {CASTER_possessive} genes have regrown, {CASTER_pronoun} will die.</OutlandGenes.LetterTextXenotypeImplanted>
 
+	<OutlandGenes.SelectXenotype>Select Target Xenotype...</OutlandGenes.SelectXenotype>
+	<OutlandGenes.SelectedXenotype>Target Xenotype: {0}</OutlandGenes.SelectedXenotype>
+	<OutlandGenes.ReadyToAscend>Ready To Ascend!</OutlandGenes.ReadyToAscend>
+
 	<Outland.XenotypeEggLabel>{0} egg</Outland.XenotypeEggLabel>
 	<Outland.XenotypeEggDesc>An abnormally large egg that will eventually hatch into a {0} colonist.</Outland.XenotypeEggDesc>
 	<Outland.GoLayEggLabel>Lay {0} Egg</Outland.GoLayEggLabel>

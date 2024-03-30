@@ -22,9 +22,7 @@ namespace OutlandGenes
 
         public GeneSet geneSet;
 
-        public XenotypeDef xenotype;
-
-        public List<XenotypeDef> potentialXenotypes;
+        public XenotypeDef xenotypeDef;
 
         public CompTemperatureRuinable tempComp;
 
@@ -56,34 +54,20 @@ namespace OutlandGenes
             Scribe_Deep.Look(ref geneSet, "geneSet");
             Scribe_Values.Look(ref hatched, "hatched");
             Scribe_Values.Look(ref progressSpeed, "progressSpeed");
-            Scribe_Collections.Look(ref potentialXenotypes, "potentialXenotypes");
-        }
-
-        public XenotypeDef GetXenotype()
-        {
-            if(potentialXenotypes.NullOrEmpty())
-            {
-                return xenotype;
-            }
-            return potentialXenotypes.RandomElement();
         }
 
         public void GenerateChild()
         {
-            PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: GetXenotype(), forcedEndogenes: (geneSet != null) ? geneSet.genes : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
+            PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: xenotypeDef ?? XenotypeDefOf.Baseliner, forcedEndogenes: (geneSet != null) ? geneSet.genes : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
             hatchee = PawnGenerator.GeneratePawn(request);
-            if (mother != null && father != null)
+            if (GeneUtility.SameHeritableXenotype(mother, father) && mother.genes.UniqueXenotype)
             {
-                if (GeneUtility.SameHeritableXenotype(mother, father) && mother.genes.UniqueXenotype)
-                {
-                    hatchee.genes.xenotypeName = mother.genes.xenotypeName;
-                    hatchee.genes.iconDef = mother.genes.iconDef;
-                }
-                //hatchee.genes.SetXenotypeDirect(xenotype);
+                hatchee.genes.xenotypeName = mother.genes.xenotypeName;
+                hatchee.genes.iconDef = mother.genes.iconDef;
             }
-            else if (PregnancyUtility.TryGetInheritedXenotype(mother, father, out var xenotype))
+            if (PregnancyUtility.TryGetInheritedXenotype(mother, father, out var xenotype))
             {
-                hatchee.genes?.SetXenotypeDirect(GetXenotype());
+                hatchee.genes?.SetXenotypeDirect(xenotype);
             }
             else if (PregnancyUtility.ShouldByHybrid(mother, father))
             {
@@ -113,9 +97,9 @@ namespace OutlandGenes
         public override void CompTick()
         {
             base.CompTick();
-            if (xenotype == null)
+            if (xenotypeDef == null)
             {
-                xenotype = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
+                xenotypeDef = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
             }
             if (hatchee == null)
             {
