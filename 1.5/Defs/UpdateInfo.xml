@@ -45,7 +45,7 @@
 			</li>
 			<li>
 				<header>Skin Colour Variety</header>
-				<text>I've removed all the existing skin colours and replaced them, the ones there before had far too many that were too similar to others and was sorely lacking in some ways, that was my own fault for thinking it'd be a good idea to imitate the vanilla ColorDefs for them. The new selection may lack quantity but hopefully the variety is improved overall.</text>
+				<text>I've replaced the skin colours completely, the old ones were based on vanilla ColorDef data, which sucks. So the new palette is one created with MATH! However, I'm bad at math, and colourblind so if they're accurately assigned at all then it's completely by luck alone.</text>
 			</li>
 			<li>
 				<header>Ascension Gene Overhaul</header>

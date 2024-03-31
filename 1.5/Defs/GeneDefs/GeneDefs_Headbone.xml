@@ -25,7 +25,7 @@
 				<parentTagDef>Head</parentTagDef>
 				<drawData>
 					<defaultData>
-						<layer>80</layer>
+						<layer>61</layer>
 					</defaultData>
 				</drawData>
 			</li>
@@ -60,7 +60,7 @@
 				<parentTagDef>Head</parentTagDef>
 				<drawData>
 					<defaultData>
-						<layer>80</layer>
+						<layer>61</layer>
 					</defaultData>
 				</drawData>
 			</li>

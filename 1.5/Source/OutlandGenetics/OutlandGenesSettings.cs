@@ -22,6 +22,7 @@ namespace OutlandGenes
         public bool alternateYttakin = false;
         public bool alternateYttakinNoBeards = false;
 
+        public bool editVanillaSkins = true;
         public float earnedAscensionExperienceFactor = 1.0f;
 
         public override void ExposeData()
@@ -37,6 +38,7 @@ namespace OutlandGenes
             Scribe_Values.Look(ref alternateYttakin, "alternateYttakin", false);
             Scribe_Values.Look(ref alternateYttakinNoBeards, "alternateYttakinNoBeards", false);
 
+            Scribe_Values.Look(ref editVanillaSkins, "editVanillaSkins", true);
             Scribe_Values.Look(ref earnedAscensionExperienceFactor, "earnedAscensionExperienceFactor", 1.0f);
         }
 

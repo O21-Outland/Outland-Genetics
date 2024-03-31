@@ -73,7 +73,9 @@ namespace OutlandGenes
             listing.CheckboxEnhanced("Extended Impids", "Patches the Impid Xenotype to have additional horn variation as well as giving them a tail and chance of having wings.", ref settings.extendImpidGenes);
             listing.CheckboxEnhanced("Less Beards Yttakin", "Removes the gene from Yttakin that forces them to have a beard.", ref settings.alternateYttakin);
             listing.CheckboxEnhanced("No Beards Yttakin", "Adds the gene to Yttakin preventing them from ever having a beard.", ref settings.alternateYttakinNoBeards);
+            listing.CheckboxEnhanced("Vanilla Skin Color Edits", "Makes some small changes to vanilla skin colors so they are organised among the added ones appropriately, and makes the yellows fit their name better.", ref settings.editVanillaSkins);
             listing.GapLine();
+            listing.SliderLabeled("Earned Ascension Gain Multiplier: " + settings.earnedAscensionExperienceFactor.ToStringPercent(), settings.earnedAscensionExperienceFactor, 0.1f, 5.0f);
         }
     }
 }
