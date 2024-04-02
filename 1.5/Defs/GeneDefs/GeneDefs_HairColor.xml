@@ -2,6 +2,8 @@
 <Defs>
 
 	<GeneDef ParentName="GeneHairColorBase" Name="Outland_GeneHairColorBase" Abstract="True">
+		<selectionWeight>0.02</selectionWeight>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
@@ -10,112 +12,244 @@
 		</modExtensions>
 	</GeneDef>
 
+	<!-- 
+		============================================================
+		=========================== Reds ===========================
+		============================================================
+	-->
+
 	<GeneDef ParentName="Outland_GeneHairColorBase">
 		<defName>Outland_HairColor_DarkRed</defName>
 		<label>dark red hair</label>
-		<hairColorOverride>(130, 69, 69)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<hairColorOverride>(150, 62, 62)</hairColorOverride>
 		<displayOrderInCategory>7900</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_PastelOrange</defName>
-		<label>pastel orange hair</label>
-		<hairColorOverride>(191, 148, 107)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_BrightRed</defName>
+		<label>bright red hair</label>
+		<hairColorOverride>(199, 72, 72)</hairColorOverride>
 		<displayOrderInCategory>7901</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
+	<!-- 
+		============================================================
+		========================= Oranges ==========================
+		============================================================
+	-->
+
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_Yellow</defName>
-		<label>yellow hair</label>
-		<hairColorOverride>(189, 181, 87)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_DarkOrange</defName>
+		<label>dark orange hair</label>
+		<hairColorOverride>(171, 94, 54)</hairColorOverride>
 		<displayOrderInCategory>7902</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_Lime</defName>
-		<label>lime hair</label>
-		<hairColorOverride>(140, 189, 87)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_BrightOrange</defName>
+		<label>bright orange hair</label>
+		<hairColorOverride>(210, 114, 63)</hairColorOverride>
 		<displayOrderInCategory>7903</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
+	<!-- 
+		============================================================
+		========================= Yellows ==========================
+		============================================================
+	-->
+
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_PastelGreen</defName>
-		<label>faded green hair</label>
-		<hairColorOverride>(114, 171, 108)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_DarkYellow</defName>
+		<label>dark yellow hair</label>
+		<hairColorOverride>(210, 187, 55)</hairColorOverride>
 		<displayOrderInCategory>7904</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_Seafoam</defName>
-		<label>seafoam hair</label>
-		<hairColorOverride>(87, 189, 126)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_BrightYellow</defName>
+		<label>bright yellow hair</label>
+		<hairColorOverride>(229, 208, 87)</hairColorOverride>
 		<displayOrderInCategory>7905</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
+	<!-- 
+		============================================================
+		========================== Limes ===========================
+		============================================================
+	-->
+
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_Aqua</defName>
-		<label>aqua hair</label>
-		<hairColorOverride>(111, 179, 162)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_DarkLime</defName>
+		<label>dark lime hair</label>
+		<hairColorOverride>(134, 157, 63)</hairColorOverride>
 		<displayOrderInCategory>7906</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_PastelBlue</defName>
-		<label>pastel blue hair</label>
-		<hairColorOverride>(99, 165, 201)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_BrightLime</defName>
+		<label>bright lime hair</label>
+		<hairColorOverride>(168, 199, 72)</hairColorOverride>
 		<displayOrderInCategory>7907</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
+	<!-- 
+		============================================================
+		========================== Greens ==========================
+		============================================================
+	-->
+
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_SkyBlue</defName>
-		<label>sky blue hair</label>
-		<hairColorOverride>(122, 179, 222)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_DarkGreen</defName>
+		<label>dark green hair</label>
+		<hairColorOverride>(139, 149, 91)</hairColorOverride>
 		<displayOrderInCategory>7908</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_Indigo</defName>
-		<label>indigo hair</label>
-		<hairColorOverride>(92, 87, 189)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_BrightGreen</defName>
+		<label>bright green hair</label>
+		<hairColorOverride>(169, 182, 108)</hairColorOverride>
 		<displayOrderInCategory>7909</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
+	<!-- 
+		============================================================
+		========================== Sages ===========================
+		============================================================
+	-->
+
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_Violet</defName>
-		<label>violet hair</label>
-		<hairColorOverride>(137, 105, 207)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_DarkSage</defName>
+		<label>dark sage hair</label>
+		<hairColorOverride>(60, 73, 62)</hairColorOverride>
 		<displayOrderInCategory>7910</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneHairColorBase">
-		<defName>Outland_HairColor_PastelPink</defName>
-		<label>pastel pink hair</label>
-		<hairColorOverride>(212, 140, 170)</hairColorOverride>
-		<selectionWeight>0.05</selectionWeight>
+		<defName>Outland_HairColor_BrightSage</defName>
+		<label>bright sage hair</label>
+		<hairColorOverride>(74, 110, 80)</hairColorOverride>
 		<displayOrderInCategory>7911</displayOrderInCategory>
-		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+
+	<!-- 
+		============================================================
+		========================= Viridians ========================
+		============================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_DarkViridian</defName>
+		<label>dark viridian hair</label>
+		<hairColorOverride>(71, 148, 124)</hairColorOverride>
+		<displayOrderInCategory>7912</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_BrightViridian</defName>
+		<label>bright viridian hair</label>
+		<hairColorOverride>(80, 189, 154)</hairColorOverride>
+		<displayOrderInCategory>7913</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		============================================================
+		========================== Blues ===========================
+		============================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_DarkBlue</defName>
+		<label>dark blue hair</label>
+		<hairColorOverride>(80, 136, 159)</hairColorOverride>
+		<displayOrderInCategory>7914</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_BrightBlue</defName>
+		<label>bright blue hair</label>
+		<hairColorOverride>(100, 165, 193)</hairColorOverride>
+		<displayOrderInCategory>7915</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		============================================================
+		========================== Azures ==========================
+		============================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_DarkAzure</defName>
+		<label>dark azure hair</label>
+		<hairColorOverride>(73, 107, 167)</hairColorOverride>
+		<displayOrderInCategory>7916</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_BrightAzure</defName>
+		<label>bright azure hair</label>
+		<hairColorOverride>(93, 132, 200)</hairColorOverride>
+		<displayOrderInCategory>7917</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		============================================================
+		========================== Purples =========================
+		============================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_DarkPurple</defName>
+		<label>dark purple hair</label>
+		<hairColorOverride>(80, 72, 157)</hairColorOverride>
+		<displayOrderInCategory>7918</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_BrightPurple</defName>
+		<label>bright purple hair</label>
+		<hairColorOverride>(97, 87, 195)</hairColorOverride>
+		<displayOrderInCategory>7919</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		============================================================
+		========================= Magentas =========================
+		============================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_DarkMagenta</defName>
+		<label>dark magenta hair</label>
+		<hairColorOverride>(136, 72, 157)</hairColorOverride>
+		<displayOrderInCategory>7920</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_BrightMagenta</defName>
+		<label>bright magenta hair</label>
+		<hairColorOverride>(168, 87, 195)</hairColorOverride>
+		<displayOrderInCategory>7921</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		============================================================
+		========================== Pinks ===========================
+		============================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_DarkPink</defName>
+		<label>dark pink hair</label>
+		<hairColorOverride>(183, 87, 151)</hairColorOverride>
+		<displayOrderInCategory>7922</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHairColorBase">
+		<defName>Outland_HairColor_BrightPink</defName>
+		<label>bright pink hair</label>
+		<hairColorOverride>(208, 115, 177)</hairColorOverride>
+		<displayOrderInCategory>7923</displayOrderInCategory>
 	</GeneDef>
 
 </Defs>
