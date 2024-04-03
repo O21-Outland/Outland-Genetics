@@ -157,8 +157,7 @@
 				<texPath>Outland/Genes/Noses/Leathery</texPath>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
-				<colorType>Custom</colorType>
-				<color>(255, 255, 255)</color>
+				<colorType>Skin</colorType>
 				<useRottenColor>true</useRottenColor>
 				<useSkinShader>true</useSkinShader>
 				<drawSize>1.0</drawSize>

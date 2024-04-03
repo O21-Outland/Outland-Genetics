@@ -49,7 +49,7 @@
 			</li>
 			<li>
 				<header>Ascension Gene Overhaul</header>
-				<text>A smaller but still substantial overhaul to the Ascension genes has also been done, now you can have multiple, and choose which one they'll ascend to in the hediff with a dropdown, it'll be random if one isn't chosen. There's also now additional genes for increasing and decreasing life experience gain, as well as skipping that part of the mechanic entirely if none of the "Earned Ascension" genes are on the xenotype.</text>
+				<text>A smaller but still substantial overhaul to the Ascension genes has also been done, now you can have multiple, and choose which one they'll ascend to in the hediff with a dropdown, it'll be random if one isn't chosen. There's also now additional genes (and a setting) for increasing and decreasing life experience gain, as well as skipping that part of the mechanic entirely if none of the "Earned Ascension" genes are on the xenotype.</text>
 			</li>
 		</contentList>
 	</TabulaRasa.UpdateDef>
