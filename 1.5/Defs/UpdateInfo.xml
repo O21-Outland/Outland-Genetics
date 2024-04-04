@@ -32,8 +32,8 @@
 	</TabulaRasa.UpdateDef> -->
 
 	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
-		<defName>Outland_Genetics_02042024</defName>
-		<date>2024/04/03</date>
+		<defName>Outland_Genetics_04042024</defName>
+		<date>2024/04/04</date>
 		<contentList>
 			<li>
 				<header>1.5 Changes</header>

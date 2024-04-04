@@ -78,17 +78,17 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0.1, 0.25, -0.25)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0.1, -0.1, -0.25)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
-						<offset>(-0.5, -0.1, -0.15)</offset>
+						<offset>(-0.5, 0, -0.15)</offset>
 					</dataEast>
 					<dataWest>
-						<offset>(0.5, -0.1, -0.15)</offset>
+						<offset>(0.5, 0, -0.15)</offset>
 					</dataWest>
 				</drawData>
 			</li>
@@ -123,11 +123,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -161,11 +161,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -199,11 +199,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -237,11 +237,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -275,11 +275,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -313,11 +313,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -351,11 +351,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -389,11 +389,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -427,11 +427,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -465,11 +465,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -503,11 +503,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -541,11 +541,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -579,11 +579,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -617,11 +617,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -656,11 +656,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
@@ -694,11 +694,11 @@
 						<layer>-2</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0.1, 0, -0.45)</offset>
 						<layer>90</layer>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(-0.1, 0, -0.25)</offset>
 					</dataSouth>
 					<dataEast>
 						<offset>(-0.5, 0, -0.15)</offset>
