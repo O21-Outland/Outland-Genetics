@@ -127,13 +127,13 @@
 		<defName>Outland_Teeth_TusksSmall</defName>
 		<label>teeth (small tusks)</label>
 		<description>Carriers of this gene have a pair of tusks protruding from their bottom row of teeth.</description>
-		<iconPath>Outland/Genes/Face/TusksSmall</iconPath>
+		<iconPath>Outland/Genes/Teeth/TusksSmall</iconPath>
 		<displayOrderInCategory>7906</displayOrderInCategory>
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Outland/Genes/Face/TusksSmall</texPath>
+				<texPath>Outland/Genes/Teeth/TusksSmall</texPath>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
 				<colorType>Custom</colorType>
