@@ -127,13 +127,13 @@
 		<defName>Outland_Teeth_TusksSmall</defName>
 		<label>teeth (small tusks)</label>
 		<description>Carriers of this gene have a pair of tusks protruding from their bottom row of teeth.</description>
-		<iconPath>Outland/Genes/Face/PointedBeak</iconPath>
+		<iconPath>Outland/Genes/Face/TusksSmall</iconPath>
 		<displayOrderInCategory>7906</displayOrderInCategory>
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Outland/Genes/Face/PointedBeak</texPath>
+				<texPath>Outland/Genes/Face/TusksSmall</texPath>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Head</parentTagDef>
 				<colorType>Custom</colorType>
@@ -268,6 +268,12 @@
 				</visibleFacing>
 			</li>
 		</renderNodeProperties>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneTeethBase">
@@ -301,6 +307,12 @@
 				</visibleFacing>
 			</li>
 		</renderNodeProperties>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneTeethBase">
@@ -334,6 +346,12 @@
 				</visibleFacing>
 			</li>
 		</renderNodeProperties>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
 	</GeneDef>
 
 </Defs>
