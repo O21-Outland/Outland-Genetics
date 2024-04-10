@@ -174,7 +174,7 @@
 	<GeneDef ParentName="Outland_GeneWingBase">
 		<defName>Outland_Wings_Angel</defName>
 		<label>wings (angel)</label>
-		<description>Carriers of this gene grow a large pair of feathery wings, which can give them ability to fly a short distance.</description>
+		<description>Carriers of this gene grow a large pair of feathery wings, which can give them ability to fly a short distance. The colour of these wings is always white.</description>
 		<iconPath>Outland/Genes/Wings/Angel</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>4</displayOrderInCategory>
@@ -222,7 +222,7 @@
 	<GeneDef ParentName="Outland_GeneWingBase">
 		<defName>Outland_Wings_FallenAngel</defName>
 		<label>wings (fallen angel)</label>
-		<description>Carriers of this gene grow a large pair of feathery wings, which can give them ability to fly a short distance.</description>
+		<description>Carriers of this gene grow a large pair of feathery wings, which can give them ability to fly a short distance. The colour of these wings is always black.</description>
 		<iconPath>Outland/Genes/Wings/Angel</iconPath>
 		<iconColor>(0.15, 0.15, 0.15)</iconColor>
 		<displayOrderInCategory>4</displayOrderInCategory>
@@ -234,6 +234,54 @@
 				<texPath>Outland/Genes/Wings/Angel</texPath>
 				<colorType>Custom</colorType>
 				<color>(64, 64, 64)</color>
+				<overrideMeshSize>(1.7, 1.7)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.2, 0)</offset>
+						<layer>90</layer>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.2, 0)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(0, 0.3, 0)</offset>
+						<layer>90</layer>
+					</dataEast>
+					<dataWest>
+						<offset>(0, 0.3, 0)</offset>
+						<layer>90</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneWingBase">
+		<defName>Outland_Wings_Bird</defName>
+		<label>wings (bird)</label>
+		<description>Carriers of this gene grow a large pair of feathery wings, which can give them ability to fly a short distance. The colour of these wings matches hair colour.</description>
+		<iconPath>Outland/Genes/Wings/Angel</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Outland/Genes/Wings/Angel</texPath>
+				<colorType>Hair</colorType>
 				<overrideMeshSize>(1.7, 1.7)</overrideMeshSize>
 				<parentTagDef>Body</parentTagDef>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
