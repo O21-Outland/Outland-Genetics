@@ -60,9 +60,6 @@
 		<displayOrderInCategory>7900</displayOrderInCategory>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<randomChosen>true</randomChosen>
-		<exclusionTags>
-			<li>FacialFeatures</li>
-		</exclusionTags>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
@@ -115,6 +112,81 @@
 				</visibleFacing>
 			</li>
 		</renderNodeProperties>
+		<exclusionTags>
+			<li>FacialFeatures</li>
+			<li>ChinFeatures</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFaceFeatureBase">
+		<defName>Outland_ChinHorns</defName>
+		<label>chin horns</label>
+		<description>Carriers of this gene grow a pair of horns on their chin.</description>
+		<iconPath>Outland/Genes/Face/ChinHorns</iconPath>
+		<displayOrderInCategory>501</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/ChinHorns</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Skin</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>ChinFeatures</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFaceFeatureBase">
+		<defName>Outland_JawTusks</defName>
+		<label>jaw tusks</label>
+		<description>Carriers of this gene grow a pair of tusks either side of their jaw.</description>
+		<iconPath>Outland/Genes/Face/JawTusks</iconPath>
+		<displayOrderInCategory>502</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/JawTusks</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Skin</colorType>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>53</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>JawFeatures</li>
+		</exclusionTags>
 	</GeneDef>
 
 </Defs>

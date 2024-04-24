@@ -13,7 +13,7 @@
 		</exclusionTags>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<offsets>
+				<!-- <offsets>
 					<north>
 						<bodyTypes>
 							<Male>(0, 0, 0)</Male>
@@ -41,7 +41,7 @@
 							<Fat>(0, 0, 0)</Fat>
 						</bodyTypes>
 					</west>
-				</offsets>
+				</offsets> -->
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>

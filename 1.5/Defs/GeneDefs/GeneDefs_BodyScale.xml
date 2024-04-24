@@ -27,11 +27,10 @@
 			<MeleeHitChance>0.8</MeleeHitChance>
 			<MeleeDodgeChance>1.1</MeleeDodgeChance>
 			<CarryingCapacity>0.8</CarryingCapacity>
+			<VEF_CosmeticBodySize_Multiplier>0.7</VEF_CosmeticBodySize_Multiplier>
 		</statFactors>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<bodyScaleFactor>(0.7,0.7)</bodyScaleFactor>
-				<headScaleFactor>(0.7,0.7)</headScaleFactor>
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>
@@ -53,11 +52,10 @@
 			<MeleeHitChance>0.8</MeleeHitChance>
 			<MeleeDodgeChance>1.05</MeleeDodgeChance>
 			<CarryingCapacity>0.9</CarryingCapacity>
+			<VEF_CosmeticBodySize_Multiplier>0.85</VEF_CosmeticBodySize_Multiplier>
 		</statFactors>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<bodyScaleFactor>(0.85,0.85)</bodyScaleFactor>
-				<headScaleFactor>(0.85,0.85)</headScaleFactor>
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>
@@ -79,11 +77,10 @@
 			<WorkSpeedGlobal>0.9</WorkSpeedGlobal>
 			<IncomingDamageFactor>0.95</IncomingDamageFactor>
 			<CarryingCapacity>1.1</CarryingCapacity>
+			<VEF_CosmeticBodySize_Multiplier>1.15</VEF_CosmeticBodySize_Multiplier>
 		</statFactors>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<bodyScaleFactor>(1.15,1.15)</bodyScaleFactor>
-				<headScaleFactor>(1.15,1.15)</headScaleFactor>
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>
@@ -105,11 +102,10 @@
 			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
 			<IncomingDamageFactor>0.9</IncomingDamageFactor>
 			<CarryingCapacity>1.4</CarryingCapacity>
+			<VEF_CosmeticBodySize_Multiplier>1.3</VEF_CosmeticBodySize_Multiplier>
 		</statFactors>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<bodyScaleFactor>(1.3,1.3)</bodyScaleFactor>
-				<headScaleFactor>(1.3,1.3)</headScaleFactor>
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>
@@ -122,38 +118,18 @@
 		<description>Carriers of this gene have a short, wide body. This makes them a little more robust but slightly reduces movement speed.</description>
 		<iconPath>Outland/GeneIcons/Gene_ScaleSquat</iconPath>
 		<displayOrderInCategory>7905</displayOrderInCategory>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<statFactors>
 			<MoveSpeed>0.9</MoveSpeed>
 			<IncomingDamageFactor>0.9</IncomingDamageFactor>
+			<VEF_CosmeticBodySize_Multiplier>0.9</VEF_CosmeticBodySize_Multiplier>
 		</statFactors>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<bodyScaleFactor>(0.95, 0.85)</bodyScaleFactor>
-				<headScaleFactor>(0.95, 0.85)</headScaleFactor>
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>
 		</modExtensions>
 	</GeneDef>
-
-	<!-- <GeneDef ParentName="Outland_BodyScaleBase">
-		<defName>Outland_BodyScale_Slender</defName>
-		<label>body scale (slender)</label>
-		<description>Carriers of this gene have a tall, thin body. This makes them a little less robust but increases movement speed.</description>
-		<iconPath>Outland/GeneIcons/Gene_ScaleSquat</iconPath>
-		<displayOrderInCategory>7905</displayOrderInCategory>
-		<statFactors>
-			<MoveSpeed>1.1</MoveSpeed>
-			<IncomingDamageFactor>1.1</IncomingDamageFactor>
-		</statFactors>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<bodyScaleFactor>(1.2, 0.9)</bodyScaleFactor>
-				<headScaleFactor>(1, 1)</headScaleFactor>
-				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
-				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
-			</li>
-		</modExtensions>
-	</GeneDef> -->
 
 </Defs>

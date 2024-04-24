@@ -30,5 +30,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld.Biotech</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>neronix17.toolbox</li>
 	</loadAfter>
 </ModMetaData>
