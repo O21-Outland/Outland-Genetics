@@ -8,12 +8,6 @@
 		<displayOrderInCategory>7800</displayOrderInCategory>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<randomChosen>true</randomChosen>
-		<!-- <graphicData>
-			<layer>PostHair</layer>
-			<drawNorthAfterHair>false</drawNorthAfterHair>
-			<useSkinShader>false</useSkinShader>
-			<drawLoc>HeadTop</drawLoc>
-		</graphicData> -->
 		<exclusionTags>
 			<li>Ears</li>
 		</exclusionTags>

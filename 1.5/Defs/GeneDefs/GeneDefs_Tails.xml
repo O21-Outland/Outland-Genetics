@@ -8,44 +8,6 @@
 			<li Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
-				<!-- <offsets>
-					<north>
-						<bodyTypes>
-							<Male>(0.01,-0.08,-0.8)</Male>
-							<Female>(0.01,-0.08,-0.7)</Female>
-							<Thin>(0.01, -0.08, -0.65)</Thin>
-							<Child>(0.0, -0.08, -0.7)</Child>
-							<Baby>(0.0, -0.08, -0.7)</Baby>
-						</bodyTypes>
-					</north>
-					<east>
-						<bodyTypes>
-							<Male>(0.6,-0.08,-0.42)</Male>
-							<Female>(0.65,-0.08,-0.25)</Female>
-							<Thin>(0.9,-0.08,-0.3)</Thin>
-							<Child>(0.7, -0.08, -0.2)</Child>
-							<Baby>(0.7, -0.08, -0.15)</Baby>
-						</bodyTypes>
-					</east>
-					<west>
-						<bodyTypes>
-							<Male>(0.6,-0.08,-0.42)</Male>
-							<Female>(0.65,-0.08,-0.25)</Female>
-							<Thin>(0.9,-0.08,-0.3)</Thin>
-							<Child>(0.7, -0.08, -0.2)</Child>
-							<Baby>(0.7, -0.08, -0.15)</Baby>
-						</bodyTypes>
-					</west>
-					<south>
-						<bodyTypes>
-							<Male>(0.2,-0.08,-0.3)</Male>
-							<Female>(0.2,-0.08,-0.3)</Female>
-							<Thin>(0.2,-0.08,-0.3)</Thin>
-							<Child>(0.3, -0.08, -0.25)</Child>
-							<Baby>(0.3, -0.08, -0.45)</Baby>
-						</bodyTypes>
-					</south>
-				</offsets> -->
 			</li>
 		</modExtensions>
 	</GeneDef>

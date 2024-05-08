@@ -13,35 +13,6 @@
 		</exclusionTags>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
-				<!-- <offsets>
-					<south>
-						<bodyTypes>
-							<Male>(0, 0, 0)</Male>
-							<Female>(0, 0, 0.12)</Female>
-							<Thin>(0, 0, 0.05)</Thin>
-							<Hulk>(0, 0, 0.1)</Hulk>
-							<Fat>(0, 0, 0.12)</Fat>
-						</bodyTypes>
-					</south>
-					<east>
-						<bodyTypes>
-							<Male>(0, 0, 0)</Male>
-							<Female>(0.05, 0, 0.12)</Female>
-							<Thin>(0.05, 0, 0.05)</Thin>
-							<Hulk>(-0.1, 0, 0.05)</Hulk>
-							<Fat>(-0.05, 0, 0.12)</Fat>
-						</bodyTypes>
-					</east>
-					<west>
-						<bodyTypes>
-							<Male>(0, 0, 0)</Male>
-							<Female>(0.05, 0, 0.12)</Female>
-							<Thin>(0.05, 0, 0.05)</Thin>
-							<Hulk>(-0.1, 0, 0.05)</Hulk>
-							<Fat>(-0.05, 0, 0.12)</Fat>
-						</bodyTypes>
-					</west>
-				</offsets> -->
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>
