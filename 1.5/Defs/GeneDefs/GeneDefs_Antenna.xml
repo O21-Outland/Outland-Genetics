@@ -184,4 +184,30 @@
 		</renderNodeProperties>
 	</GeneDef>
 
+	<GeneDef ParentName="Outland_GeneAntennaBase">
+		<defName>Outland_Antenna_Fluted</defName>
+		<label>antenna (fluted)</label>
+		<description>Carriers of this gene will grow a pair of fluted antenna from their head.</description>
+		<iconPath>Outland/Genes/Antenna/Fluted</iconPath>
+		<displayOrderInCategory>7906</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Antenna/Fluted</texPath>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
 </Defs>

@@ -119,6 +119,41 @@
 	</GeneDef>
 
 	<GeneDef ParentName="Outland_GeneFaceFeatureBase">
+		<defName>Outland_DistinctCheekbones</defName>
+		<label>distinct cheekbones</label>
+		<description>Carriers of this gene grow more pronounced cheekbones.</description>
+		<iconPath>Outland/Genes/Face/DistinctCheekbones</iconPath>
+		<displayOrderInCategory>500</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/DistinctCheekbones</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Skin</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>true</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>52</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>CheekFeatures</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFaceFeatureBase">
 		<defName>Outland_ChinHorns</defName>
 		<label>chin horns</label>
 		<description>Carriers of this gene grow a pair of horns on their chin.</description>
@@ -186,6 +221,43 @@
 		</renderNodeProperties>
 		<exclusionTags>
 			<li>JawFeatures</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneFaceFeatureBase">
+		<defName>Outland_LongMouth</defName>
+		<label>long snout</label>
+		<description>Carriers of this gene grow a elongated snout, similar to that of an anteater.</description>
+		<iconPath>Outland/Genes/Face/Long</iconPath>
+		<displayOrderInCategory>502</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Face/Long</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Skin</colorType>
+				<shaderTypeDef>Cutout</shaderTypeDef>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>53</layer>
+					</defaultData>
+				</drawData>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>JawFeatures</li>
+			<li>ChinFeatures</li>
 		</exclusionTags>
 	</GeneDef>
 
