@@ -281,6 +281,38 @@
 		</renderNodeProperties>
 	</GeneDef>
 
+	<!-- <GeneDef ParentName="Outland_FurGeneBase">
+		<defName>Outland_PrimateSkin</defName>
+		<label>primate skin</label>
+		<labelShortAdj>furred</labelShortAdj>
+		<description>Carriers of this gene grow fur all over their body.\n\nThis is the same as Furskin, but allows for other head types, and doesn't set the skin to match hair colour.</description>
+		<iconPath>UI/Icons/Genes/Gene_Furskin</iconPath>
+		<displayOrderInCategory>7406</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<statOffsets>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		</statOffsets>
+		<fur>Furskin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>primate skin</debugLabel>
+				<nodeClass>TabulaRasa.PawnRenderNode_FurCustom</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<forcedHeadTypes>
+			<li>Outland_Male_Primate</li>
+			<li>Outland_Female_Primate</li>
+		</forcedHeadTypes>
+	</GeneDef> -->
+
 	<GeneDef>
 		<defName>Outland_ScaleSkin</defName>
 		<label>scaleskin</label>

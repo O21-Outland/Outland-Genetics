@@ -31,6 +31,34 @@
 		</contentList>
 	</TabulaRasa.UpdateDef> -->
 
+	<!-- <TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_10012025</defName>
+		<date>2025/01/10</date>
+		<contentList>
+			<li>
+				<header>New Genes</header>
+				<text>- Primate Skin (like furskin, but for monkey men)
+- Primate Hairs
+- Primate Beards</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef> -->
+
+	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
+		<defName>Outland_Genetics_10012025</defName>
+		<date>2025/01/10</date>
+		<contentList>
+			<li>
+				<header>New Genes</header>
+				<text>- Antenna (Fluted)
+- Ears (Curved)
+- Eyes (Large + Colors)
+- Distinct Cheekbones
+- Long Snout</text>
+			</li>
+		</contentList>
+	</TabulaRasa.UpdateDef>
+
 	<TabulaRasa.UpdateDef ParentName="OutlandGeneticsBaseUpdate">
 		<defName>Outland_Genetics_04042024</defName>
 		<date>2024/04/04</date>

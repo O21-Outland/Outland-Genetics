@@ -22,4 +22,25 @@
 		</modExtensions>
 	</GeneDef>
 
+	<!-- <GeneDef ParentName="GeneBeardStyleBase">
+		<defName>Outland_Beard_PrimateOnly</defName>
+		<label>only primate beards</label>
+		<labelShortAdj>furry</labelShortAdj>
+		<description>Male carriers of this gene experience rapid beard growth and are uncomfortable cutting their beards.</description>
+		<iconPath>UI/Icons/Genes/Gene_BeardStyleBushyOnly</iconPath>
+		<displayOrderInCategory>7602</displayOrderInCategory>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Primate</li>
+			</tags>
+		</beardTagFilter>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+
 </Defs>
