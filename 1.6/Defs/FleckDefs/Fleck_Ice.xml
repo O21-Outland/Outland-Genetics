@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>Outland_IceGlow</defName>
+		<graphicData>
+			<texPath>Outland/Flecks/IceGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>2.6</fadeInTime>
+		<solidTime>1.5</solidTime>
+		<fadeOutTime>3.3</fadeOutTime>
+	</FleckDef>
+
+</Defs>

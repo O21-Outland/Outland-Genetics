@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- 
+		Additions to Impids:
+		- Variety of horns that fit for them.
+		- Wings designed to fit them, but only a 50% chance.
+		- Tail designed to fit them.
+	-->
+	<Operation Class="OutlandGenes.PatchOperation_SettingActive">
+		<settings>
+			<li>extendImpidGenes</li>
+		</settings>
+		<active Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Impid"]/genes</xpath>
+			<value>
+				<li>Outland_Headbone_Bull</li>
+				<li>Outland_Headbone_Drop</li>
+				<li>Outland_Headbone_Flame</li>
+				<li>Outland_Headbone_LongProng</li>
+				<li>Outland_Headbone_Ram</li>
+				<li>Outland_Headbone_Forward</li>
+				<li>Outland_Headbone_Benevolent</li>
+				<li>Outland_Headbone_Straw</li>
+				<li>Outland_Headbone_Thorn</li>
+				<li>Outland_Wings_None</li>
+				<li>Outland_Wings_Imp</li>
+				<li>Outland_Tail_Imp</li>
+			</value>
+		</active>
+	</Operation>
+
+</Patch>

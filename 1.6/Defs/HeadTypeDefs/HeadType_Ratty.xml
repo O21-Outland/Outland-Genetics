@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Ratty</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Ratty/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_RattyHead</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+</Defs>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GeneHealingRateBase">
+		<defName>Outland_Regeneration</defName>
+		<label>regeneration</label>
+		<description>Carriers of this gene heal from wounds faster than normal and even regenerate limbs.</description>
+		<iconPath>Outland/GeneIcons/Gene_Regeneration</iconPath>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<geneClass>TabulaRasa.Gene_Regeneration</geneClass>
+		<statFactors>
+			<InjuryHealingFactor>1.25</InjuryHealingFactor>
+		</statFactors>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+			<li Class="TabulaRasa.DefModExt_GeneRegeneration">
+				<healTicks>1200</healTicks>
+				<regrowParts>true</regrowParts>
+				<cureTicks>300</cureTicks>
+				<removeInfections>true</removeInfections>
+				<infectionsAllowed />
+				<explicitRemovals>
+					<li>FibrousMechanites</li>
+					<li>SensoryMechanites</li>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>Asthma</li>
+					<li>HeartArteryBlockage</li>
+					<li>Carcinoma</li>
+					<li>HearingLoss</li>
+					<li>Cataract</li>
+					<li>BadBack</li>
+					<li>Frail</li>
+					<li>ResurrectionPsychosis</li>
+				</explicitRemovals>
+				<growthTicks>600</growthTicks>
+				<growthText>Growth: </growthText>
+				<protoBodyPart>Outland_ProtoBodypart</protoBodyPart>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneHealingRateBase">
+		<defName>Outland_FragileHealing</defName>
+		<label>fragile healing</label>
+		<description>Carriers of this gene heal from wounds faster than normal but take more damage overall.</description>
+		<iconPath>Outland/GeneIcons/Gene_FragileHealing</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<statFactors>
+			<InjuryHealingFactor>1.25</InjuryHealingFactor>
+			<IncomingDamageFactor>1.1</IncomingDamageFactor>
+		</statFactors>
+		<biostatMet>2</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>fragile</symbol>
+				</li>
+				<li>
+					<symbol>soft</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_YouthfulAgeing</defName>
+		<label>youthful</label>
+		<description>Carriers of this gene age much slower while in their prime, allowing them to live for much longer than is normal overall. The cost for this extended period of youth is a rapid increase in age as they get older.</description>
+		<iconPath>Outland/GeneIcons/Gene_Youthful</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(17.99, 1)</li>
+				<li>(18, 0.1)</li>
+				<li>(35, 0.5)</li>
+				<li>(45, 1.0)</li>
+				<li>(50, 1.5)</li>
+				<li>(60, 3)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Normal ageing up to 18</li>
+			<li>10% ageing rate at 18</li>
+			<li>100% ageing rate by 45</li>
+			<li>300% ageing rate by 60</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>timeless</symbol>
+				</li>
+				<li>
+					<symbol>youthful</symbol>
+				</li>
+			</wholeNameSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_FeyAgeing</defName>
+		<label>fey ageing</label>
+		<description>Carriers of this gene age at a normal rate up until they are in their prime, where their ageing gradually slows to a complete stop.</description>
+		<iconPath>Outland/GeneIcons/Gene_FeyAgeing</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(18, 1)</li>
+				<li>(28, 0)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<customEffectDescriptions>
+			<li>Aging is normal from 0 to 18.</li>
+			<li>Aging slows to a halt over the time between age 18 and 28.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>slow-lifer</symbol>
+				</li>
+				<li>
+					<symbol>long-lifer</symbol>
+				</li>
+			</wholeNameSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_AcceleratedAgeing</defName>
+		<label>accelerated ageing</label>
+		<description>Carriers of this gene age much faster than others, roughly halving their typical lifespan.</description>
+		<iconPath>Outland/GeneIcons/Gene_AcceleratedAgeing</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(0, 2)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<customEffectDescriptions>
+			<li>Pawn ages twice as fast regardless of what age they are.</li>
+		</customEffectDescriptions>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>fast-lifer</symbol>
+				</li>
+				<li>
+					<symbol>half-lifer</symbol>
+				</li>
+			</wholeNameSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_AcceleratedMaturation</defName>
+		<label>accelerated maturation</label>
+		<description>Carriers of this gene age much faster than others while maturing, then return to a normal ageing rate.</description>
+		<iconPath>Outland/GeneIcons/Gene_AcceleratedMaturation</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(0, 2)</li>
+				<li>(17.99, 2)</li>
+				<li>(18, 1)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Pawn ages twice as fast up until they are 18.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_DeceleratedMaturation</defName>
+		<label>decelerated maturation</label>
+		<description>Carriers of this gene age much slower than others while maturing, then return to a normal ageing rate.</description>
+		<iconPath>Outland/GeneIcons/Gene_DeceleratedMaturation</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(0, 0.5)</li>
+				<li>(17.99, 0.5)</li>
+				<li>(18, 1)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Pawn ages half as fast up until they are 18.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<!-- TODO: Add hediff during winter adjusting tolerances, and remove during other seasons. -->
+	<!-- <GeneDef>
+		<defName>Outland_WinterCoat</defName>
+		<label>winter coat</label>
+		<description>Carriers of this gene adapt to winter for the colder weather, providing them a better tolerance against the cold and weaker tolerance against the heat during Decembary.</description>
+		<iconPath>Outland/GeneIcons/Gene_WinterCoat</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>cold-walker</symbol>
+				</li>
+				<li>
+					<symbol>winter-dick</symbol>
+				</li>
+				<li>
+					<symbol>chilly-willy</symbol>
+				</li>
+				<li>
+					<symbol>netflix-and-chill</symbol>
+				</li>
+			</wholeNameSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+
+	<GeneDef>
+		<defName>Outland_ThickSkin</defName>
+		<label>thick skin</label>
+		<description>Carriers of this gene have thick skin protecting them against blunt damage and some sharp damage.</description>
+		<iconPath>Outland/GeneIcons/Gene_ThickSkin</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

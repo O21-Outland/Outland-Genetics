@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- <HeadTypeDef ParentName="AverageBase" Name="Outland_PrimateHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Outland_PrimateSkin</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_PrimateHeadBase">
+		<defName>Outland_Male_Primate</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Primate/Male_Normal</graphicPath>
+		<gender>Male</gender>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+				<twoColorMask>true</twoColorMask>
+				<flipColorMask>true</flipColorMask>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_PrimateHeadBase">
+		<defName>Outland_Female_Primate</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Primate/Female_Normal</graphicPath>
+		<gender>Female</gender>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+				<twoColorMask>true</twoColorMask>
+				<flipColorMask>true</flipColorMask>
+			</li>
+		</modExtensions>
+	</HeadTypeDef> -->
+
+</Defs>

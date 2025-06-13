@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>Outland_XenotypeAscender</defName>
+		<hediffClass>OutlandGenes.Hediff_XenotypeAscender</hediffClass>
+		<label>Xenotype Ascension</label>
+		<description>This pawn can ascend to another Xenotype once they have earned enough life experience performing tasks they have a passion for.</description>
+		<defaultLabelColor>(85, 230, 167)</defaultLabelColor>
+		<isBad>false</isBad>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<capMods />
+			</li>
+		</stages>
+		<comps>
+			<li Class="TabulaRasa.HediffCompProperties_TooltipDescription" />
+		</comps>
+	</HediffDef>
+
+</Defs>

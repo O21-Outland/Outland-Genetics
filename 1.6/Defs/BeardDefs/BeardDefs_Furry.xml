@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Categories -->
+
+	<StyleItemCategoryDef>
+		<defName>Outland_Furry</defName>
+		<label>furry</label>
+	</StyleItemCategoryDef>
+
+	<!-- Beards -->
+
+	<BeardDef Name="Outland_FurryBeardBase" Abstract="True">
+		<category>Outland_Furry</category>
+		<requiredGene>Outland_Beard_FurryOnly</requiredGene>
+		<styleTags>
+			<li>Furry</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurryCurlyMoustache</defName>
+		<label>furry moustache</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinCurlyMoustache</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurryKnots</defName>
+		<label>furry knots</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinKnots</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurryMegabraid</defName>
+		<label>furry megabraid</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinMegabraid</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurryMonkey</defName>
+		<label>furry monkey</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinMonkey</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurryMoustache</defName>
+		<label>furry long stache</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinMoustache</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurryScruffy</defName>
+		<label>furry scruffy</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinScruffy</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurrySenile</defName>
+		<label>furry senile</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinSenile</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurrySideChops</defName>
+		<label>furry thick chops</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinSideChops</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurrySideTufts</defName>
+		<label>furry tufts</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinSideTufts</texPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_FurryBeardBase">
+		<defName>Outland_FurryStrongChops</defName>
+		<label>furry strong chops</label>
+		<texPath>Things/Pawn/Humanlike/Beards/BeardFurskinStrongChops</texPath>
+	</BeardDef>
+
+</Defs>

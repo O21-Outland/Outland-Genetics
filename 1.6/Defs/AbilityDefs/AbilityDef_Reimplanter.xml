@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>Outland_ReimplantXenogerm</defName>
+		<label>implant genes</label>
+		<description>Implant this person's xenogenes into a willing subject using a special injector organ. If this person's genes are currently regrowing, they will implant their xenogerm and die in the process.\n\nWhen implanted, a xenogerm will overwrite the target's xenogenes. Germline genes will be unaffected.</description>
+		<iconPath>UI/Icons/Genes/Gene_XenogermReimplanter</iconPath>
+		<warmupStartSound>ReimplantXenogerm_Cast</warmupStartSound>
+		<warmupEffecter>Implant_Xenogerm</warmupEffecter>
+		<displayOrder>500</displayOrder>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>4</warmupTime>
+			<targetParams>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_GermlineReimplanter" />
+		</comps>
+	</AbilityDef>
+
+</Defs>

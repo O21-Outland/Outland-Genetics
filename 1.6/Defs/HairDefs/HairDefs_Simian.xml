@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- <StyleItemCategoryDef>
+		<defName>Outland_Primate</defName>
+		<label>primate</label>
+	</StyleItemCategoryDef>
+
+	<HairDef Name="Outland_PrimateHairBase" Abstract="True">
+		<category>Outland_Primate</category>
+		<requiredGene>Outland_PrimateHairOnly</requiredGene>
+		<styleTags>
+			<li>Primate</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef ParentName="Outland_PrimateHairBase">
+		<defName>Outland_HairBald</defName>
+		<label>primate bald</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Mote/Transparent</texPath>
+		<iconPath>Things/Mote/Transparent</iconPath>
+	</HairDef>
+
+	<HairDef ParentName="Outland_PrimateHairBase">
+		<defName>Outland_HairZaius</defName>
+		<label>primate zaius</label>
+		<styleGender>Any</styleGender>
+		<texPath>ApePlanet/Pawn/Hair/ApeZaius</texPath>
+	</HairDef>
+
+	<HairDef ParentName="Outland_PrimateHairBase">
+		<defName>Outland_HairZira</defName>
+		<label>primate zira</label>
+		<styleGender>Female</styleGender>
+		<texPath>ApePlanet/Pawn/Hair/ApeZira</texPath>
+	</HairDef> -->
+
+</Defs>

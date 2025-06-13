@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase" Name="Outland_GoblinoidHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_GoblinoidHeadBase">
+		<defName>Outland_Male_Goblinoid</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/GreaterGoblinoid/Male_GreaterGoblinoid</graphicPath>
+		<gender>Male</gender>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</modExtensions>
+		<requiredGenes>
+			<li>Outland_GreaterGoblinoidHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_GoblinoidHeadBase">
+		<defName>Outland_Female_Goblinoid</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/GreaterGoblinoid/Female_GreaterGoblinoid</graphicPath>
+		<gender>Female</gender>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</modExtensions>
+		<requiredGenes>
+			<li>Outland_GreaterGoblinoidHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_GoblinoidHeadBase">
+		<defName>Outland_None_Goblinoid</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/LesserGoblinoid/LesserGoblinoid</graphicPath>
+		<gender>None</gender>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</modExtensions>
+		<requiredGenes>
+			<li>Outland_LesserGoblinoidHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneTemplateDef ParentName="GeneChemicalBase">
+		<defName>Outland_AddictionSensitivity</defName>
+		<label>{0} addict-sensitive</label>
+		<ignoreIllegalLabelCharacterConfigError>True</ignoreIllegalLabelCharacterConfigError>
+		<description>Carriers of this gene get addicted to {0} very easily.</description>
+		<labelShortAdj>{0}-sensitive</labelShortAdj>
+		<iconPath>UI/Icons/Genes/Chemicals/{0}/AddictionSensitivity</iconPath>
+		<addictionChanceFactor>9999</addictionChanceFactor>
+		<displayOrderOffset>0</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneTemplateDef>
+
+</Defs>

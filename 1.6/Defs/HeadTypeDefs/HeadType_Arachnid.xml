@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Arachnid</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Arachnid/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_ArachnidHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

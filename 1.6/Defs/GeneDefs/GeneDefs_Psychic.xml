@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- TODO: Code the draining of nearby psycasters. -->
+	<!-- <GeneDef ParentName="GenePsychicAbilityBase">
+		<defName>Outland_PsychicBlank</defName>
+		<label>psychic void</label>
+		<labelShortAdj>psy-void</labelShortAdj>
+		<description>Carriers of this gene are deaf to all psychic energy and influence outside their own minds. They cannot be affected by psychic influence, much like psychically deaf pawns, with the difference being they drain psychic energy from those who have it when in close proximity. This has a side effect of also causing other pawns to naturally dislike them without knowing why.</description>
+		<iconPath>UI/Icons/Genes/Gene_PsychicallyDeaf</iconPath>
+		<displayOrderInCategory>-1</displayOrderInCategory>
+		<forcedTraits>
+			<li>
+				<def>PsychicSensitivity</def>
+				<degree>-2</degree>
+			</li>
+		</forcedTraits>
+		<biostatMet>2</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>deaf</symbol>
+				</li>
+				<li>
+					<symbol>blank</symbol>
+				</li>
+				<li>
+					<symbol>null</symbol>
+				</li>
+				<li>
+					<symbol>vac</symbol>
+				</li>
+				<li>
+					<symbol>void</symbol>
+				</li>
+				<li>
+					<symbol>nego</symbol>
+				</li>
+				<li>
+					<symbol>nullo</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+
+</Defs>

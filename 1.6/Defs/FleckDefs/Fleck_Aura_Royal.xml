@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>Outland_GlowFleck_RoyalAura</defName>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>0.1</fadeOutTime>
+		<growthRate>0</growthRate>
+		<acceleration>(0, 0, 0)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_AspectGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(237, 194, 102, 60)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_RoyalAuraA</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_RoyalA</texPath>
+			<color>(237, 194, 102, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_RoyalAuraB</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_RoyalB</texPath>
+			<color>(237, 194, 102, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_RoyalAuraC</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_RoyalC</texPath>
+			<color>(237, 194, 102, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_RoyalAuraD</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_RoyalD</texPath>
+			<color>(237, 194, 102, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+</Defs>

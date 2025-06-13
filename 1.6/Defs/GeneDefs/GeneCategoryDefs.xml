@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneCategoryDef>
+		<defName>Outland_Metabolism</defName>
+		<label>metabolism</label>
+		<displayPriorityInXenotype>293</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-124</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_FacialFeatures</defName>
+		<label>facial features</label>
+		<displayPriorityInXenotype>292</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-123</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_HeadType</defName>
+		<label>head type</label>
+		<displayPriorityInXenotype>291</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-121</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Ears</defName>
+		<label>ears</label>
+		<displayPriorityInXenotype>279</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-111</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Eyes</defName>
+		<label>eyes</label>
+		<displayPriorityInXenotype>278</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-112</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Headbone</defName>
+		<label>headbone</label>
+		<displayPriorityInXenotype>277</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-113</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Wings</defName>
+		<label>wings</label>
+		<displayPriorityInXenotype>276</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-114</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Tails</defName>
+		<label>tails</label>
+		<displayPriorityInXenotype>275</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-115</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_HandsAndFeet</defName>
+		<label>hands &amp; feet</label>
+		<displayPriorityInXenotype>274</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-116</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Teeth</defName>
+		<label>teeth</label>
+		<displayPriorityInXenotype>273</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-117</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Blood</defName>
+		<label>blood</label>
+		<displayPriorityInXenotype>272</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-118</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Voice</defName>
+		<label>voice</label>
+		<displayPriorityInXenotype>271</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-119</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Auras</defName>
+		<label>auras</label>
+		<displayPriorityInXenotype>269</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-122</displayPriorityInGenepack>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Passions</defName>
+		<label>passions</label>
+		<displayPriorityInXenotype>100</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_XenotypeAscension</defName>
+		<label>ascension</label>
+		<displayPriorityInXenotype>205</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_BodyScale</defName>
+		<label>body scale</label>
+		<displayPriorityInXenotype>206</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_Implanter</defName>
+		<label>gene implanter</label>
+		<displayPriorityInXenotype>207</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<GeneCategoryDef>
+		<defName>Outland_XenotypeReproduction</defName>
+		<label>xenotype reproduction</label>
+		<displayPriorityInXenotype>208</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<OutlandGenes.XenoImplanterGeneTemplateDef>
+		<defName>Outland_XenotypeImplanter</defName>
+		<label>{0} implanter</label>
+		<labelShortAdj>{0} implanter</labelShortAdj>
+		<description>Carriers of this gene are capable of turning other pawns into a {0} xenotype. Doing so will put the target into a temporary coma while they adapt to their new genes, and will require the carrier to regrow the genes to reimplant again safely.\n\nNote: implanting too quickly after the previous attempt will kill the carrier.</description>
+		<!-- <geneClass>OutlandGenes.Gene_XenotypeAscension</geneClass> -->
+		<minAgeActive>13</minAgeActive>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+		<!-- <exclusionTagPrefix>Outland_XenotypeImplanter</exclusionTagPrefix> -->
+		<displayCategory>Outland_Implanter</displayCategory>
+		<displayOrderOffset>3</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</OutlandGenes.XenoImplanterGeneTemplateDef>
+
+</Defs>

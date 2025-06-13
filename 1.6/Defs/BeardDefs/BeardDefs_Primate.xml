@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- <BeardDef Name="Outland_PrimateBeardBase" Abstract="True">
+		<category>Outland_Primate</category>
+		<requiredGene>Outland_Beard_PrimateOnly</requiredGene>
+		<styleTags>
+			<li>Primate</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_PrimateBeardBase">
+		<defName>Outland_NoBeard</defName>
+		<label>primate beardless</label>
+		<texPath>Things/Mote/Transparent</texPath>
+		<iconPath>Things/Mote/Transparent</iconPath>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_PrimateBeardBase">
+		<defName>Outland_Caesar</defName>
+		<label>primate caesar</label>
+		<texPath>ApePlanet/Pawn/Hair/ApeCaesar</texPath>
+		<styleGender>Male</styleGender>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_PrimateBeardBase">
+		<defName>Outland_Cloud</defName>
+		<label>primate cloud</label>
+		<texPath>ApePlanet/Pawn/Hair/ApeCloud</texPath>
+		<styleGender>Male</styleGender>
+	</BeardDef>
+
+	<BeardDef ParentName="Outland_PrimateBeardBase">
+		<defName>Outland_Gaius</defName>
+		<label>primate gaius</label>
+		<texPath>ApePlanet/Pawn/Hair/ApeGaius</texPath>
+		<styleGender>Male</styleGender>
+	</BeardDef> -->
+
+</Defs>

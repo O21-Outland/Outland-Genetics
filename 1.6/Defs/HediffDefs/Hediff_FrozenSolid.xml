@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>Outland_FrozenSolid</defName>
+		<label>frozen solid</label>
+		<description>This pawn is completely encased in ice, and will not be able to move until it thaws.</description>
+		<hediffClass>OutlandGenes.Hediff_FrozenSolid</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>2000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+	</HediffDef>
+
+</Defs>

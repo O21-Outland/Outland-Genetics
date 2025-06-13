@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<OutlandGenes.XenoReproductionGeneTemplateDef>
+		<defName>Outland_XenoReproduction</defName>
+		<label>{0} reproduction</label>
+		<labelShortAdj>{0} reproduction</labelShortAdj>
+		<description>Carriers of this gene either through egg laying or birth, specifically produce a {0} xenotype baby.</description>
+		<!-- <geneClass>OutlandGenes.Gene_XenoEggLayer</geneClass> -->
+		<minAgeActive>18</minAgeActive>
+		<ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+		<displayCategory>Outland_XenotypeReproduction</displayCategory>
+		<displayOrderOffset>3</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>If multiple of this type of gene are on a single pawn, it will choose one at random each time.</li>
+			<li>Only takes effect if on the mother.</li>
+			<li>May not work with reproduction methods from other mods.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<!-- <hediffToWholeBody>Outland_XenoReproduction</hediffToWholeBody> -->
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</OutlandGenes.XenoReproductionGeneTemplateDef>
+
+</Defs>

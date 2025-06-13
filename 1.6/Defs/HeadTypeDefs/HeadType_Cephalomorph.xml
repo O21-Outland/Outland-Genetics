@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase" Name="Outland_CephalomorphHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Outland_CephalomorphHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_CephalomorphHeadBase">
+		<defName>Outland_Male_Cephalomorph</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Cephalomorph/Male_Normal</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_CephalomorphHeadBase">
+		<defName>Outland_Female_Cephalomorph</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Cephalomorph/Female_Normal</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+</Defs>

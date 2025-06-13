@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Monocular</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Monocular/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_MonocularHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

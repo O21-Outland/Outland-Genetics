@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>Outland_GlowFleck_EarthAspect</defName>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>0.1</fadeOutTime>
+		<growthRate>0</growthRate>
+		<acceleration>(0, 0, 0)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_AspectGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(125, 92, 70, 60)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_EarthAspectA</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_EarthAspectA</texPath>
+			<color>(125, 92, 70, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_EarthAspectB</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_EarthAspectB</texPath>
+			<color>(125, 92, 70, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_EarthAspectC</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_EarthAspectC</texPath>
+			<color>(125, 92, 70, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+</Defs>

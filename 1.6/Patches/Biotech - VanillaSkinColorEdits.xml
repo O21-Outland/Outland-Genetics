@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- 
+		Changes to vanilla Skin Colors:
+		- Re-order to fit in with Outlands skins
+		- Replace yellow values to actually be yellow values instead of brown and lime.
+	-->
+	<Operation Class="OutlandGenes.PatchOperation_SettingActive">
+		<settings>
+			<li>editVanillaSkins</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+				<!-- Change Order-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_DeepRed"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>0</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_PaleRed"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>2</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_Orange"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>4</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_DeepYellow"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>6</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_PaleYellow"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>8</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_Green"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>13</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_Blue"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>22</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_Purple"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>28</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_InkBlack"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>101</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_SlateGray"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>102</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_LightGray"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>103</displayOrderInCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_SheerWhite"]/displayOrderInCategory</xpath>
+					<value>
+						<displayOrderInCategory>104</displayOrderInCategory>
+					</value>
+				</li>
+				<!-- Change Colors -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_DeepYellow"]/skinColorOverride</xpath>
+					<value>
+						<skinColorOverride>(210, 187, 55)</skinColorOverride>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/GeneDef[defName="Skin_PaleYellow"]/skinColorOverride</xpath>
+					<value>
+						<skinColorOverride>(243, 225, 124)</skinColorOverride>
+					</value>
+				</li>
+			</operations>
+		</active>
+	</Operation>
+
+</Patch>

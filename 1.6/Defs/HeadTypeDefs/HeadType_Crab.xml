@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Crab</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Crab/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_ChitinousSkin</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_CrabTinted</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Crab/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_ChitinousSkinTinted</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+</Defs>

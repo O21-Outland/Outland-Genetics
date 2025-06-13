@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef>
+		<defName>Outland_ShortFlight</defName>
+		<label>short flight</label>
+		<description>Use wings to fly a short distance.</description>
+		<iconPath>Outland/Abilities/Ability_ShortFlight</iconPath>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<label>use wings</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.5</warmupTime>
+			<range>16.9</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<flyWithCarriedThing>true</flyWithCarriedThing>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+			<soundCast>Outland_Spell_MysticismFail</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+		</verbProperties>
+		<cooldownTicksRange>2400</cooldownTicksRange>
+	</AbilityDef>
+
+</Defs>

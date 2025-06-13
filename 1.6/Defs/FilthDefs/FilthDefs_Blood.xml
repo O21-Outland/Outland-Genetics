@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_AcidBlood</defName>
+		<label>acid blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<graphicData>
+			<texPath>Things/Filth/PoolSoft</texPath>
+			<color>(111, 129, 75, 180)</color>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<maxThickness>1</maxThickness>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+</Defs>
