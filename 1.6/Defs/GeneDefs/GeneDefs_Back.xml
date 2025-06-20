@@ -12,7 +12,7 @@
 			<li>Back</li>
 		</exclusionTags>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<!-- <offsets>
 					<north>
 						<bodyTypes>

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using TabulaRasa;
 
 namespace OutlandGenes
 {
@@ -33,7 +34,7 @@ namespace OutlandGenes
             Version version = Assembly.GetExecutingAssembly().GetName().Version;
             CurrentVersion = $"{version.Major}.{version.Minor}.{version.Build}";
 
-            LogUtil.LogMessage($"{CurrentVersion} ::");
+            Log.Message($":: {mod.Content.Name} ::".Colorize(Color.cyan) + $" {CurrentVersion} ::");
 
             File.WriteAllText(VersionDir, CurrentVersion);
 

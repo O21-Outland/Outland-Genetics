@@ -15,7 +15,7 @@ namespace OutlandGenes
 		{
 			if(p.Awake() && p.IsColonist && !PawnUtility.IsBiologicallyOrArtificiallyBlind(p))
 			{
-				if (p.genes.HasGene(OutlandGenesDefOf.Outland_DarklightAffinity))
+				if (p.genes.HasActiveGene(OutlandGenesDefOf.Outland_DarklightAffinity))
 				{
 					if (!DarklightUtility.IsDarklight(p.Map.glowGrid.VisualGlowAt(p.Position)))
 					{

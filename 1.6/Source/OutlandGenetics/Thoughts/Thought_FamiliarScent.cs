@@ -13,7 +13,7 @@ namespace OutlandGenes
 	{
 		public override float OpinionOffset()
 		{
-			return GeneUtil.SameXenotype(pawn, OtherPawn()) ? (OtherPawn().genes.HasGene(OutlandGenesDefOf.Outland_FamiliarScent) ? 20 : 0) : 0;
+			return GeneUtil.SameXenotype(pawn, OtherPawn()) ? (OtherPawn().genes.HasActiveGene(OutlandGenesDefOf.Outland_FamiliarScent) ? 20 : 0) : 0;
 		}
 	}
 }

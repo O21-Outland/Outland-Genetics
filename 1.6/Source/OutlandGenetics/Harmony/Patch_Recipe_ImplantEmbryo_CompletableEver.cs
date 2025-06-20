@@ -17,7 +17,7 @@ namespace OutlandGenes
 		[HarmonyPostfix]
 		public static void Postfix(Recipe_ImplantEmbryo __instance, Pawn surgeryTarget, ref bool __result)
 		{
-			if (__result && (surgeryTarget.genes?.HasGene(OutlandGenesDefOf.Outland_EggLayer) ?? false))
+			if (__result && (surgeryTarget.genes?.HasActiveGene(OutlandGenesDefOf.Outland_EggLayer) ?? false))
 			{
 				__result = false;
 				return;

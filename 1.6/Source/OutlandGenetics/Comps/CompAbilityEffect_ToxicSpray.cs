@@ -21,7 +21,7 @@ namespace OutlandGenes
 		{
 			IntVec3 position = parent.pawn.Position;
 			float num = Mathf.Atan2(-(target.Cell.z - position.z), target.Cell.x - position.x) * 57.29578f;
-			GenExplosion.DoExplosion(position, parent.pawn.MapHeld, Props.range, DamageDefOf.ToxGas, null, 30, -1f, null, null, null, null, null, 0f, 1, GasType.ToxGas, false, null, 0f, 1, 0f, false, null, null, new FloatRange(num - 10f, num + 10f), false);
+			GenExplosion.DoExplosion(position, parent.pawn.MapHeld, Props.range, DamageDefOf.ToxGas, null, 30, -1f, null, null, null, null, null, 0f, 1, GasType.ToxGas, null, 255, false, null, 0f, 1, 0f, false, null, null, new FloatRange(num - 10f, num + 10f), false);
 			base.Apply(target, dest);
 		}
 

@@ -11,13 +11,13 @@ using HarmonyLib;
 
 namespace OutlandGenes
 {
-	[HarmonyPatch(typeof(Hediff_Pregnant), "Tick")]
+	[HarmonyPatch(typeof(Hediff_Pregnant), "TickInterval")]
 	public static class Patch_Hediff_Pregnant_Tick
 	{
 		[HarmonyPrefix]
-		public static bool Prefix(Hediff_Pregnant __instance)
+		public static bool Prefix(Hediff_Pregnant __instance, int delta)
 		{
-			if ((Find.TickManager.TicksAbs % 200 == 0) && (__instance?.pawn?.genes?.HasGene(OutlandGenesDefOf.Outland_EggLayer) ?? false))
+			if ((Find.TickManager.TicksAbs % 200 == 0) && (__instance?.pawn?.genes?.HasActiveGene(OutlandGenesDefOf.Outland_EggLayer) ?? false))
 			{
 				try
 				{

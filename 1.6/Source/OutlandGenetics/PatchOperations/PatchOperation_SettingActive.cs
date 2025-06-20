@@ -27,7 +27,7 @@ namespace OutlandGenes
             {
                 if (!OutlandGenesMod.settings.IsValidSetting(settings[i]))
                 {
-                    LogUtil.LogError("Configuration error in patch, { settings[i]} is not an existing setting in this mod. This can only check existing boolean settings.");
+                    Log.Error(":: Outland - Genetics :: Configuration error in patch, { settings[i]} is not an existing setting in this mod. This can only check existing boolean settings.");
                 }
                 if (OutlandGenesMod.settings.GetEnabledSettings.Contains(settings[i]))
                 {

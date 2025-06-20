@@ -19,7 +19,7 @@ namespace OutlandGenes
 			{
 				return false;
 			}
-			if (otherPawn.genes?.HasGene(OutlandGenesDefOf.Outland_FamiliarScent) ?? false)
+			if (otherPawn.genes?.HasActiveGene(OutlandGenesDefOf.Outland_FamiliarScent) ?? false)
 			{
 				return ThoughtState.ActiveAtStage(1);
 			}

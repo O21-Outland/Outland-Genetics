@@ -164,7 +164,7 @@ namespace OutlandGenes
 			}
 		}
 
-		public override void PostPostGeneratedForTrader(TraderKindDef trader, int forTile, Faction forFaction)
+		public override void PostPostGeneratedForTrader(TraderKindDef trader, PlanetTile forTile, Faction forFaction)
 		{
 			base.PostPostGeneratedForTrader(trader, forTile, forFaction);
 			hatcheeFaction = forFaction;
