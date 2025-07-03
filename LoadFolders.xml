@@ -2,16 +2,19 @@
 <loadFolders>
 	<v1.4>
 		<li>/</li>
+		<li>Common_Old</li>
 		<li>1.4</li>
 		<li IfModNotActive="Neronix17.Outland.Core">1.4/Mods/NoOutland</li>
 	</v1.4>
 	<v1.5>
 		<li>/</li>
+		<li>Common_Old</li>
 		<li>1.5</li>
 		<li IfModNotActive="Neronix17.Outland.Core">1.5/Mods/NoOutland</li>
 	</v1.5>
 	<v1.6>
 		<li>/</li>
+		<li>Common</li>
 		<li>1.6</li>
 		<li IfModNotActive="Neronix17.Outland.Core">1.6/Mods/NoOutland</li>
 	</v1.6>
