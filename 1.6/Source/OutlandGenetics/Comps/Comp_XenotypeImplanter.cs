@@ -50,22 +50,27 @@ namespace OutlandGenes
                 {
                     int maxComa = OutlandGenesDefOf.Outland_EndogerminationComa.CompProps<HediffCompProperties_Disappears>().disappearsAfterTicks.max;
 					int maxShock = OutlandGenesDefOf.Outland_EndogermLossShock.CompProps<HediffCompProperties_Disappears>().disappearsAfterTicks.max;
-                    Find.LetterStack.ReceiveLetter("LetterLabelXenotypeImplanted".Translate(), "LetterTextGenesImplanted".Translate(parent.pawn.Named("CASTER"), pawn.Named("TARGET"), maxComa.ToStringTicksToPeriod().Named("COMADURATION"), maxShock.ToStringTicksToPeriod().Named("SHOCKDURATION")), LetterDefOf.NeutralEvent, new LookTargets(parent.pawn, pawn));
+                    Find.LetterStack.ReceiveLetter("OutlandGenes.LetterLabelXenotypeImplanted".Translate(), "OutlandGenes.LetterTextXenotypeImplanted".Translate(parent.pawn.Named("CASTER"), pawn.Named("TARGET"), maxComa.ToStringTicksToPeriod().Named("COMADURATION"), maxShock.ToStringTicksToPeriod().Named("SHOCKDURATION")), LetterDefOf.NeutralEvent, new LookTargets(parent.pawn, pawn));
                 }
             }
 		}
 
 		public void ImplantXenotype(Pawn pawn, XenotypeDef xenotype)
         {
-			pawn.genes.SetXenotype(Props.xenotype);
+			pawn.genes.SetXenotypeDirect(Props.xenotype);
 			pawn.genes.xenotypeName = xenotype.label;
 			pawn.genes.ClearXenogenes();
 			foreach(GeneDef gene in xenotype.genes)
             {
-				pawn.genes.AddGene(gene, xenotype.inheritable);
+				pawn.genes.AddGene(gene, !xenotype.inheritable);
             }
-			pawn.health.AddHediff(OutlandGenesDefOf.Outland_EndogerminationComa);
-			parent.pawn.health.AddHediff(OutlandGenesDefOf.Outland_EndogermLossShock);
+            Pawn caster = parent.pawn;
+            if (caster.health.hediffSet.HasHediff(OutlandGenesDefOf.Outland_EndogermLossShock)) { caster.Kill(null); }
+			else
+            {
+                pawn.health.AddHediff(OutlandGenesDefOf.Outland_EndogerminationComa);
+                caster.health.AddHediff(OutlandGenesDefOf.Outland_EndogermLossShock);
+            }
 		}
 
 		public override bool Valid(LocalTargetInfo target, bool throwMessages = false)

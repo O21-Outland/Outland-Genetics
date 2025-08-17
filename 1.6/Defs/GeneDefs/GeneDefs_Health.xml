@@ -4,13 +4,19 @@
 	<GeneDef ParentName="GeneHealingRateBase">
 		<defName>Outland_Regeneration</defName>
 		<label>regeneration</label>
-		<description>Carriers of this gene heal from wounds faster than normal and even regenerate limbs.</description>
+		<description>Carriers of this gene heal from wounds much faster than normal and even regenerate body parts.</description>
 		<iconPath>Outland/GeneIcons/Gene_Regeneration</iconPath>
 		<displayOrderInCategory>7900</displayOrderInCategory>
 		<geneClass>TabulaRasa.Gene_Regeneration</geneClass>
 		<statFactors>
 			<InjuryHealingFactor>1.25</InjuryHealingFactor>
 		</statFactors>
+		<customEffectDescriptions>
+			<li>Wounds are automatically sealed.</li>
+			<li>Body parts automatically regrow.</li>
+			<li>Health automatically regenerates.</li>
+			<li>Diseases and infections are also healed.</li>
+		</customEffectDescriptions>
 		<biostatMet>-2</biostatMet>
 		<modExtensions>
 			<li Class="VEF.Genes.GeneExtension">
