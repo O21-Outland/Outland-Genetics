@@ -936,4 +936,29 @@
 		</renderNodeProperties>
 	</GeneDef>
 
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Daemon</defName>
+		<label>horns (daemon)</label>
+		<description>Carriers of this gene grow two large pointed horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Other/Daemon</iconPath>
+		<displayOrderInCategory>7938</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Other/Daemon</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
 </Defs>

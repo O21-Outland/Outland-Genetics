@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1029297466
+CRC: 3281597203
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5383fe1a04fdbe45873f385d959906e6
+    Hash: 9ebaacb2052d825b50bd34ac282de4ed
   TypeTreeHash:
     serializedVersion: 2
     Hash: ce3b6d18a872ca8039cd5eb3c4fb7ef5
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 5383fe1a04fdbe45873f385d959906e6
+    Hash: 9ebaacb2052d825b50bd34ac282de4ed
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -228,6 +228,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Rounded_eastm.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Fluffage_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Hairs/Primate/ApeCloud_east.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/GeneIcons/Gene_DaemonEyes.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Things/Pawn/Humanlike/Heads/LesserGoblinoid/LesserGoblinoid_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Rounded.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/Scaleskin/Naked_Child_north.png
@@ -249,6 +250,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/Ridged/Naked_Hulk_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Uncommon/Bonfire.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Auras/Fleck_StinkyA.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Daemon_Female_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Back/BackFeathers_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Uncommon/Rough.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Plated_north.png
@@ -261,6 +263,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Things/Pawn/Humanlike/Heads/Crab/Normal_northm.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Layered_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Face/FaceTendrils12_north.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Daemon_Male_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Rare/King_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Uncommon/SmallUni.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/GeneIcons/Gene_VoiceClicker.png
@@ -271,8 +274,9 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/BumFluff/BumFluff_Hulk_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Hairs/Primate/ApeZaius_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Akhkharu_southm.png
-- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Female_north.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Daemon_Male_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Intake.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Female_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Furred_northm.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Noses/Leathery_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Webbed_south.png
@@ -417,10 +421,10 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Male_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Bun_eastm.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Common/Bean_north.png
-- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Female_RecessedEyes_south.png
-- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Rolled_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Teeth/Mandibles_south.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Female_RecessedEyes_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Female_east.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Rolled_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Things/Pawn/Humanlike/Heads/GreaterGoblinoid/Male_GreaterGoblinoid_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/DestinyMarks/Naked_Female_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Face/FaceTendrils4_east.png
@@ -689,9 +693,10 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/BumFluff/BumFluff_Thin_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/ModIcon.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/GeneIcons/Gene_ColdImmunity.png
-- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Fat_east.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Daemon_Male_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Sounds/Outland/Voices/Vibronic/Call.wav
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Face/ChinHorns.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Fat_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/CompositeEyes_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Fleef_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/Scaleskin/Naked_Male_south.png
@@ -790,6 +795,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Things/Pawn/Humanlike/Heads/Trencher/Female_Normal_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Leaves/Leaves03_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Ratty.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Daemon_Female_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Auras/Gene_LightAspect.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Thin_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Pointed_east.png
@@ -836,6 +842,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Common/LongProng_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/BackFuzz/Rough_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Flick_east.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Other/Daemon_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Noses/Goblinoid_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/Chitin/Naked_Hulk_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Uncommon/Zilla_north.png
@@ -883,6 +890,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Rounded_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Sounds/Outland/Voices/Insect/Death.wav
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Flame_north.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Other/Daemon_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Things/Pawn/Humanlike/Heads/Draconic/Normal_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/FlatPointed_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/SuccubusTail_north.png
@@ -919,6 +927,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Jackal_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/GeneIcons/Gene_DeceleratedPregnancy.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/GeneIcons/XenogeneBG.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Eyes/Daemon_Female_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/ChitinTinted/Naked_Female_southm.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Hook.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Items/XenoEgg_Baseliner.png
@@ -955,9 +964,10 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Things/Pawn/Humanlike/Heads/Insect/Normal_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Fleef_southm.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Teeth/TusksSmall_east.png
-- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Face/FaceTendrils.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Other/Daemon_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/Chitin/Naked_Female_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Face/Beak_south.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Face/FaceTendrils.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/InsectBody/Naked_Child_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Common/Drop.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Teeth/Mandibles.png
@@ -1016,6 +1026,7 @@ Assets:
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Antenna/Owl_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Ears/Woosh_north.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Things/Pawn/Humanlike/Heads/Crab/Normal_north.png
+- Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Other/Daemon.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Skins/Ridged/Naked_Thin_south.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Tails/Common/Plated_east.png
 - Assets/Data/Neronix17.Outland.Genetics/Textures/Outland/Genes/Horns/Common/SmolUni_east.png
