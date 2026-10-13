@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\comps\\comp_humanoidhatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:comps\\comp_humanoidhatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\hediffs\\hediff_xenotypeascender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:hediffs\\hediff_xenotypeascender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_hediff_pregnant_tick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_hediff_pregnant_tick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\hediffs\\hediff_implanted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:hediffs\\hediff_implanted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_hediff_pregnant_tick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_hediff_pregnant_tick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\comps\\comp_humanoidhatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:comps\\comp_humanoidhatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\genes\\gene_asexualreproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_pawn_skilltracker_learn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_pawn_skilltracker_learn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\utilities\\logutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:utilities\\logutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\hediffs\\hediff_xenotypeascender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:hediffs\\hediff_xenotypeascender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\utilities\\preggoutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\comps\\compabilityeffect_toxicspray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:comps\\compabilityeffect_toxicspray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\utilities\\logutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:utilities\\logutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\comps\\compabilityeffect_freezingspray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,76 +122,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Patch_Pawn_SkillTracker_Learn.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Pawn_SkillTracker_Learn.cs",
               "RelativeDocumentMoniker": "Harmony\\Patch_Pawn_SkillTracker_Learn.cs",
               "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Pawn_SkillTracker_Learn.cs",
               "RelativeToolTip": "Harmony\\Patch_Pawn_SkillTracker_Learn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswBUAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T17:34:41.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Gene_AsexualReproduction.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Genes\\Gene_AsexualReproduction.cs",
               "RelativeDocumentMoniker": "Genes\\Gene_AsexualReproduction.cs",
               "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Genes\\Gene_AsexualReproduction.cs",
               "RelativeToolTip": "Genes\\Gene_AsexualReproduction.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAgwA4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T17:24:33.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Patch_Hediff_Pregnant_Tick.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Hediff_Pregnant_Tick.cs",
               "RelativeDocumentMoniker": "Harmony\\Patch_Hediff_Pregnant_Tick.cs",
               "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Hediff_Pregnant_Tick.cs",
               "RelativeToolTip": "Harmony\\Patch_Hediff_Pregnant_Tick.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwDwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T17:07:32.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Hediff_Implanted.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Hediffs\\Hediff_Implanted.cs",
               "RelativeDocumentMoniker": "Hediffs\\Hediff_Implanted.cs",
               "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Hediffs\\Hediff_Implanted.cs",
               "RelativeToolTip": "Hediffs\\Hediff_Implanted.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAqwFoAAACMAwAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T17:03:52.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Comp_HumanoidHatcher.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Comps\\Comp_HumanoidHatcher.cs",
               "RelativeDocumentMoniker": "Comps\\Comp_HumanoidHatcher.cs",
               "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Comps\\Comp_HumanoidHatcher.cs",
               "RelativeToolTip": "Comps\\Comp_HumanoidHatcher.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwIcAAACGAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAjwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T17:01:29.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Hediff_XenotypeAscender.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Hediffs\\Hediff_XenotypeAscender.cs",
               "RelativeDocumentMoniker": "Hediffs\\Hediff_XenotypeAscender.cs",
@@ -204,7 +204,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "LogUtil.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Utilities\\LogUtil.cs",
+              "RelativeDocumentMoniker": "Utilities\\LogUtil.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Utilities\\LogUtil.cs",
+              "RelativeToolTip": "Utilities\\LogUtil.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T17:10:46.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PreggoUtil.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Utilities\\PreggoUtil.cs",
               "RelativeDocumentMoniker": "Utilities\\PreggoUtil.cs",
@@ -217,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CompAbilityEffect_ToxicSpray.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Comps\\CompAbilityEffect_ToxicSpray.cs",
               "RelativeDocumentMoniker": "Comps\\CompAbilityEffect_ToxicSpray.cs",
@@ -230,20 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LogUtil.cs",
-              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Utilities\\LogUtil.cs",
-              "RelativeDocumentMoniker": "Utilities\\LogUtil.cs",
-              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Utilities\\LogUtil.cs",
-              "RelativeToolTip": "Utilities\\LogUtil.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwBUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T17:10:46.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "CompAbilityEffect_LightningSpray.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Comps\\CompAbilityEffect_LightningSpray.cs",
               "RelativeDocumentMoniker": "Comps\\CompAbilityEffect_LightningSpray.cs",
@@ -256,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Comp_XenotypeHatcher.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Comps\\Comp_XenotypeHatcher.cs",
               "RelativeDocumentMoniker": "Comps\\Comp_XenotypeHatcher.cs",

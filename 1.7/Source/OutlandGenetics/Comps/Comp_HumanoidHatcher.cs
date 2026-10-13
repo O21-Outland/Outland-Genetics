@@ -14,7 +14,7 @@ namespace OutlandGenes
     {
         public float gestateProgress;
 
-        public Pawn hatchee;
+        public HumanEmbryo embryo;
 
         public Pawn mother;
 
@@ -48,41 +48,11 @@ namespace OutlandGenes
         {
             base.PostExposeData();
             Scribe_Values.Look(ref gestateProgress, "gestateProgress");
-            Scribe_Deep.Look(ref hatchee, "hatchee");
             Scribe_References.Look(ref mother, "mother");
             Scribe_References.Look(ref father, "father");
             Scribe_Deep.Look(ref geneSet, "geneSet");
             Scribe_Values.Look(ref hatched, "hatched");
             Scribe_Values.Look(ref progressSpeed, "progressSpeed");
-        }
-
-        public void GenerateChild()
-        {
-            PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: xenotypeDef ?? XenotypeDefOf.Baseliner, forcedEndogenes: (geneSet != null) ? geneSet.GenesListForReading : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
-            hatchee = PawnGenerator.GeneratePawn(request);
-            if (GeneUtility.SameHeritableXenotype(mother, father) && mother.genes.UniqueXenotype)
-            {
-                hatchee.genes.xenotypeName = mother.genes.xenotypeName;
-                hatchee.genes.iconDef = mother.genes.iconDef;
-            }
-            if (PregnancyUtility.TryGetInheritedXenotype(mother, father, out var xenotype))
-            {
-                hatchee.genes?.SetXenotypeDirect(xenotype);
-            }
-            else if (PregnancyUtility.ShouldByHybrid(mother, father))
-            {
-                hatchee.genes.hybrid = true;
-                hatchee.genes.xenotypeName = "Hybrid".Translate();
-            }
-
-            if (mother != null)
-            {
-                hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
-            }
-            if (father != null)
-            {
-                hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
-            }
         }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -101,10 +71,17 @@ namespace OutlandGenes
             {
                 xenotypeDef = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
             }
-            if (hatchee == null)
+            /*if (hatchee == null)
             {
                 // Generate child ASAP so it doesn't magically have differences made to the parents during the time the egg exists.
                 GenerateChild();
+            }*/
+            if(embryo == null)
+            {
+                //using vanilla fertilization mechanics to avoid using the internals that got changed to private in the update
+                HumanOvum ovum = ThingMaker.MakeThing(ThingDefOf.HumanOvum) as HumanOvum;
+                ovum.TryGetComp<CompHasPawnSources>().AddSource(mother);
+                embryo = ovum.ProduceEmbryo(father) as HumanEmbryo;
             }
             if (!TemperatureDamaged)
             {
@@ -117,51 +94,31 @@ namespace OutlandGenes
             }
             if (hatched)
             {
+                embryo.Destroy();
                 parent.Destroy();
             }
         }
 
         public void Hatch()
         {
-            // Reset child and spawn as if newborn.
-            hatchee.ageTracker.AgeBiologicalTicks = 0;
-            hatchee.ageTracker.BirthAbsTicks = Find.TickManager.TicksAbs;
-            hatchee.SetFaction(Faction.OfPlayer);
-            if (PawnUtility.TrySpawnHatchedOrBornPawn(hatchee, parent))
-            {
-                if (mother != null)
-                {
-                    if (hatchee.playerSettings != null && mother.playerSettings != null)
-                    {
-                        hatchee.playerSettings.AreaRestrictionInPawnCurrentMap = mother.playerSettings.AreaRestrictionInPawnCurrentMap;
-                    }
-                    if (hatchee.RaceProps.IsFlesh)
-                    {
-                        hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
-                        if (father != null)
-                        {
-                            hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
-                        }
-                    }
-                    if (mother.Spawned)
-                    {
-                        mother.GetLord()?.AddPawn(hatchee);
-                    }
-                }
+            Precept_Ritual ritual = Faction.OfPlayer.ideos.PrimaryIdeo.GetPrecept(PreceptDefOf.ChildBirth) as Precept_Ritual;
+            Thing thing = PregnancyUtility.ApplyBirthOutcome(RitualOutcomeEffectDefOf.ChildBirth.BestOutcome, 1f, ritual, embryo?.GeneSet?.GenesListForReading, embryo.Mother, parent, embryo.Father, preventLetter: true);
+            if(thing != null) {     
+                thing.SetFaction(Faction.OfPlayer);
                 // Send Letter
-                SendLetter();
+                SendLetter(thing);
                 hatched = true;
             }
         }
 
-        public void SendLetter()
+        public void SendLetter(Thing child)
         {
             if (mother == null)
             {
                 Log.Warning("Mother is null, this shouldn't happen but here we are I guess.");
                 return;
             }
-            ChoiceLetter_BabyBirth choiceLetter_BabyBirth = (ChoiceLetter_BabyBirth)LetterMaker.MakeLetter("Outland.EggHatchedLabel".Translate(mother.NameShortColored), "Outland.EggHatchedDesc".Translate(mother.NameShortColored), LetterDefOf.BabyBirth, (TargetInfo)hatchee);
+            ChoiceLetter_BabyBirth choiceLetter_BabyBirth = (ChoiceLetter_BabyBirth)LetterMaker.MakeLetter("Outland.EggHatchedLabel".Translate(mother.NameShortColored), "Outland.EggHatchedDesc".Translate(mother.NameShortColored), LetterDefOf.BabyBirth, (TargetInfo)child);
             choiceLetter_BabyBirth.Start();
             Find.LetterStack.ReceiveLetter(choiceLetter_BabyBirth);
         }
@@ -218,20 +175,6 @@ namespace OutlandGenes
                     Hatch();
                 }
             };
-            yield return new Command_Action()
-            {
-                defaultLabel = "DEV: Regenerate Child",
-                action = delegate
-                {
-                    RegenerateChild();
-                }
-            };
-        }
-
-        public void RegenerateChild()
-        {
-            hatchee.Discard();
-            GenerateChild();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace OutlandGenes
 		[HarmonyPostfix]
 		public static void Postfix(Pawn pawn, ref AcceptanceReport __result)
 		{
-			if (pawn.genes?.HasGene(OutlandGenesDefOf.Outland_EggLayer) ?? false)
+			if (pawn.genes?.HasActiveGene(OutlandGenesDefOf.Outland_EggLayer) ?? false)
 			{
 				__result = "Outland.CannotEggLayer".Translate();
 			}

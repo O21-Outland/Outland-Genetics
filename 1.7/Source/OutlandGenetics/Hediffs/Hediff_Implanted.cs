@@ -84,77 +84,38 @@ namespace OutlandGenes
 		public Pawn DropSprog()
 		{
 			Pawn host = pawn as Pawn;
-			if (host.Spawned)
+			bool hostWasLactating = false;
+			if(host.health.hediffSet.HasHediff(HediffDefOf.Lactating))
 			{
-				EffecterDefOf.Birth.Spawn(host, host.Map);
+				hostWasLactating = true;
 			}
-			Pawn offspring = PawnGenerator.GeneratePawn(new PawnGenerationRequest(Mother?.kindDef ?? PawnKindDefOf.Colonist, Mother.Faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(Mother, host as Pawn, Father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, false, null, forcedXenotype: XenotypeDefOf.Baseliner, forcedEndogenes: (geneSet.GenesListForReading != null) ? geneSet.GenesListForReading : PregnancyUtility.GetInheritedGenes(Father, Mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn));
-			if (Mother.genes.UniqueXenotype)
+            Precept_Ritual ritual = Faction.OfPlayer.ideos.PrimaryIdeo.GetPrecept(PreceptDefOf.ChildBirth) as Precept_Ritual;
+            HumanOvum ovum = ThingMaker.MakeThing(ThingDefOf.HumanOvum) as HumanOvum;
+            ovum.TryGetComp<CompHasPawnSources>().AddSource(Mother);
+            HumanEmbryo embryo = ovum.ProduceEmbryo(Father) as HumanEmbryo;
+            Thing thing = PregnancyUtility.ApplyBirthOutcome(RitualOutcomeEffectDefOf.ChildBirth.BestOutcome, 1f, ritual, embryo?.GeneSet?.GenesListForReading, Mother, host, Father, preventLetter: true);
+			embryo.Destroy();
+			Pawn offspring = thing as Pawn;
+			//clean up after stuff rimworld does here that we don't want
+			if (!hostWasLactating)
 			{
-				offspring.genes.xenotypeName = Mother.genes.xenotypeName;
-				offspring.genes.iconDef = Mother.genes.iconDef;
-			}
-			if (PregnancyUtility.TryGetInheritedXenotype(Mother, Father, out var xenotype))
-			{
-				offspring.genes?.SetXenotypeDirect(xenotype);
-			}
-			else if (PregnancyUtility.ShouldByHybrid(Mother, Father))
-			{
-				offspring.genes.hybrid = true;
-				offspring.genes.xenotypeName = "Hybrid".Translate();
-			}
-			IntVec3? intVec = null;
-			if (host != null && host.Spawned)
-			{
-				int? sleepingSlot;
-				IntVec3 intVec2 = host.CurrentBed(out sleepingSlot)?.GetFootSlotPos(sleepingSlot.Value) ?? host.PositionHeld;
-				intVec = CellFinder.RandomClosewalkCellNear(intVec2, host.Map, 1, delegate (IntVec3 cell)
+				Hediff lactationHediff;
+				if (host.health.hediffSet.TryGetHediff(HediffDefOf.Lactating, out lactationHediff))
 				{
-					if (cell != host.PositionHeld)
-					{
-						Building building = host.Map.edificeGrid[cell];
-						if (building == null)
-						{
-							return true;
-						}
-						return building.def?.IsBed != true;
-					}
-					return false;
-				});
-				PregnancyUtility.SpawnBirthFilth(host, intVec2, ThingDefOf.Filth_AmnioticFluid, 1);
+					host.health.RemoveHediff(lactationHediff);
+				}
 			}
+			offspring.mindState.SetAutofeeder(host, AutofeedMode.Childcare);
+			thing.SetFaction(Mother.Faction);
+
 			if (Mother != null)
 			{
 				Mother.health.AddHediff(HediffDefOf.Lactating);
-			}
-			if (offspring.RaceProps.IsFlesh)
-			{
-				if (Mother != null)
-				{
-					offspring.relations.AddDirectRelation(PawnRelationDefOf.Parent, Mother);
-				}
-				if (Father != null)
-				{
-					offspring.relations.AddDirectRelation(PawnRelationDefOf.Parent, Father);
-				}
-				if (host != null && host != Mother)
-				{
-					offspring.relations.AddDirectRelation(PawnRelationDefOf.ParentBirth, host);
-				}
-			}
-
-			if (offspring.playerSettings != null && Mother?.playerSettings != null)
-			{
-				offspring.playerSettings.AreaRestrictionInPawnCurrentMap = Mother.playerSettings.AreaRestrictionInPawnCurrentMap;
 			}
 			if (offspring != null)
 			{
 				TaleRecorder.RecordTale(TaleDefOf.GaveBirth, host, offspring);
 				offspring.mindState.SetAutofeeder(Mother, AutofeedMode.Urgent);
-			}
-			if (!PawnUtility.TrySpawnHatchedOrBornPawn(offspring, host, intVec))
-			{
-				Find.WorldPawns.PassToWorld(offspring, PawnDiscardDecideMode.Discard);
 			}
 			Mother?.needs?.mood?.thoughts?.memories?.TryGainMemory(ThoughtDefOf.BabyBorn, offspring);
 			host?.needs?.mood?.thoughts?.memories?.TryGainMemory(ThoughtDefOf.BabyBorn, offspring);

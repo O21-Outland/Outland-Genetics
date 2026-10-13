@@ -13,3 +13,5 @@ F:\RWModCategories\Neronix17\Outland\Outland - Fantasy Genetics\1.5\Assemblies\O
 C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Source\OutlandGenetics\obj\Debug\OutlandGenes.csproj.AssemblyReference.cache
 C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Source\OutlandGenetics\obj\Debug\OutlandGenes.csproj.CoreCompileInputs.cache
 C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Source\OutlandGenetics\obj\Debug\OutlandGenes.dll
+C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Assemblies\OutlandGenes.dll
+C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Source\OutlandGenetics\obj\Debug\OutlandG.9FF58B0C.Up2Date

@@ -13,7 +13,7 @@ namespace OutlandGenes
 	{
 		public override float OpinionOffset()
 		{
-			return OtherPawn().genes.HasGene(OutlandGenesDefOf.Outland_KindEyes) ? 20 : 0;
+			return OtherPawn().genes.HasActiveGene(OutlandGenesDefOf.Outland_KindEyes) ? 20 : 0;
 		}
 	}
 }
