@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_genedefgenerator_getfromtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_genedefgenerator_getfromtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\outlandgenesdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:outlandgenesdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\defs\\ascensiongenetemplatedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:defs\\ascensiongenetemplatedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_recipe_extractovum_completableever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_recipe_extractovum_completableever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_hediff_pregnant_tick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_hediff_pregnant_tick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\outlandgenesmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:outlandgenesmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\modextensions\\defmodext_genespecifics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:modextensions\\defmodext_genespecifics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\modextensions\\defmodext_xenotype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:modextensions\\defmodext_xenotype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\patchoperations\\patchoperation_settingactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:patchoperations\\patchoperation_settingactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_humanembryo_canimplantreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_humanembryo_canimplantreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\thoughts\\thought_kindeyes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:thoughts\\thought_kindeyes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\thoughts\\thought_calmingpheromones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:thoughts\\thought_calmingpheromones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_humanembryo_canimplantreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_humanembryo_canimplantreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_recipe_extractovum_completableever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|solutionrelative:harmony\\patch_recipe_extractovum_completableever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5C0B0BE-CEB1-4620-B4F9-B08855C40001}|OutlandGenes.csproj|c:\\misc\\privatedev\\outland genetics\\outland-genetics\\1.7\\source\\outlandgenetics\\harmony\\patch_recipe_implantembryo_completableever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,6 +75,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Patch_GeneDefGenerator_GetFromTemplate.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_GeneDefGenerator_GetFromTemplate.cs",
+              "RelativeDocumentMoniker": "Harmony\\Patch_GeneDefGenerator_GetFromTemplate.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_GeneDefGenerator_GetFromTemplate.cs",
+              "RelativeToolTip": "Harmony\\Patch_GeneDefGenerator_GetFromTemplate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T23:25:41.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AscensionGeneTemplateDef.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Defs\\AscensionGeneTemplateDef.cs",
+              "RelativeDocumentMoniker": "Defs\\AscensionGeneTemplateDef.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Defs\\AscensionGeneTemplateDef.cs",
+              "RelativeToolTip": "Defs\\AscensionGeneTemplateDef.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:37:26.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OutlandGenesMod.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\OutlandGenesMod.cs",
+              "RelativeDocumentMoniker": "OutlandGenesMod.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\OutlandGenesMod.cs",
+              "RelativeToolTip": "OutlandGenesMod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:50:47.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OutlandGenesDefOf.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\OutlandGenesDefOf.cs",
+              "RelativeDocumentMoniker": "OutlandGenesDefOf.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\OutlandGenesDefOf.cs",
+              "RelativeToolTip": "OutlandGenesDefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:50:44.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DefModExt_GeneSpecifics.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\ModExtensions\\DefModExt_GeneSpecifics.cs",
+              "RelativeDocumentMoniker": "ModExtensions\\DefModExt_GeneSpecifics.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\ModExtensions\\DefModExt_GeneSpecifics.cs",
+              "RelativeToolTip": "ModExtensions\\DefModExt_GeneSpecifics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:50:27.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DefModExt_Xenotype.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\ModExtensions\\DefModExt_Xenotype.cs",
+              "RelativeDocumentMoniker": "ModExtensions\\DefModExt_Xenotype.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\ModExtensions\\DefModExt_Xenotype.cs",
+              "RelativeToolTip": "ModExtensions\\DefModExt_Xenotype.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:50:24.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatchOperation_SettingActive.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\PatchOperations\\PatchOperation_SettingActive.cs",
+              "RelativeDocumentMoniker": "PatchOperations\\PatchOperation_SettingActive.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\PatchOperations\\PatchOperation_SettingActive.cs",
+              "RelativeToolTip": "PatchOperations\\PatchOperation_SettingActive.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:50:20.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Patch_Hediff_Pregnant_Tick.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Hediff_Pregnant_Tick.cs",
+              "RelativeDocumentMoniker": "Harmony\\Patch_Hediff_Pregnant_Tick.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Hediff_Pregnant_Tick.cs",
+              "RelativeToolTip": "Harmony\\Patch_Hediff_Pregnant_Tick.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:41:23.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Patch_Recipe_ExtractOvum_CompletableEver.cs",
+              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
+              "RelativeDocumentMoniker": "Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
+              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
+              "RelativeToolTip": "Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T22:33:35.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Thought_KindEyes.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Thoughts\\Thought_KindEyes.cs",
               "RelativeDocumentMoniker": "Thoughts\\Thought_KindEyes.cs",
@@ -55,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Thought_FamiliarScent.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Thoughts\\Thought_FamiliarScent.cs",
               "RelativeDocumentMoniker": "Thoughts\\Thought_FamiliarScent.cs",
@@ -68,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Thought_CalmingPheromones.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Thoughts\\Thought_CalmingPheromones.cs",
               "RelativeDocumentMoniker": "Thoughts\\Thought_CalmingPheromones.cs",
@@ -81,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Patch_HumanEmbryo_CanImplantReport.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_HumanEmbryo_CanImplantReport.cs",
               "RelativeDocumentMoniker": "Harmony\\Patch_HumanEmbryo_CanImplantReport.cs",
@@ -94,20 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Patch_Recipe_ExtractOvum_CompletableEver.cs",
-              "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
-              "RelativeDocumentMoniker": "Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
-              "ToolTip": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
-              "RelativeToolTip": "Harmony\\Patch_Recipe_ExtractOvum_CompletableEver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T22:33:35.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Patch_Recipe_ImplantEmbryo_CompletableEver.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Recipe_ImplantEmbryo_CompletableEver.cs",
               "RelativeDocumentMoniker": "Harmony\\Patch_Recipe_ImplantEmbryo_CompletableEver.cs",
@@ -120,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Patch_Pawn_SkillTracker_Learn.cs",
               "DocumentMoniker": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\Harmony\\Patch_Pawn_SkillTracker_Learn.cs",
               "RelativeDocumentMoniker": "Harmony\\Patch_Pawn_SkillTracker_Learn.cs",

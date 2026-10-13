@@ -14,7 +14,7 @@ namespace OutlandGenes
     public static class Patch_GeneDefGenerator_GetFromTemplate
     {
         [HarmonyPostfix]
-        public static void Postfix(AscensionGeneTemplateDef template, Def def, int displayOrderBase, GeneDef __result)
+        public static void Postfix(GeneTemplateDef template, Def def, int displayOrderBase, GeneDef __result)
         {
             // Simple fix for modExtensions not being copied through templates.
             if(!template.modExtensions.NullOrEmpty() && __result.modExtensions.NullOrEmpty())
