@@ -818,11 +818,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.5\\Source\\OutlandGenetics\\OutlandGenes.csproj",
+      "projectUniqueName": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\OutlandGenes.csproj",
       "projectName": "OutlandGenes",
-      "projectPath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.5\\Source\\OutlandGenetics\\OutlandGenes.csproj",
+      "projectPath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\OutlandGenes.csproj",
       "packagesPath": "C:\\Users\\rkrys\\.nuget\\packages\\",
-      "outputPath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.5\\Source\\OutlandGenetics\\obj\\",
+      "outputPath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,

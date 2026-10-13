@@ -88,17 +88,17 @@ namespace OutlandGenes
 			{
 				EffecterDefOf.Birth.Spawn(host, host.Map);
 			}
-			Pawn offspring = PawnGenerator.GeneratePawn(new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, mother.Faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, host as Pawn, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, false, null, forcedXenotype: XenotypeDefOf.Baseliner, forcedEndogenes: (geneSet.genes != null) ? geneSet.genes : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn));
-			if (mother.genes.UniqueXenotype)
+			Pawn offspring = PawnGenerator.GeneratePawn(new PawnGenerationRequest(Mother?.kindDef ?? PawnKindDefOf.Colonist, Mother.Faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(Mother, host as Pawn, Father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, false, null, forcedXenotype: XenotypeDefOf.Baseliner, forcedEndogenes: (geneSet.GenesListForReading != null) ? geneSet.GenesListForReading : PregnancyUtility.GetInheritedGenes(Father, Mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn));
+			if (Mother.genes.UniqueXenotype)
 			{
-				offspring.genes.xenotypeName = mother.genes.xenotypeName;
-				offspring.genes.iconDef = mother.genes.iconDef;
+				offspring.genes.xenotypeName = Mother.genes.xenotypeName;
+				offspring.genes.iconDef = Mother.genes.iconDef;
 			}
-			if (PregnancyUtility.TryGetInheritedXenotype(mother, father, out var xenotype))
+			if (PregnancyUtility.TryGetInheritedXenotype(Mother, Father, out var xenotype))
 			{
 				offspring.genes?.SetXenotypeDirect(xenotype);
 			}
-			else if (PregnancyUtility.ShouldByHybrid(mother, father))
+			else if (PregnancyUtility.ShouldByHybrid(Mother, Father))
 			{
 				offspring.genes.hybrid = true;
 				offspring.genes.xenotypeName = "Hybrid".Translate();
@@ -123,40 +123,40 @@ namespace OutlandGenes
 				});
 				PregnancyUtility.SpawnBirthFilth(host, intVec2, ThingDefOf.Filth_AmnioticFluid, 1);
 			}
-			if (mother != null)
+			if (Mother != null)
 			{
-				mother.health.AddHediff(HediffDefOf.Lactating);
+				Mother.health.AddHediff(HediffDefOf.Lactating);
 			}
 			if (offspring.RaceProps.IsFlesh)
 			{
-				if (mother != null)
+				if (Mother != null)
 				{
-					offspring.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
+					offspring.relations.AddDirectRelation(PawnRelationDefOf.Parent, Mother);
 				}
-				if (father != null)
+				if (Father != null)
 				{
-					offspring.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
+					offspring.relations.AddDirectRelation(PawnRelationDefOf.Parent, Father);
 				}
-				if (host != null && host != mother)
+				if (host != null && host != Mother)
 				{
 					offspring.relations.AddDirectRelation(PawnRelationDefOf.ParentBirth, host);
 				}
 			}
 
-			if (offspring.playerSettings != null && mother?.playerSettings != null)
+			if (offspring.playerSettings != null && Mother?.playerSettings != null)
 			{
-				offspring.playerSettings.allowedAreas = mother.playerSettings.allowedAreas;
+				offspring.playerSettings.AreaRestrictionInPawnCurrentMap = Mother.playerSettings.AreaRestrictionInPawnCurrentMap;
 			}
 			if (offspring != null)
 			{
 				TaleRecorder.RecordTale(TaleDefOf.GaveBirth, host, offspring);
-				offspring.mindState.SetAutofeeder(mother, AutofeedMode.Urgent);
+				offspring.mindState.SetAutofeeder(Mother, AutofeedMode.Urgent);
 			}
 			if (!PawnUtility.TrySpawnHatchedOrBornPawn(offspring, host, intVec))
 			{
 				Find.WorldPawns.PassToWorld(offspring, PawnDiscardDecideMode.Discard);
 			}
-			mother?.needs?.mood?.thoughts?.memories?.TryGainMemory(ThoughtDefOf.BabyBorn, offspring);
+			Mother?.needs?.mood?.thoughts?.memories?.TryGainMemory(ThoughtDefOf.BabyBorn, offspring);
 			host?.needs?.mood?.thoughts?.memories?.TryGainMemory(ThoughtDefOf.BabyBorn, offspring);
 
 			return offspring;

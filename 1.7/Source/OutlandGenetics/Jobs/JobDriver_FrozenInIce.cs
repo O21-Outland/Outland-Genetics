@@ -22,7 +22,7 @@ namespace OutlandGenes
 			return true;
 		}
 
-		public override IEnumerable<Toil> MakeNewToils()
+		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			Toil toil = new Toil
 			{

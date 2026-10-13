@@ -111,7 +111,7 @@ namespace OutlandGenes
         {
             foreach (SkillRange skillRange in skillRanges)
             {
-                if (!skillRange.Range.Includes(pawn.skills.GetSkill(skillRange.Skill).Level))
+                if (!((skillRange.Range.min <= (pawn.skills.GetSkill(skillRange.Skill).Level)) && (skillRange.Range.max >= (pawn.skills.GetSkill(skillRange.Skill).Level))))
                 {
                     return false;
                 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AbXfss8BsrY=",
+  "dgSpecHash": "O4bubXwKGFc=",
   "success": true,
-  "projectFilePath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.5\\Source\\OutlandGenetics\\OutlandGenes.csproj",
+  "projectFilePath": "C:\\misc\\privatedev\\outland genetics\\Outland-Genetics\\1.7\\Source\\OutlandGenetics\\OutlandGenes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rkrys\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4871\\krafs.rimworld.ref.1.6.4871.nupkg.sha512",
     "C:\\Users\\rkrys\\.nuget\\packages\\lib.harmony\\2.4.3\\lib.harmony.2.4.3.nupkg.sha512"

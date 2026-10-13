@@ -58,7 +58,7 @@ namespace OutlandGenes
 
         public void GenerateChild()
         {
-            PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: xenotypeDef ?? XenotypeDefOf.Baseliner, forcedEndogenes: (geneSet != null) ? geneSet.genes : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
+            PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: xenotypeDef ?? XenotypeDefOf.Baseliner, forcedEndogenes: (geneSet != null) ? geneSet.GenesListForReading : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
             hatchee = PawnGenerator.GeneratePawn(request);
             if (GeneUtility.SameHeritableXenotype(mother, father) && mother.genes.UniqueXenotype)
             {
@@ -124,16 +124,16 @@ namespace OutlandGenes
         public void Hatch()
         {
             // Reset child and spawn as if newborn.
-            hatchee.ageTracker.ageBiologicalTicksInt = 0;
-            hatchee.ageTracker.birthAbsTicksInt = Find.TickManager.TicksAbs;
-            hatchee.factionInt = Faction.OfPlayer;
+            hatchee.ageTracker.AgeBiologicalTicks = 0;
+            hatchee.ageTracker.BirthAbsTicks = Find.TickManager.TicksAbs;
+            hatchee.SetFaction(Faction.OfPlayer);
             if (PawnUtility.TrySpawnHatchedOrBornPawn(hatchee, parent))
             {
                 if (mother != null)
                 {
                     if (hatchee.playerSettings != null && mother.playerSettings != null)
                     {
-                        hatchee.playerSettings.allowedAreas = mother.playerSettings.allowedAreas;
+                        hatchee.playerSettings.AreaRestrictionInPawnCurrentMap = mother.playerSettings.AreaRestrictionInPawnCurrentMap;
                     }
                     if (hatchee.RaceProps.IsFlesh)
                     {

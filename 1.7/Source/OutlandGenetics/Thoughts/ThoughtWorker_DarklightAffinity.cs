@@ -11,11 +11,11 @@ namespace OutlandGenes
 {
     public class ThoughtWorker_DarklightAffinity : ThoughtWorker
 	{
-		public override ThoughtState CurrentStateInternal(Pawn p)
+        protected override ThoughtState CurrentStateInternal(Pawn p)
 		{
 			if(p.Awake() && p.IsColonist && !PawnUtility.IsBiologicallyOrArtificiallyBlind(p))
 			{
-				if (p.genes.HasGene(OutlandGenesDefOf.Outland_DarklightAffinity))
+				if (p.genes.HasActiveGene(OutlandGenesDefOf.Outland_DarklightAffinity))
 				{
 					if (!DarklightUtility.IsDarklight(p.Map.glowGrid.VisualGlowAt(p.Position)))
 					{

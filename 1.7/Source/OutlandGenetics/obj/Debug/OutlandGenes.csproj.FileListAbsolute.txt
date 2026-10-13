@@ -10,3 +10,6 @@ F:\RWModCategories\Neronix17\Outland\Outland - Fantasy Genetics\1.5\Source\Outla
 F:\RWModCategories\Neronix17\Outland\Outland - Fantasy Genetics\1.5\Source\OutlandGenetics\obj\Debug\OutlandGenes.csproj.CoreCompileInputs.cache
 F:\RWModCategories\Neronix17\Outland\Outland - Fantasy Genetics\1.5\Source\OutlandGenetics\obj\Debug\OutlandGenes.dll
 F:\RWModCategories\Neronix17\Outland\Outland - Fantasy Genetics\1.5\Assemblies\OutlandGenes.dll
+C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Source\OutlandGenetics\obj\Debug\OutlandGenes.csproj.AssemblyReference.cache
+C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Source\OutlandGenetics\obj\Debug\OutlandGenes.csproj.CoreCompileInputs.cache
+C:\misc\privatedev\outland genetics\Outland-Genetics\1.7\Source\OutlandGenetics\obj\Debug\OutlandGenes.dll

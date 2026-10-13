@@ -48,8 +48,9 @@ namespace OutlandGenes
 				}
 				tmpGenes.RemoveAll((GeneDef x) => x.prerequisite != null && !tmpGenes.Contains(x.prerequisite));
 				int val = tmpGenes.NonOverriddenGenes(xenogene: false).Sum((GeneDef x) => x.biostatMet);
-				if (GeneTuning.BiostatRange.Includes(val))
-				{
+				if ((GeneTuning.BiostatRange.min <= val) && (GeneTuning.BiostatRange.max >= val))
+
+                {
 					break;
 				}
 				num++;

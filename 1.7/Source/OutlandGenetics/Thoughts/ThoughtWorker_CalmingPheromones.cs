@@ -11,7 +11,7 @@ namespace OutlandGenes
 {
     public class ThoughtWorker_CalmingPheromones : ThoughtWorker
 	{
-		public override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
+        protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
 		{
 			if(otherPawn == null) { return false; }
 			if(otherPawn.genes == null) { return false; }
@@ -19,7 +19,7 @@ namespace OutlandGenes
 			{
 				return false;
 			}
-			if (otherPawn?.genes?.HasGene(OutlandGenesDefOf.Outland_CalmingPheromones) ?? false)
+			if (otherPawn?.genes?.HasActiveGene(OutlandGenesDefOf.Outland_CalmingPheromones) ?? false)
 			{
 				return ThoughtState.ActiveAtStage(1);
 			}

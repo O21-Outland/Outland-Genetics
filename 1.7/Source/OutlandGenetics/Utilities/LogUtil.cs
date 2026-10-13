@@ -21,35 +21,20 @@ namespace OutlandGenes
 
         public static void LogMessage(string msg)
         {
-            if (Log.ReachedMaxMessagesLimit)
-            {
-                return;
-            }
+            Log.Message(msg);
             UnityEngine.Debug.Log(msg);
-            Log.messageQueue.Enqueue(new LogMessage(LogMessageType.Message, $"{msgPrefix.Colorize(msgColor)} {msg}", StackTraceUtility.ExtractStackTrace()));
-            Log.PostMessage();
         }
 
         public static void LogWarning(string msg)
         {
-            if (Log.ReachedMaxMessagesLimit)
-            {
-                return;
-            }
+            Log.Warning(msg);
             UnityEngine.Debug.Log(msg);
-            Log.messageQueue.Enqueue(new LogMessage(LogMessageType.Warning, $"{msgPrefix.Colorize(wrnColor)} {msg}", StackTraceUtility.ExtractStackTrace()));
-            Log.PostMessage();
         }
 
         public static void LogError(string msg)
         {
-            if (Log.ReachedMaxMessagesLimit)
-            {
-                return;
-            }
+            Log.Error(msg);
             UnityEngine.Debug.Log(msg);
-            Log.messageQueue.Enqueue(new LogMessage(LogMessageType.Error, $"{msgPrefix.Colorize(errColor)} {msg}", StackTraceUtility.ExtractStackTrace()));
-            Log.PostMessage();
         }
     }
 }

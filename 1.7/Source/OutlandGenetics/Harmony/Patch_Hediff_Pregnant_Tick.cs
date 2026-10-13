@@ -17,7 +17,7 @@ namespace OutlandGenes
 		[HarmonyPrefix]
 		public static bool Prefix(Hediff_Pregnant __instance)
 		{
-			if ((Find.TickManager.TicksAbs % 200 == 0) && (__instance?.pawn?.genes?.HasGene(OutlandGenesDefOf.Outland_EggLayer) ?? false))
+			if ((Find.TickManager.TicksAbs % 200 == 0) && (__instance?.pawn?.genes?.HasActiveGene(OutlandGenesDefOf.Outland_EggLayer) ?? false))
 			{
 				try
 				{
@@ -27,7 +27,7 @@ namespace OutlandGenes
                     }
 					float progressSpeed = GeneUtil.GetPregnancySpeed(__instance.pawn);
 					// Lay the egg.
-					Thing egg = LayHumanEgg(__instance.pawn, __instance.father, __instance.geneSet);
+					Thing egg = LayHumanEgg(__instance.pawn, __instance.Father, __instance.geneSet);
 					GenSpawn.Spawn(egg, __instance.pawn.Position, __instance.pawn.Map);
 					Comp_HumanoidHatcher comp = egg.TryGetComp<Comp_HumanoidHatcher>();
 					if(comp != null)
@@ -50,23 +50,23 @@ namespace OutlandGenes
 			return true;
 		}
 
-		public static Thing LayHumanEgg(Pawn mother, Pawn father, GeneSet geneSet)
+		public static Thing LayHumanEgg(Pawn mother, Pawn Father, GeneSet geneSet)
 		{
 			Thing thing;
 			thing = ThingMaker.MakeThing(OutlandGenesDefOf.Outland_HumanoidEgg);
 			Comp_HumanoidHatcher comp = thing.TryGetComp<Comp_HumanoidHatcher>();
 			comp.mother = mother;
-			if (mother?.genes?.xenotype == father?.genes?.xenotype)
+			if (mother?.genes?.Xenotype == Father?.genes?.Xenotype)
 			{
-				comp.xenotypeDef = mother.genes.xenotype;
+				comp.xenotypeDef = mother.genes.Xenotype;
 			}
 			else
 			{
 				comp.xenotypeDef = XenotypeDefOf.Baseliner;
 			}
-			if (father != null)
+			if (Father != null)
 			{
-				comp.father = father;
+				comp.father = Father;
 			}
 			//if (mother.genes.GenesListForReading.Any(g => g.def.defName.Contains("Outland_XenoReproduction")))
 			//{

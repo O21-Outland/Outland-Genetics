@@ -66,7 +66,7 @@ namespace OutlandGenes
                     defaultLabel = "Outland.BeginPregnancy".Translate(),
                     defaultDesc = "Outland.BeginPregnancyDesc".Translate(),
                     icon = ContentFinder<Texture2D>.Get("Outland/GeneIcons/Gene_AsexualReproduction"),
-                    disabled = fatigued || currentlyPregnant,
+                    Disabled = fatigued || currentlyPregnant,
                     disabledReason = fatigued ? "Outland.EggFatigueReason".Translate() : (currentlyPregnant ? "Outland.AlreadyPregnantReason".Translate() : null),
                     action = delegate
                     {

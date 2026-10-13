@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
-using VanillaGenesExpanded;
+using VEF.Genes;
 
 namespace OutlandGenes
 {

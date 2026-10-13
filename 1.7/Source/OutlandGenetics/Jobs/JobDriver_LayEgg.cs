@@ -36,7 +36,7 @@ namespace OutlandGenes
             return RandomSocialMode.Off;
         }
 
-        public override IEnumerable<Toil> MakeNewToils()
+        protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDestroyedNullOrForbidden(TargetIndex.A);
             yield return Toils_Reserve.Reserve(TargetIndex.A);

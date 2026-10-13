@@ -22,7 +22,7 @@ namespace OutlandGenes
             Text.Font = GameFont.Tiny;
             listing.ColumnWidth -= 34f;
             GUI.color = Color.gray;
-            listing.Label(explanation, -1f, null);
+            listing.Label(explanation, -1f, tooltip: null);
             listing.ColumnWidth += 34f;
             Text.Font = GameFont.Small;
             Rect rect = listing.GetRect(0f);
@@ -45,7 +45,7 @@ namespace OutlandGenes
             Text.Font = font;
             listing.ColumnWidth -= 34f;
             GUI.color = Color.white;
-            listing.Label(name, -1f, null);
+            listing.Label(name, -1f, tooltip: null);
             listing.ColumnWidth += 34f;
             Text.Font = GameFont.Small;
         }
@@ -73,7 +73,7 @@ namespace OutlandGenes
             Text.Font = GameFont.Tiny;
             listing.ColumnWidth -= 34f;
             GUI.color = Color.gray;
-            listing.Label(explanation, -1f, null);
+            listing.Label(explanation, -1f, tooltip: null);
             listing.ColumnWidth += 34f;
             Text.Font = GameFont.Small;
 
@@ -776,7 +776,7 @@ namespace OutlandGenes
             this._alphaPosition = pos;
         }
 
-        public override void SetInitialSizeAndPosition()
+        protected override void SetInitialSizeAndPosition()
         {
             Vector2 vector = new Vector2(Mathf.Min(this.InitialSize.x, (float)UI.screenWidth), Mathf.Min(this.InitialSize.y, (float)UI.screenHeight - 35f));
             Vector2 vector2 = new Vector2(Mathf.Max(0f, Mathf.Min(this.InitialPosition.x, (float)UI.screenWidth - vector.x)), Mathf.Max(0f, Mathf.Min(this.InitialPosition.y, (float)UI.screenHeight - vector.y)));

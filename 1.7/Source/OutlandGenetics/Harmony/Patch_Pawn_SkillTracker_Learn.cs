@@ -19,7 +19,7 @@ namespace OutlandGenes
         {
             if (xp > 0)
             {
-                Hediff_XenotypeAscender hediff = (Hediff_XenotypeAscender)__instance.pawn.health.hediffSet.hediffs.Find(h => h is Hediff_XenotypeAscender);
+                Hediff_XenotypeAscender hediff = (Hediff_XenotypeAscender)__instance.skills.First().Pawn.health.hediffSet.hediffs.Find(h => h is Hediff_XenotypeAscender);
 
                 if (hediff != null && (__instance.GetSkill(sDef).passion.HasFlag(Passion.Minor) || __instance.GetSkill(sDef).passion.HasFlag(Passion.Major)))
                 {
