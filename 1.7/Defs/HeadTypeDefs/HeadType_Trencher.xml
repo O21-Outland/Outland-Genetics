@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase" Name="Outland_TrencherHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Outland_TrencherHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_TrencherHeadBase">
+		<defName>Outland_Male_Trencher</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Trencher/Male_Normal</graphicPath>
+		<gender>Male</gender>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_TrencherHeadBase">
+		<defName>Outland_Female_Trencher</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Trencher/Female_Normal</graphicPath>
+		<gender>Female</gender>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+</Defs>

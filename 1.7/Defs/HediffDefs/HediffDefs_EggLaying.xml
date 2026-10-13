@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>Outland_EggFatigue</defName>
+		<label>egg fatigue</label>
+		<description>This pawn has already recently produced an egg, you'll have to wait a while until they can do so again.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.055</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<Fertility>0</Fertility>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Outland_EggPouch</defName>
+		<label>egg pouch</label>
+		<description>Hidden hediff handler for laying eggs. You probably shouldn't be seeing this.</description>
+		<hediffClass>OutlandGenes.Hediff_EggPouch</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

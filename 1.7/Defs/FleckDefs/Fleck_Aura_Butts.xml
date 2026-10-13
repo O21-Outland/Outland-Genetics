@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>Outland_GlowFleck_StinkyAura</defName>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<fadeInTime>0.1</fadeInTime>
+		<solidTime>0.1</solidTime>
+		<fadeOutTime>0.1</fadeOutTime>
+		<growthRate>0</growthRate>
+		<acceleration>(0, 0, 0)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_AspectGlow</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(89, 79, 57, 60)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_StinkyAuraA</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_StinkyA</texPath>
+			<color>(147, 186, 121, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_StinkyAuraB</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_StinkyC</texPath>
+			<color>(89, 79, 57, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_StinkyAuraC</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_StinkyB</texPath>
+			<color>(147, 186, 121, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="Outland_GeneFleckBase">
+		<defName>Outland_Fleck_StinkyAuraD</defName>
+		<acceleration>(0, 0, 0.5)</acceleration>
+		<graphicData>
+			<texPath>Outland/Genes/Auras/Fleck_StinkyD</texPath>
+			<color>(89, 79, 57, 180)</color>
+		</graphicData>
+	</FleckDef>
+
+</Defs>

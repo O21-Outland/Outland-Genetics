@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneNeckBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>None</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Neck</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Curly</defName>
+		<label>neck ruffle (curly)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Curly_south</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Neck/Curly</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Hair</colorType>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>49</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>51</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Spikey</defName>
+		<label>neck ruffle (spikey)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Spikey_south</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Neck/Spikey</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Hair</colorType>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>49</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>51</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Wavy</defName>
+		<label>neck ruffle (wavy)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Wavy_south</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Neck/Wavy</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Hair</colorType>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>49</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>51</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneNeckBase">
+		<defName>Outland_NeckRuffle_Fuzzy</defName>
+		<label>neck ruffle (fuzzy)</label>
+		<description>Carriers of this gene will grow a bushy ruffle of hair around their neck.</description>
+		<iconPath>Outland/Genes/Neck/Fuzzy_south</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Neck/Fuzzy</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<colorType>Hair</colorType>
+				<useSkinShader>false</useSkinShader>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>49</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>51</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Draconic</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Draconic/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_DraconicHead</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+</Defs>

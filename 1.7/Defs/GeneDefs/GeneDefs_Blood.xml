@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- TODO: 
+		- Do damage to pawns using melee attacks AND in melee range of a pawn with acid blood they have caused bleeding to.
+		- Minor damage to pawns standing on acid blood.
+		- Protection from acid damage if the pawn also has acid blood themselves.
+	-->
+	<!-- <GeneDef>
+		<defName>Outland_AcidBlood</defName>
+		<label>acid blood</label>
+		<displayCategory>Outland_Blood</displayCategory>
+		<description>Carriers of this gene have blood which is highly acidic, while the gene also strengthens the pawns body against the acidic properties of the blood it will have a strong effect against any others exposed to it.</description>
+		<iconPath>Outland/GeneIcons/Gene_AcidBlood</iconPath>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<exclusionTags>
+			<li>AG_BloodType</li>
+			<li>BloodType</li>
+			<li>Blood</li>
+		</exclusionTags>
+		<selectionWeight>0</selectionWeight>
+		<biostatCpx>1</biostatCpx>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>acidbleeder</symbol>
+				</li>
+				<li>
+					<symbol>spicyblood</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>acid</symbol>
+				</li>
+				<li>
+					<symbol>spicy</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+				<customBloodThingDef>Outland_AcidBlood</customBloodThingDef>
+				<customBloodIcon>Outland/BloodIcons/Acid</customBloodIcon>
+				<customBloodEffect>Outland_AcidBlood</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_AcidBloodWounds</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+	</GeneDef> -->
+
+	<GeneDef Name="Outland_BloodTypeBase" Abstract="True">
+		<displayCategory>Outland_Blood</displayCategory>
+		<iconPath>Outland/GeneIcons/Gene_Blood</iconPath>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<exclusionTags>
+			<li>BloodType</li>
+			<li>Blood</li>
+		</exclusionTags>
+		<biostatCpx>1</biostatCpx>
+	</GeneDef>
+
+	<EffecterDef Name="Outland_BloodDamageBase" Abstract="True">
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.4</positionRadius>
+				<fleckDef>AirPuff</fleckDef>
+				<burstCount>4~5</burstCount>
+				<speed>0.4~0.8</speed>
+				<scale>1.0~1.1</scale>
+				<color>(120, 18, 0)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.0</positionRadius>
+				<fleckDef>BodyImpact</fleckDef>
+				<burstCount>1</burstCount>
+				<scale>0.4</scale>
+				<color>(255, 120, 30, 60)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+		<offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+		<positionRadius>0.1</positionRadius>
+	</EffecterDef>
+
+	<!-- ========== Blood: Red ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Red</defName>
+		<label>red blood</label>
+		<labelShortAdj>red-blooded</labelShortAdj>
+		<description>Carriers of this gene have red blood.</description>
+		<iconColor>(173, 37, 37)</iconColor>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodRed</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingRed</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodRed</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodRed</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodRed</defName>
+		<label>red blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(173, 37, 37, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodRed</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(173, 37, 37)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodRed</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodRed</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(173, 37, 37)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(173, 37, 37)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(173, 37, 37)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Black ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Black</defName>
+		<label>black blood</label>
+		<labelShortAdj>black-blooded</labelShortAdj>
+		<description>Carriers of this gene have ink black blood.</description>
+		<iconColor>(55, 55, 55)</iconColor>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodBlack</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingBlack</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodBlack</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodBlack</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodBlack</defName>
+		<label>black blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(55, 55, 55, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodBlack</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(55, 55, 55)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodBlack</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodBlack</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(55, 55, 55)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(55, 55, 55)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(55, 55, 55)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Gray ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Gray</defName>
+		<label>gray blood</label>
+		<labelShortAdj>gray-blooded</labelShortAdj>
+		<description>Carriers of this gene have pale white-gray blood.</description>
+		<iconColor>(124, 124, 124)</iconColor>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodGray</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingGray</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodGray</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodGray</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodGray</defName>
+		<label>gray blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(124, 124, 124, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodGray</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(124, 124, 124)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodGray</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodGray</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(124, 124, 124)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(124, 124, 124)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(124, 124, 124)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Orange ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Orange</defName>
+		<label>orange blood</label>
+		<labelShortAdj>orange-blooded</labelShortAdj>
+		<description>Carriers of this gene have deeply orange blood.</description>
+		<iconColor>(249, 128, 29)</iconColor>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodOrange</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingOrange</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodOrange</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodOrange</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodOrange</defName>
+		<label>orange blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(249, 128, 29, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodOrange</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(249, 128, 29)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodOrange</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodOrange</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(249, 128, 29)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(249, 128, 29)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(249, 128, 29)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Light Blue ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_LightBlue</defName>
+		<label>light blue blood</label>
+		<labelShortAdj>blue-blooded</labelShortAdj>
+		<description>Carriers of this gene have light blue blood.</description>
+		<iconColor>(58, 179, 218)</iconColor>
+		<displayOrderInCategory>7802</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodLightBlue</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingLightBlue</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodLightBlue</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodLightBlue</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodLightBlue</defName>
+		<label>light blue blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(58, 179, 218, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodLightBlue</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(58, 179, 218)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodLightBlue</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodLightBlue</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(58, 179, 218)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(58, 179, 218)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(58, 179, 218)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Cyan ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Cyan</defName>
+		<label>cyan blood</label>
+		<labelShortAdj>cyan-blooded</labelShortAdj>
+		<description>Carriers of this gene have cyan blood.</description>
+		<iconColor>(22, 156, 157)</iconColor>
+		<displayOrderInCategory>7803</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodCyan</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingCyan</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodCyan</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodCyan</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodCyan</defName>
+		<label>cyan blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(22, 156, 157, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodCyan</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(22, 156, 157)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodCyan</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodCyan</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(22, 156, 157)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(22, 156, 157)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(22, 156, 157)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Blue ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Blue</defName>
+		<label>blue blood</label>
+		<labelShortAdj>blue-blooded</labelShortAdj>
+		<description>Carriers of this gene have blue blood.</description>
+		<iconColor>(60, 68, 169)</iconColor>
+		<displayOrderInCategory>7804</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodBlue</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingBlue</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodBlue</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodBlue</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodBlue</defName>
+		<label>blue blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(60, 68, 169, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodBlue</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(60, 68, 169)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodBlue</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodBlue</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(60, 68, 169)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(60, 68, 169)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(60, 68, 169)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Lime ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Lime</defName>
+		<label>lime blood</label>
+		<labelShortAdj>lime-blooded</labelShortAdj>
+		<description>Carriers of this gene have lime blood.</description>
+		<iconColor>(128, 199, 31)</iconColor>
+		<displayOrderInCategory>7805</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodLime</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingLime</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodLime</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodLime</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodLime</defName>
+		<label>lime blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(128, 199, 31, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodLime</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(128, 199, 31)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodLime</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodLime</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(128, 199, 31)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(128, 199, 31)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(128, 199, 31)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Green ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Green</defName>
+		<label>green blood</label>
+		<labelShortAdj>green-blooded</labelShortAdj>
+		<description>Carriers of this gene have green blood.</description>
+		<iconColor>(93, 124, 21)</iconColor>
+		<displayOrderInCategory>7806</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodGreen</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingGreen</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodGreen</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodGreen</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodGreen</defName>
+		<label>green blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(93, 124, 21, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodGreen</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(93, 124, 21)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodGreen</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodGreen</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(93, 124, 21)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(93, 124, 21)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(93, 124, 21)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Yellow ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Yellow</defName>
+		<label>yellow blood</label>
+		<labelShortAdj>yellow-blooded</labelShortAdj>
+		<description>Carriers of this gene have yellow blood.</description>
+		<iconColor>(255, 216, 61)</iconColor>
+		<displayOrderInCategory>7807</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodYellow</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingYellow</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodYellow</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodYellow</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodYellow</defName>
+		<label>yellow blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(255, 216, 61, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodYellow</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(255, 216, 61)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodYellow</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodYellow</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(255, 216, 61)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(255, 216, 61)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(255, 216, 61)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Pink ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Pink</defName>
+		<label>pink blood</label>
+		<labelShortAdj>pink-blooded</labelShortAdj>
+		<description>Carriers of this gene have pink blood.</description>
+		<iconColor>(243, 140, 170)</iconColor>
+		<displayOrderInCategory>7808</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodPink</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingPink</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodPink</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodPink</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodPink</defName>
+		<label>pink blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(243, 140, 170, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodPink</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(243, 140, 170)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodPink</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodPink</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(243, 140, 170)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(243, 140, 170)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(243, 140, 170)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Magenta ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Magenta</defName>
+		<label>magenta blood</label>
+		<labelShortAdj>magenta-blooded</labelShortAdj>
+		<description>Carriers of this gene have magenta blood.</description>
+		<iconColor>(198, 79, 189)</iconColor>
+		<displayOrderInCategory>7809</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodMagenta</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingMagenta</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodMagenta</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodMagenta</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodMagenta</defName>
+		<label>magenta blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(198, 79, 189, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodMagenta</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(198, 79, 189)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodMagenta</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodMagenta</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(198, 79, 189)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(198, 79, 189)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(198, 79, 189)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Purple ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Purple</defName>
+		<label>purple blood</label>
+		<labelShortAdj>purple-blooded</labelShortAdj>
+		<description>Carriers of this gene have purple blood.</description>
+		<iconColor>(137, 50, 183)</iconColor>
+		<displayOrderInCategory>7810</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodPurple</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingPurple</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodPurple</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodPurple</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodPurple</defName>
+		<label>purple blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(137, 50, 183, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodPurple</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(137, 50, 183)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodPurple</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodPurple</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(137, 50, 183)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(137, 50, 183)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(137, 50, 183)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: Brown ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_Brown</defName>
+		<label>brown blood</label>
+		<labelShortAdj>brown-blooded</labelShortAdj>
+		<description>Carriers of this gene have brown blood.</description>
+		<iconColor>(130, 84, 5)</iconColor>
+		<displayOrderInCategory>7811</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodBrown</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingBrown</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodBrown</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodBrown</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodBrown</defName>
+		<label>brown blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(130, 84, 5, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodBrown</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(130, 84, 5)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodBrown</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodBrown</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(130, 84, 5)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(130, 84, 5)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(130, 84, 5)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<!-- ========== Blood: White ========= -->
+
+	<GeneDef ParentName="Outland_BloodTypeBase">
+		<defName>Outland_Blood_White</defName>
+		<label>white blood</label>
+		<labelShortAdj>white-blooded</labelShortAdj>
+		<description>Carriers of this gene have blazing white blood.</description>
+		<iconColor>(249, 255, 255)</iconColor>
+		<displayOrderInCategory>7812</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customBloodThingDef>Outland_Filth_BloodWhite</customBloodThingDef>
+				<customBloodIcon>Outland/Medical/BleedingWhite</customBloodIcon>
+				<customBloodEffect>Outland_Damage_BloodWhite</customBloodEffect>
+				<customWoundsFromFleshtype>Outland_Flesh_BloodWhite</customWoundsFromFleshtype>
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Outland_Filth_BloodWhite</defName>
+		<label>white blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(249, 255, 255, 180)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+
+	<EffecterDef ParentName="Outland_BloodDamageBase">
+		<defName>Outland_Damage_BloodWhite</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.1</positionRadius>
+				<fleckDef>BloodSplash</fleckDef>
+				<burstCount>2~3</burstCount>
+				<scale>1.1~1.4</scale>
+				<color>(249, 255, 255)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<FleshTypeDef>
+		<defName>Outland_Flesh_BloodWhite</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Outland_Damage_BloodWhite</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Outland/Medical/WoundFleshA</texture>
+				<color>(249, 255, 255)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshB</texture>
+				<color>(249, 255, 255)</color>
+			</li>
+			<li>
+				<texture>Outland/Medical/WoundFleshC</texture>
+				<color>(249, 255, 255)</color>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+</Defs>

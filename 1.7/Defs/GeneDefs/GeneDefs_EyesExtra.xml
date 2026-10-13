@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ============================== Eye Functional ============================== -->
+
+	<GeneDef>
+		<defName>Outland_KindEyes</defName>
+		<label>kind eyes</label>
+		<description>Carriers of this gene have eyes that make others more trusting of them.</description>
+		<iconPath>Outland/GeneIcons/Gene_KindEyes</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThoughtDef>
+		<defName>Outland_KindEyesThought</defName>
+		<thoughtClass>OutlandGenes.Thought_KindEyes</thoughtClass>
+		<workerClass>OutlandGenes.ThoughtWorker_KindEyes</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>kind eyes</label>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

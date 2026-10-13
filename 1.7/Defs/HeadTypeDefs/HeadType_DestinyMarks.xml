@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase" Name="Outland_DestinyMarksHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Outland_DestinyMarks</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_DestinyMarksHeadBase">
+		<defName>Outland_DestinyMarks_MaleNormal</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/DestinyMarks/Male_Average_Normal</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_DestinyMarksHeadBase">
+		<defName>Outland_DestinyMarks_MalePointy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/DestinyMarks/Male_Average_Pointy</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_DestinyMarksHeadBase">
+		<defName>Outland_DestinyMarks_MaleWide</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/DestinyMarks/Male_Average_Wide</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_DestinyMarksHeadBase">
+		<defName>Outland_DestinyMarks_FemaleNormal</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/DestinyMarks/Female_Average_Normal</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_DestinyMarksHeadBase">
+		<defName>Outland_DestinyMarks_FemalePointy</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/DestinyMarks/Female_Average_Pointy</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_DestinyMarksHeadBase">
+		<defName>Outland_DestinyMarks_FemaleWide</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/DestinyMarks/Female_Average_Wide</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+</Defs>

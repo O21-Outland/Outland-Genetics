@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneHeadboneHornBase" ParentName="GeneHeadboneBase" Abstract="True">
+		<!-- <graphicData>
+			<drawOffsetNorth>(0, -0.2, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, 0.1, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, 0.2, 0)</drawOffsetEast>
+		</graphicData> -->
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>horn</symbol>
+				</li>
+				<li>
+					<symbol>knob</symbol>
+				</li>
+				<li>
+					<symbol>spike</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>horn</symbol>
+				</li>
+				<li>
+					<symbol>spike</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Bean</defName>
+		<label>horns (bean)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Bean</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Bean</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Bulb</defName>
+		<label>horns (bulb)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Bulb</iconPath>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Bulb</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Bull</defName>
+		<label>horns (bull)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Bull</iconPath>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Bull</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Crescent</defName>
+		<label>horns (crescent)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Crescent</iconPath>
+		<displayOrderInCategory>7904</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Crescent</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Crystal</defName>
+		<label>horns (crystal)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Crystal</iconPath>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Crystal</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Drop</defName>
+		<label>horns (drop)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Drop</iconPath>
+		<displayOrderInCategory>7906</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Drop</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Fawn</defName>
+		<label>horns (fawn)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Fawn</iconPath>
+		<displayOrderInCategory>7907</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Fawn</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Flame</defName>
+		<label>horns (flame)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Flame</iconPath>
+		<displayOrderInCategory>7908</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Flame</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Heart</defName>
+		<label>horns (heart)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Heart</iconPath>
+		<displayOrderInCategory>7909</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Heart</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_LongProng</defName>
+		<label>horns (long prong)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/LongProng</iconPath>
+		<displayOrderInCategory>7910</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/LongProng</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Raffe</defName>
+		<label>horns (raffe)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Raffe</iconPath>
+		<displayOrderInCategory>7911</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Raffe</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Ram</defName>
+		<label>horns (ram)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Ram</iconPath>
+		<displayOrderInCategory>7912</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Ram</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Row</defName>
+		<label>horns (row)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Row</iconPath>
+		<displayOrderInCategory>7913</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Row</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_SmolUni</defName>
+		<label>horns (small uni)</label>
+		<description>Carriers of this gene grow one small horn protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/SmolUni</iconPath>
+		<displayOrderInCategory>7914</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/SmolUni</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Strong</defName>
+		<label>horns (strong)</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Common/Strong</iconPath>
+		<displayOrderInCategory>7915</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Common/Bean</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Antler</defName>
+		<label>horns (antler)</label>
+		<description>Carriers of this gene grow two complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/Antler</iconPath>
+		<displayOrderInCategory>7916</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/Antler</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Cherub</defName>
+		<label>horns (cherub)</label>
+		<description>Carriers of this gene grow two complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/Cherub</iconPath>
+		<displayOrderInCategory>7917</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/Cherub</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_DevilsTwist</defName>
+		<label>horns (devils twist)</label>
+		<description>Carriers of this gene grow two complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/DevilsTwist</iconPath>
+		<displayOrderInCategory>7918</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/DevilsTwist</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Dragon</defName>
+		<label>horns (dragon)</label>
+		<description>Carriers of this gene grow two complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/Dragon</iconPath>
+		<displayOrderInCategory>7919</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/Dragon</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_King</defName>
+		<label>horns (king)</label>
+		<description>Carriers of this gene grow two complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/King</iconPath>
+		<displayOrderInCategory>7920</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/King</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Laurel</defName>
+		<label>horns (laurel)</label>
+		<description>Carriers of this gene grow two complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/Laurel</iconPath>
+		<displayOrderInCategory>7921</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/Laurel</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_PlatedUni</defName>
+		<label>horns (large uni)</label>
+		<description>Carriers of this gene grow a single large horn protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/PlatedUni</iconPath>
+		<displayOrderInCategory>7922</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/PlatedUni</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Splash</defName>
+		<label>horns (splash)</label>
+		<description>Carriers of this gene grow two complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/Splash</iconPath>
+		<displayOrderInCategory>7923</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/Splash</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_ZillaEx</defName>
+		<label>horns (zilla ex)</label>
+		<description>Carriers of this gene grow multiple complex horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Rare/ZillaEx</iconPath>
+		<displayOrderInCategory>7924</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Rare/ZillaEx</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Benevolent</defName>
+		<label>horns (benevolent)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Benevolent</iconPath>
+		<displayOrderInCategory>7925</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Benevolent</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Bonfire</defName>
+		<label>horns (bonfire)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Bonfire</iconPath>
+		<displayOrderInCategory>7926</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Bonfire</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Forward</defName>
+		<label>horns (forward)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Forward</iconPath>
+		<displayOrderInCategory>7928</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Forward</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Rookie</defName>
+		<label>horns (rookie)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Rookie</iconPath>
+		<displayOrderInCategory>7929</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Rookie</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Rough</defName>
+		<label>horns (rough)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Rough</iconPath>
+		<displayOrderInCategory>7930</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Rough</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Scalloped</defName>
+		<label>horns (scalloped)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Scalloped</iconPath>
+		<displayOrderInCategory>7931</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Scalloped</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_SmallUni</defName>
+		<label>horns (medium uni)</label>
+		<description>Carriers of this gene grow a single medium horn protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/SmallUni</iconPath>
+		<displayOrderInCategory>7932</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/SmallUni</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Spring</defName>
+		<label>horns (spring)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Spring</iconPath>
+		<displayOrderInCategory>7933</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Spring</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Straw</defName>
+		<label>horns (straw)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Straw</iconPath>
+		<displayOrderInCategory>7934</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Straw</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Thorn</defName>
+		<label>horns (thorn)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Thorn</iconPath>
+		<displayOrderInCategory>7935</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Thorn</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_TwoProng</defName>
+		<label>horns (two prong)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/TwoProng</iconPath>
+		<displayOrderInCategory>7936</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/TwoProng</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneHeadboneHornBase">
+		<defName>Outland_Headbone_Zilla</defName>
+		<label>horns (zilla)</label>
+		<description>Carriers of this gene grow two medium horns protruding from the forehead.</description>
+		<iconPath>Outland/Genes/Horns/Uncommon/Zilla</iconPath>
+		<displayOrderInCategory>7937</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Outland/Genes/Horns/Uncommon/Zilla</texPath>
+				<color>(255, 255, 255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+</Defs>

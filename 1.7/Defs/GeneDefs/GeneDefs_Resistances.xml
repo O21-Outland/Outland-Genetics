@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GeneMinTempBase">
+		<defName>Outland_ColdImmune</defName>
+		<label>cold immunity</label>
+		<labelShortAdj>cold immune</labelShortAdj>
+		<description>Carriers of this gene are almost completely immune to cold temperatures.</description>
+		<iconPath>Outland/GeneIcons/Gene_ColdImmunity</iconPath>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<statOffsets>
+			<ComfyTemperatureMin>-999</ComfyTemperatureMin>
+		</statOffsets>
+		<biostatMet>-4</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneMaxTempBase">
+		<defName>Outland_HeatImmune</defName>
+		<label>heat immunity</label>
+		<labelShortAdj>heat immune</labelShortAdj>
+		<description>Carriers of this gene are almost completely immune to hot temperatures</description>
+		<iconPath>Outland/GeneIcons/Gene_HeatImmunity</iconPath>
+		<displayOrderInCategory>7901</displayOrderInCategory>
+		<statOffsets>
+			<ComfyTemperatureMax>999</ComfyTemperatureMax>
+		</statOffsets>
+		<biostatMet>-4</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_FireImmune</defName>
+		<label>fire immunity</label>
+		<labelShortAdj>fire immune</labelShortAdj>
+		<description>Carriers of this gene are unaffected by fire, however heat based attacks will still work on them.</description>
+		<iconPath>Outland/GeneIcons/Gene_FireImmunity</iconPath>
+		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<statFactors>
+			<Flammability>0</Flammability>
+		</statFactors>
+		<damageFactors>
+			<Flame>0</Flame>
+		</damageFactors>
+		<biostatMet>-4</biostatMet>
+		<exclusionTags>
+			<li>FireDamage</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="UVSensitivityBase">
+		<defName>Outland_UVSensitivity_Extreme</defName>
+		<label>extreme UV sensitivity</label>
+		<labelShortAdj>UV-allergic</labelShortAdj>
+		<description>Carriers of this gene have biological compounds in their skin that react violently to UV radiation. They are extremely sensitive to sunlight, to such a degree they will spontaneously ignite.\n\nNote: This will not prevent them just wandering into sunlight, if their torso and head are covered it will prevent them catching fire.</description>
+		<iconPath>Outland/GeneIcons/Gene_ExtremeUVSensitivity</iconPath>
+		<geneClass>OutlandGenes.Gene_BurningSunlight</geneClass>
+		<displayOrderInCategory>7903</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Ignites regularly in sunlight.</li>
+		</customEffectDescriptions>
+		<conditionalStatAffecters>
+			<li Class="ConditionalStatAffecter_InSunlight">
+				<statFactors>
+					<MoveSpeed>0.6</MoveSpeed>
+				</statFactors>
+			</li>
+		</conditionalStatAffecters>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>8</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

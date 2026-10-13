@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_AuraGeneBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<geneClass>TabulaRasa.Gene_Effecter</geneClass>
+		<displayCategory>Outland_Auras</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<customEffectDescriptions>
+			<li>Visual effect only.</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+			<li>Aura</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_FireAspect</defName>
+		<label>aura (fire)</label>
+		<description>Carriers of this gene produce a visible aura, with small fire element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_FireAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_FireAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_AirAspect</defName>
+		<label>aura (air)</label>
+		<description>Carriers of this gene produce a visible aura, with small air element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_AirAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_AirAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_EarthAspect</defName>
+		<label>aura (earth)</label>
+		<description>Carriers of this gene produce a visible aura, with small earth element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_EarthAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_EarthAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_LifeAspect</defName>
+		<label>aura (life)</label>
+		<description>Carriers of this gene produce a visible aura, with small life element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_LifeAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_LifeAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_WaterAspect</defName>
+		<label>aura (water)</label>
+		<description>Carriers of this gene produce a visible aura, with small water element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_WaterAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_WaterAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_DarkAspect</defName>
+		<label>aura (dark)</label>
+		<description>Carriers of this gene produce a visible aura, with small dark element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_DarkAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_DarkAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_DeathAspect</defName>
+		<label>aura (death)</label>
+		<description>Carriers of this gene produce a visible aura, with small death element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_DeathAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_DeathAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_LightAspect</defName>
+		<label>aura (light)</label>
+		<description>Carriers of this gene produce a visible aura, with small light element glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_LightAspect</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_LightAspect</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_Gambit</defName>
+		<label>aura (gambit)</label>
+		<description>Carriers of this gene produce a visible aura, with small card house glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_GambitAura</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_GambitAura</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_Royal</defName>
+		<label>aura (royal)</label>
+		<description>Carriers of this gene produce a visible aura, with small royal/noble glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_RoyalAura</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_RoyalAura</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_AuraGeneBase">
+		<defName>Outland_Aura_Smelly</defName>
+		<label>aura (smelly)</label>
+		<description>Carriers of this gene produce a visible aura, with small childish joke glyphs appearing occasionally.</description>
+		<iconPath>Outland/Genes/Auras/Gene_StinkyAura</iconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_GeneEffecter">
+				<effecter>Outland_Effecter_StinkyAura</effecter>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

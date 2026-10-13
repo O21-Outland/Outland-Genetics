@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>Outland_Resurrect</defName>
+		<label>resurrect</label>
+		<description>Carriers have a reserve of unique resurrector archites which can infuse a corpse, rebuild degenerated tissue and kickstart the vital processes. This brings the dead back to life - though possibly with health issues. This can only be done very rarely, and comes at a steep hemogen cost.</description>
+		<iconPath>UI/Icons/Genes/Gene_Resurrect</iconPath>
+		<prerequisite>Hemogenic</prerequisite>
+		<displayCategory>Archite</displayCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<abilities>
+			<li>Outland_Resurrect</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_Resurrect</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>1</biostatArc>
+		<minAgeActive>3</minAgeActive>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>resurrector</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>life</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

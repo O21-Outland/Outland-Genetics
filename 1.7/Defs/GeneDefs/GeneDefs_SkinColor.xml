@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneSkinColorOverride" ParentName="GeneSkinColorOverride" Abstract="true">
+		<displayOrderInCategory>00</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		================================ Reds ================================ 
+		======================================================================
+	-->
+
+	<!-- VANILLA: DEEP RED 00 -->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Red</defName>
+		<label>red skin</label>
+		<labelShortAdj>red</labelShortAdj>
+		<description>Carriers of this produce a red pigment in their skin.</description>
+		<skinColorOverride>(199, 72, 72)</skinColorOverride>
+		<displayOrderInCategory>01</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- VANILLA: PALE RED 02 -->
+
+	<!-- 
+		======================================================================
+		============================== Oranges =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepOrange</defName>
+		<label>deep orange skin</label>
+		<labelShortAdj>orange</labelShortAdj>
+		<description>Carriers of this produce a deep orange pigment in their skin.</description>
+		<skinColorOverride>(171, 94, 54)</skinColorOverride>
+		<displayOrderInCategory>03</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- VANILLA: ORANGE 04 -->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleOrange</defName>
+		<label>pale orange skin</label>
+		<labelShortAdj>orange</labelShortAdj>
+		<description>Carriers of this produce a pale orange pigment in their skin.</description>
+		<skinColorOverride>(229, 143, 97)</skinColorOverride>
+		<displayOrderInCategory>05</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		============================== Yellows =============================== 
+		======================================================================
+	-->
+
+	<!-- VANILLA: DEEP YELLOW 06 -->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Yellow</defName>
+		<label>yellow skin</label>
+		<labelShortAdj>yellow</labelShortAdj>
+		<description>Carriers of this produce a yellow pigment in their skin.</description>
+		<skinColorOverride>(229, 208, 87)</skinColorOverride>
+		<displayOrderInCategory>07</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- VANILLA: PALE YELLOW 08 -->
+
+	<!-- 
+		======================================================================
+		================================ Limes =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepLime</defName>
+		<label>deep lime skin</label>
+		<labelShortAdj>lime</labelShortAdj>
+		<description>Carriers of this produce a deep lime pigment in their skin.</description>
+		<skinColorOverride>(134, 157, 63)</skinColorOverride>
+		<displayOrderInCategory>09</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Lime</defName>
+		<label>lime skin</label>
+		<labelShortAdj>lime</labelShortAdj>
+		<description>Carriers of this produce a lime pigment in their skin.</description>
+		<skinColorOverride>(168, 199, 72)</skinColorOverride>
+		<displayOrderInCategory>10</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleLime</defName>
+		<label>pale lime skin</label>
+		<labelShortAdj>lime</labelShortAdj>
+		<description>Carriers of this produce a pale lime pigment in their skin.</description>
+		<skinColorOverride>(191, 220, 101)</skinColorOverride>
+		<displayOrderInCategory>11</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		=============================== Greens =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepGreen</defName>
+		<label>deep green skin</label>
+		<labelShortAdj>green</labelShortAdj>
+		<description>Carriers of this produce a deep green pigment in their skin.</description>
+		<skinColorOverride>(139, 149, 91)</skinColorOverride>
+		<displayOrderInCategory>12</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- VANILLA: GREEN 13 -->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleGreen</defName>
+		<label>pale green skin</label>
+		<labelShortAdj>green</labelShortAdj>
+		<description>Carriers of this produce a pale green pigment in their skin.</description>
+		<skinColorOverride>(195, 208, 134)</skinColorOverride>
+		<displayOrderInCategory>14</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		=============================== Sages ================================ 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepSage</defName>
+		<label>deep sage skin</label>
+		<labelShortAdj>sage</labelShortAdj>
+		<description>Carriers of this produce a deep sage pigment in their skin.</description>
+		<skinColorOverride>(60, 73, 62)</skinColorOverride>
+		<displayOrderInCategory>15</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Sage</defName>
+		<label>sage skin</label>
+		<labelShortAdj>sage</labelShortAdj>
+		<description>Carriers of this produce a sage pigment in their skin.</description>
+		<skinColorOverride>(74, 110, 80)</skinColorOverride>
+		<displayOrderInCategory>16</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleSage</defName>
+		<label>pale sage skin</label>
+		<labelShortAdj>sage</labelShortAdj>
+		<description>Carriers of this produce a pale sage pigment in their skin.</description>
+		<skinColorOverride>(82, 152, 94)</skinColorOverride>
+		<displayOrderInCategory>17</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		=============================== Viridians ================================ 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepViridian</defName>
+		<label>deep viridian skin</label>
+		<labelShortAdj>viridian</labelShortAdj>
+		<description>Carriers of this produce a deep viridian pigment in their skin.</description>
+		<skinColorOverride>(71, 148, 124)</skinColorOverride>
+		<displayOrderInCategory>18</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Viridian</defName>
+		<label>viridian skin</label>
+		<labelShortAdj>viridian</labelShortAdj>
+		<description>Carriers of this produce a viridian pigment in their skin.</description>
+		<skinColorOverride>(80, 189, 154)</skinColorOverride>
+		<displayOrderInCategory>19</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleViridian</defName>
+		<label>pale viridian skin</label>
+		<labelShortAdj>viridian</labelShortAdj>
+		<description>Carriers of this produce a pale viridian pigment in their skin.</description>
+		<skinColorOverride>(109, 213, 179)</skinColorOverride>
+		<displayOrderInCategory>20</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		=============================== Blues ================================ 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepBlue</defName>
+		<label>deep blue skin</label>
+		<labelShortAdj>blue</labelShortAdj>
+		<description>Carriers of this produce a deep blue pigment in their skin.</description>
+		<skinColorOverride>(80, 136, 159)</skinColorOverride>
+		<displayOrderInCategory>21</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- VANILLA: BLUE 22 -->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleBlue</defName>
+		<label>pale blue skin</label>
+		<labelShortAdj>blue</labelShortAdj>
+		<description>Carriers of this produce a pale blue pigment in their skin.</description>
+		<skinColorOverride>(126, 189, 215)</skinColorOverride>
+		<displayOrderInCategory>23</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- 
+		======================================================================
+		============================== Azures ============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepAzure</defName>
+		<label>deep azure skin</label>
+		<labelShortAdj>azure</labelShortAdj>
+		<description>Carriers of this produce a deep azure pigment in their skin.</description>
+		<skinColorOverride>(73, 107, 167)</skinColorOverride>
+		<displayOrderInCategory>24</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Azure</defName>
+		<label>azure skin</label>
+		<labelShortAdj>azure</labelShortAdj>
+		<description>Carriers of this produce a azure pigment in their skin.</description>
+		<skinColorOverride>(93, 132, 200)</skinColorOverride>
+		<displayOrderInCategory>25</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleAzure</defName>
+		<label>pale azure skin</label>
+		<labelShortAdj>azure</labelShortAdj>
+		<description>Carriers of this produce a pale azure pigment in their skin.</description>
+		<skinColorOverride>(121, 157, 220)</skinColorOverride>
+		<displayOrderInCategory>26</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- 
+		======================================================================
+		============================== Purples =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepPurple</defName>
+		<label>deep purple skin</label>
+		<labelShortAdj>purple</labelShortAdj>
+		<description>Carriers of this produce a deep purple pigment in their skin.</description>
+		<skinColorOverride>(80, 72, 157)</skinColorOverride>
+		<displayOrderInCategory>27</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- VANILLA: PURPLE 28 -->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PalePurple</defName>
+		<label>pale purple skin</label>
+		<labelShortAdj>purple</labelShortAdj>
+		<description>Carriers of this produce a pale purple pigment in their skin.</description>
+		<skinColorOverride>(124, 115, 217)</skinColorOverride>
+		<displayOrderInCategory>29</displayOrderInCategory>
+	</GeneDef>
+	
+	<!-- 
+		======================================================================
+		============================== Magentas ============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepMagenta</defName>
+		<label>deep magenta skin</label>
+		<labelShortAdj>magenta</labelShortAdj>
+		<description>Carriers of this produce a deep magenta pigment in their skin.</description>
+		<skinColorOverride>(136, 72, 157)</skinColorOverride>
+		<displayOrderInCategory>30</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Magenta</defName>
+		<label>magenta skin</label>
+		<labelShortAdj>magenta</labelShortAdj>
+		<description>Carriers of this produce a magenta pigment in their skin.</description>
+		<skinColorOverride>(168, 87, 195)</skinColorOverride>
+		<displayOrderInCategory>31</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleMagenta</defName>
+		<label>pale magenta skin</label>
+		<labelShortAdj>magenta</labelShortAdj>
+		<description>Carriers of this produce a pale magenta pigment in their skin.</description>
+		<skinColorOverride>(191, 115, 217)</skinColorOverride>
+		<displayOrderInCategory>32</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		================================ Pinks =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepPink</defName>
+		<label>deep pink skin</label>
+		<labelShortAdj>pink</labelShortAdj>
+		<description>Carriers of this produce a deep pink pigment in their skin.</description>
+		<skinColorOverride>(183, 87, 151)</skinColorOverride>
+		<displayOrderInCategory>33</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Pink</defName>
+		<label>pink skin</label>
+		<labelShortAdj>pink</labelShortAdj>
+		<description>Carriers of this produce a pink pigment in their skin.</description>
+		<skinColorOverride>(208, 115, 177)</skinColorOverride>
+		<displayOrderInCategory>34</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PalePink</defName>
+		<label>pale pink skin</label>
+		<labelShortAdj>pink</labelShortAdj>
+		<description>Carriers of this produce a pale pink pigment in their skin.</description>
+		<skinColorOverride>(227, 145, 200)</skinColorOverride>
+		<displayOrderInCategory>35</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		=============================== Browns =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_DeepBrown</defName>
+		<label>deep brown skin</label>
+		<labelShortAdj>brown</labelShortAdj>
+		<description>Carriers of this produce a deep brown pigment in their skin.</description>
+		<skinColorOverride>(65, 60, 53)</skinColorOverride>
+		<displayOrderInCategory>36</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Brown</defName>
+		<label>brown skin</label>
+		<labelShortAdj>brown</labelShortAdj>
+		<description>Carriers of this produce a brown pigment in their skin.</description>
+		<skinColorOverride>(101, 88, 67)</skinColorOverride>
+		<displayOrderInCategory>37</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_PaleBrown</defName>
+		<label>pale brown skin</label>
+		<labelShortAdj>brown</labelShortAdj>
+		<description>Carriers of this produce a pale brown pigment in their skin.</description>
+		<skinColorOverride>(143, 117, 77)</skinColorOverride>
+		<displayOrderInCategory>38</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		=============================== Stones =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Limestone</defName>
+		<label>limestone skin</label>
+		<labelShortAdj>limestone</labelShortAdj>
+		<description>Carriers of this produce a limestone pigment in their skin.</description>
+		<skinColorOverride>(158, 153, 135)</skinColorOverride>
+		<displayOrderInCategory>200</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Marble</defName>
+		<label>marble skin</label>
+		<labelShortAdj>marble</labelShortAdj>
+		<description>Carriers of this produce a marble pigment in their skin.</description>
+		<skinColorOverride>(132, 135, 132)</skinColorOverride>
+		<displayOrderInCategory>201</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Sandstone</defName>
+		<label>sandstone skin</label>
+		<labelShortAdj>sandstone</labelShortAdj>
+		<description>Carriers of this produce a sandstone pigment in their skin.</description>
+		<skinColorOverride>(126, 104, 94)</skinColorOverride>
+		<displayOrderInCategory>202</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Granite</defName>
+		<label>granite skin</label>
+		<labelShortAdj>granite</labelShortAdj>
+		<description>Carriers of this produce a granite pigment in their skin.</description>
+		<skinColorOverride>(105, 95, 97)</skinColorOverride>
+		<displayOrderInCategory>203</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- 
+		======================================================================
+		=============================== Metals =============================== 
+		======================================================================
+	-->
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Silver</defName>
+		<label>silver skin</label>
+		<labelShortAdj>silver</labelShortAdj>
+		<description>Carriers of this produce a metallic silver pigment in their skin.</description>
+		<skinColorOverride>(180, 173, 150)</skinColorOverride>
+		<displayOrderInCategory>300</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Copper</defName>
+		<label>copper skin</label>
+		<labelShortAdj>copper</labelShortAdj>
+		<description>Carriers of this produce a metallic copper pigment in their skin.</description>
+		<skinColorOverride>(207, 140, 78)</skinColorOverride>
+		<displayOrderInCategory>301</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneSkinColorOverride">
+		<defName>Outland_Skin_Gold</defName>
+		<label>gold skin</label>
+		<labelShortAdj>gold</labelShortAdj>
+		<description>Carriers of this produce a metallic gold pigment in their skin.</description>
+		<skinColorOverride>(225, 193, 110)</skinColorOverride>
+		<displayOrderInCategory>302</displayOrderInCategory>
+	</GeneDef>
+
+</Defs>

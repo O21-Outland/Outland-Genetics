@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>Outland_CompositeEyes</defName>
+		<label>large eyes</label>
+		<description>Carriers of this gene have large round eyes.</description>
+		<iconPath>Outland/GeneIcons/Gene_CompositeEyes</iconPath>
+		<iconColor>(15, 15, 15)</iconColor>
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Miscellaneous</displayCategory>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>53</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(0, 0, 0)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9001</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef Name="CompositeGeneEyeColor" Abstract="True">
+		<displayCategory>Outland_Eyes</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>CompositeEyeColor</li>
+		</exclusionTags>
+		<prerequisite>Outland_CompositeEyes</prerequisite>
+		<iconPath>Outland/GeneIcons/Gene_CompositeEyes</iconPath>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Red</defName>
+		<label>red eyes (large)</label>
+		<labelShortAdj>red-eyed</labelShortAdj>
+		<description>Carriers of this gene have red eyes.</description>
+		<iconColor>(173, 37, 37)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(173, 37, 37)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9001</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Gray</defName>
+		<label>gray eyes (large)</label>
+		<labelShortAdj>gray-eyed</labelShortAdj>
+		<description>Carriers of this gene have pale white-gray eyes.</description>
+		<iconColor>(124, 124, 124)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(124, 124, 124)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9002</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Orange</defName>
+		<label>orange eyes (large)</label>
+		<labelShortAdj>orange-eyed</labelShortAdj>
+		<description>Carriers of this gene have deeply orange eyes.</description>
+		<iconColor>(249, 128, 29)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(249, 128, 29)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9003</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_LightBlue</defName>
+		<label>light blue eyes (large)</label>
+		<labelShortAdj>blue-eyed</labelShortAdj>
+		<description>Carriers of this gene have light blue eyes.</description>
+		<iconColor>(58, 179, 218)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(58, 179, 218)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9004</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Cyan</defName>
+		<label>cyan eyes (large)</label>
+		<labelShortAdj>cyan-eyed</labelShortAdj>
+		<description>Carriers of this gene have cyan eyes.</description>
+		<iconColor>(22, 156, 157)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(22, 156, 157)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9005</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Blue</defName>
+		<label>blue eyes (large)</label>
+		<labelShortAdj>blue-eyed</labelShortAdj>
+		<description>Carriers of this gene have blue eyes.</description>
+		<iconColor>(60, 68, 169)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(60, 68, 169)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9006</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Lime</defName>
+		<label>lime eyes (large)</label>
+		<labelShortAdj>lime-eyed</labelShortAdj>
+		<description>Carriers of this gene have lime eyes.</description>
+		<iconColor>(128, 199, 31)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(128, 199, 31)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9007</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Green</defName>
+		<label>green eyes (large)</label>
+		<labelShortAdj>green-eyed</labelShortAdj>
+		<description>Carriers of this gene have green eyes.</description>
+		<iconColor>(93, 124, 21)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(93, 124, 21)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9008</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Yellow</defName>
+		<label>yellow eyes (large)</label>
+		<labelShortAdj>yellow-eyed</labelShortAdj>
+		<description>Carriers of this gene have yellow eyes.</description>
+		<iconColor>(255, 216, 61)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(255, 216, 61)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9009</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Pink</defName>
+		<label>pink eyes (large)</label>
+		<labelShortAdj>pink-eyed</labelShortAdj>
+		<description>Carriers of this gene have pink eyes.</description>
+		<iconColor>(243, 140, 170)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(243, 140, 170)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9010</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Magenta</defName>
+		<label>magenta eyes (large)</label>
+		<labelShortAdj>magenta-eyed</labelShortAdj>
+		<description>Carriers of this gene have magenta eyes.</description>
+		<iconColor>(198, 79, 189)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(198, 79, 189)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9011</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Purple</defName>
+		<label>purple eyes (large)</label>
+		<labelShortAdj>purple-eyed</labelShortAdj>
+		<description>Carriers of this gene have purple eyes.</description>
+		<iconColor>(137, 50, 183)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(137, 50, 183)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9012</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_Brown</defName>
+		<label>brown eyes (large)</label>
+		<labelShortAdj>brown-eyed</labelShortAdj>
+		<description>Carriers of this gene have brown eyes.</description>
+		<iconColor>(130, 84, 5)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(130, 84, 5)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9013</displayOrderInCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="CompositeGeneEyeColor">
+		<defName>Outland_CompositeEyes_White</defName>
+		<label>white eyes (large)</label>
+		<labelShortAdj>white-eyed</labelShortAdj>
+		<description>Carriers of this gene have blazing white eyes.</description>
+		<iconColor>(249, 255, 255)</iconColor>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<texPath>Outland/Genes/Eyes/CompositeEyes</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+				<color>(249, 255, 255)</color>
+			</li>
+		</renderNodeProperties>
+		<displayOrderInCategory>9014</displayOrderInCategory>
+	</GeneDef>
+
+</Defs>

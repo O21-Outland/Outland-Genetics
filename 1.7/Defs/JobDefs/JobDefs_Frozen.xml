@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<JobDef>
+		<defName>Outland_FrozenInIce</defName>
+		<driverClass>OutlandGenes.JobDriver_FrozenInIce</driverClass>
+		<reportString>standing.</reportString>
+		<carryThingAfterJob>true</carryThingAfterJob>
+		<dropThingBeforeJob>false</dropThingBeforeJob>
+		<casualInterruptible>false</casualInterruptible>
+		<playerInterruptible>false</playerInterruptible>
+	</JobDef>
+
+</Defs>

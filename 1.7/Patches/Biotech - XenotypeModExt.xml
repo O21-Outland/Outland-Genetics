@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Dirtmole"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Dirtmole"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Dirtmole</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Dirtmole"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Dirtmole</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Genie"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Genie"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Genie</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Genie"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Genie</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Hussar"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Hussar"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Hussar</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Hussar"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Hussar</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Sanguophage"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Sanguophage"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Vampire</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Sanguophage"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Vampire</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Neanderthal"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Neanderthal"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Neanderthal</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Neanderthal"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Neanderthal</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Pigskin"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Pigskin"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Pigskin</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Pigskin"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Pigskin</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Impid"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Impid"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Impid</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Impid"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Impid</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Waster"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Waster"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Waster</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Waster"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Waster</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Yttakin"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Yttakin"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Yttakin</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Yttakin"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Yttakin</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/XenotypeDef[defName="Highmate"]/modExtensions</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Highmate"]/modExtensions</xpath>
+			<value>
+				<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+					<xenoEggTexturePath>Outland/Items/XenoEgg_Highmate</xenoEggTexturePath>
+				</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/XenotypeDef[defName="Highmate"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+						<xenoEggTexturePath>Outland/Items/XenoEgg_Highmate</xenoEggTexturePath>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>

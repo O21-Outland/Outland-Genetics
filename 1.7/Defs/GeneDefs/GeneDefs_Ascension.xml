@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="AscensionGeneBase" Abstract="True">
+		<displayCategory>Outland_XenotypeAscension</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<minAgeActive>13</minAgeActive>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_AscendSelf</defName>
+		<label>ascend self</label>
+		<description>Causes the pawn to ascend to their next genetic form when ready.\n\nWarning: This will not carry over changes to their genes made during gameplay, their current genes are wiped and the new xenotype applied.</description>
+		<iconPath>Outland/GeneIcons/Gene_Ascend</iconPath>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<abilities>
+			<li>Outland_AscendSelf</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_AscendSelf</AbilityDef>
+		</descriptionHyperlinks>
+	</GeneDef>
+
+	<GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_AscendOther</defName>
+		<label>ascend other</label>
+		<description>Causes the target pawn to ascend to their next genetic form when ready.\n\nWarning: This will not carry over changes to their genes made during gameplay, their current genes are wiped and the new xenotype applied.</description>
+		<iconPath>Outland/GeneIcons/Gene_Ascend</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<abilities>
+			<li>Outland_AscendOther</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_AscendOther</AbilityDef>
+		</descriptionHyperlinks>
+	</GeneDef>
+
+	<GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_EasyEarnedAscension</defName>
+		<label>easy earned ascension</label>
+		<description>Carriers of this gene must earn their ascension through everyday work, proving themselves through hard work.\n\nIt's just a balance factor, don't overthink it. This variation of the earned ascension gene makes the experience gain much faster than normal.</description>
+		<iconPath>Outland/GeneIcons/Gene_HardEarnedAscension</iconPath>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<exclusionTags>
+			<li>EarnedAscension</li>
+		</exclusionTags>
+		<randomChosen>true</randomChosen>
+		<customEffectDescriptions>
+			<li>Does nothing on its own! This requires the pawn has at least one xenotype ascension gene!</li>
+		</customEffectDescriptions>
+	</GeneDef>
+
+	<GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_EarnedAscension</defName>
+		<label>earned ascension</label>
+		<description>Carriers of this gene must earn their ascension through everyday work, proving themselves through hard work.\n\nIt's just a balance factor, don't overthink it.</description>
+		<iconPath>Outland/GeneIcons/Gene_EarnedAscension</iconPath>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<biostatMet>0</biostatMet>
+		<exclusionTags>
+			<li>EarnedAscension</li>
+		</exclusionTags>
+		<randomChosen>true</randomChosen>
+		<customEffectDescriptions>
+			<li>Does nothing on its own! This requires the pawn has at least one xenotype ascension gene!</li>
+		</customEffectDescriptions>
+	</GeneDef>
+
+	<GeneDef ParentName="AscensionGeneBase">
+		<defName>Outland_HardEarnedAscension</defName>
+		<label>hard earned ascension</label>
+		<description>Carriers of this gene must earn their ascension through everyday work, proving themselves through hard work.\n\nIt's just a balance factor, don't overthink it. This variation of the earned ascension gene makes the experience gain much slower than normal.</description>
+		<iconPath>Outland/GeneIcons/Gene_EasyEarnedAscension</iconPath>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+		<exclusionTags>
+			<li>EarnedAscension</li>
+		</exclusionTags>
+		<randomChosen>true</randomChosen>
+		<customEffectDescriptions>
+			<li>Does nothing on its own! This requires the pawn has at least one xenotype ascension gene!</li>
+		</customEffectDescriptions>
+	</GeneDef>
+
+</Defs>

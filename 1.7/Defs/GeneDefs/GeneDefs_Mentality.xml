@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>Outland_FamiliarScent</defName>
+		<label>familiar scent</label>
+		<description>Carriers of this gene give off a scent that makes those of the same Xenotype more likely to like them.</description>
+		<iconPath>Outland/GeneIcons/Gene_FamiliarScent</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7800</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThoughtDef>
+		<defName>Outland_FamiliarScentThought</defName>
+		<thoughtClass>OutlandGenes.Thought_FamiliarScent</thoughtClass>
+		<workerClass>OutlandGenes.ThoughtWorker_FamiliarScent</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>familiar scent</label>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<GeneDef>
+		<defName>Outland_CalmingPheromones</defName>
+		<label>calming pheromones</label>
+		<description>Carriers of this gene give off a scent that makes those of other Xenotypes more likely to like them.</description>
+		<iconPath>Outland/GeneIcons/Gene_CalmingPheromones</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThoughtDef>
+		<defName>Outland_CalmingPheromonesThought</defName>
+		<thoughtClass>OutlandGenes.Thought_CalmingPheromones</thoughtClass>
+		<workerClass>OutlandGenes.ThoughtWorker_CalmingPheromones</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>calming pheromones</label>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<GeneDef>
+		<defName>Outland_Submissive</defName>
+		<label>submissive</label>
+		<description>Carriers of this gene are much more submissive towards others, making them very easy to enslave.</description>
+		<iconPath>Outland/GeneIcons/Gene_Submissive</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7905</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<statOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>Outland_DarklightAffinity</defName>
+		<label>darklight affinity</label>
+		<description>Carriers of this gene have an aversion to normal light, preferring to remain in darkness or darklight.</description>
+		<iconPath>Outland/GeneIcons/Gene_DarklightAffinity</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7950</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<customEffectDescriptions>
+			<li>Mood decrease in normal lighting.</li>
+			<li>Major mood decrease in sunlight.</li>
+			<li>Darklight can be used without these mood effects.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_Empathic</defName>
+		<label>empathic</label>
+		<iconPath>Outland/GeneIcons/Gene_Empathic</iconPath>
+		<description>Carriers of this gene experience the feelings of those around them, with those they share a stronger than normal bond with affecting them more.</description>
+		<geneClass>OutlandGenes.Gene_Empathic</geneClass>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>7951</displayOrderInCategory>
+		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Mood is directly affected by the mood of other colonists.</li>
+			<li>Pawns with close relationship with the carrier will have double the effect.</li>
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<ThoughtDef>
+		<defName>Outland_Empathic</defName>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<stackLimit>1</stackLimit>
+		<durationDays>0.01</durationDays>
+		<stages>
+			<li>
+				<label>empathic</label>
+				<description>I can feel the moods of those around me.</description>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

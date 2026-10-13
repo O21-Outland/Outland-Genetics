@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- 
+		Edits to Yttakin:
+		- Replace furskin with alternate
+		- If enabled, block beards too
+	-->
+	<Operation Class="OutlandGenes.PatchOperation_SettingActive">
+		<settings>
+			<li>alternateYttakin</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes/li[text()="Beard_Always"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes/li[text()="Beard_Always"]</xpath>
+					</match>
+				</li>
+			</operations>
+		</active>
+	</Operation>
+
+	<Operation Class="OutlandGenes.PatchOperation_SettingActive">
+		<settings>
+			<li>alternateYttakinNoBeards</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes/li[text()="Beard_Always"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes/li[text()="Beard_Always"]</xpath>
+					</match>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/XenotypeDef[defName="Yttakin"]/genes</xpath>
+					<value>
+						<li>Beard_NoBeardOnly</li>
+					</value>
+				</li>
+			</operations>
+		</active>
+	</Operation>
+
+</Patch>

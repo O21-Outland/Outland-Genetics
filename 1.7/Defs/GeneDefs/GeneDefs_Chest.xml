@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef Name="Outland_GeneChestBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>None</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>7900</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Chest</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="Outland_GeneChestBase">
+		<defName>Outland_Chest_Fur</defName>
+		<label>chest fur</label>
+		<description>Carriers of this gene will grow a prominent patch of fur on their chest.</description>
+		<iconPath>Outland/Genes/Chest/ChestFur</iconPath>
+		<displayOrderInCategory>7801</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Outland/Genes/Chest/ChestFur</texPath>
+				<colorType>Hair</colorType>
+				<useSkinShader>false</useSkinShader>
+				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataSouth>
+						<layer>15</layer>
+					</dataSouth>
+					<dataEast>
+						<layer>15</layer>
+					</dataEast>
+					<dataWest>
+						<layer>15</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+	
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<HediffDef>
+		<defName>Outland_ProtoBodypart</defName>
+		<label>regrowing</label>
+		<description>This body part is regrowing, strangely causing no pain.</description>
+		<hediffClass>TabulaRasa.Hediff_GrowingPart</hediffClass>
+		<defaultLabelColor>(0.59, 0.92, 0.69)</defaultLabelColor>
+		<isBad>false</isBad>
+		<addedPartProps>
+			<partEfficiency>0.1</partEfficiency>
+		</addedPartProps>
+		<initialSeverity>0.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<!-- Decides how fast the body part heals/grows -->
+				<!-- 0.07 is roughly a Quadrum (15 days) -->
+				<severityPerDayNotImmune>0.35</severityPerDayNotImmune> 
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_AutoHealProps">
+				<growthText>Growth: </growthText>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+</Defs>

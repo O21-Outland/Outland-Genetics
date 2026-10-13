@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef>
+		<defName>Outland_LeaperLegs</defName>
+		<label>leaper legs</label>
+		<description>Carriers have enhanced muscle fibers in their legs which allow them to leap short distances.</description>
+		<iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+		<displayCategory>Ability</displayCategory>
+		<abilities>
+			<li>Outland_Leap</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_Leap</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_ShortFlight</defName>
+		<label>short flight</label>
+		<description>Carriers have the natural ability to fly a short distance periodically without using any physical features.</description>
+		<iconPath>Outland/Abilities/Ability_ShortFlight</iconPath>
+		<displayCategory>Ability</displayCategory>
+		<abilities>
+			<li>Outland_ShortFlight</li>
+		</abilities>
+		<exclusionTags>
+			<li>Flight</li>
+		</exclusionTags>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_ShortFlight</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_ToxicSpray</defName>
+		<label>toxic spray</label>
+		<description>Carriers grow glands in the neck that generate and store a toxic substance, along with tox-tolerant tissues in the mouth. They can spray this substance and it'll turn into a gas immediately spreading into the area, forcing enemies caught in it to develop toxic buildup.</description>
+		<iconPath>Outland/GeneIcons/Gene_ToxicSpray</iconPath>
+		<displayCategory>Ability</displayCategory>
+		<abilities>
+			<li>Outland_ToxicSpray</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_ToxicSpray</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_LightningSpray</defName>
+		<label>lightning spray</label>
+		<description>Carriers grow glands in the neck that allows them to store electromagnetic charge, releasing this charge directionally using their mouth, causing EMP damage to any enemies caught in the wave.</description>
+		<iconPath>Outland/GeneIcons/Gene_LightningSpray</iconPath>
+		<displayCategory>Ability</displayCategory>
+		<abilities>
+			<li>Outland_LightningSpray</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_LightningSpray</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Outland_FreezingSpray</defName>
+		<label>freezing spray</label>
+		<description>Carriers grow glands in the neck that generate a supercooled fluid, as well as cold-resistant tissues in their mouth. They can spray this substance from their mouth at enemies, causing almost immediate damage severe enough to shred body parts and freeze them in place temporarily.</description>
+		<iconPath>Outland/GeneIcons/Gene_FreezingSpray</iconPath>
+		<displayCategory>Ability</displayCategory>
+		<abilities>
+			<li>Outland_FreezingSpray</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Outland_FreezingSpray</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-2</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

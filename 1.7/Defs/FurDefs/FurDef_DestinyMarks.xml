@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FurDef>
+		<defName>Outland_DestinyMarks</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Outland/Genes/Skins/DestinyMarks/Naked_Male</Male>
+			<Female>Outland/Genes/Skins/DestinyMarks/Naked_Female</Female>
+			<Hulk>Outland/Genes/Skins/DestinyMarks/Naked_Hulk</Hulk>
+			<Fat>Outland/Genes/Skins/DestinyMarks/Naked_Fat</Fat>
+			<Thin>Outland/Genes/Skins/DestinyMarks/Naked_Thin</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/Naked_Child</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/Naked_Child</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+</Defs>
