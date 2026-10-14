@@ -4,7 +4,7 @@
 	<GeneDef Name="Outland_GeneSkinColorOverride" ParentName="GeneSkinColorOverride" Abstract="true">
 		<displayOrderInCategory>00</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>

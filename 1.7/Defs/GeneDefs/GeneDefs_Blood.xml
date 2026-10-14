@@ -39,7 +39,7 @@
 			</prefixSymbols>
 		</symbolPack>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>Outland/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>Outland/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 				<customBloodThingDef>Outland_AcidBlood</customBloodThingDef>
@@ -97,7 +97,7 @@
 		<iconColor>(173, 37, 37)</iconColor>
 		<displayOrderInCategory>7901</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodRed</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingRed</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodRed</customBloodEffect>
@@ -174,7 +174,7 @@
 		<iconColor>(55, 55, 55)</iconColor>
 		<displayOrderInCategory>7902</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodBlack</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingBlack</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodBlack</customBloodEffect>
@@ -251,7 +251,7 @@
 		<iconColor>(124, 124, 124)</iconColor>
 		<displayOrderInCategory>7902</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodGray</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingGray</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodGray</customBloodEffect>
@@ -328,7 +328,7 @@
 		<iconColor>(249, 128, 29)</iconColor>
 		<displayOrderInCategory>7801</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodOrange</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingOrange</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodOrange</customBloodEffect>
@@ -405,7 +405,7 @@
 		<iconColor>(58, 179, 218)</iconColor>
 		<displayOrderInCategory>7802</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodLightBlue</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingLightBlue</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodLightBlue</customBloodEffect>
@@ -482,7 +482,7 @@
 		<iconColor>(22, 156, 157)</iconColor>
 		<displayOrderInCategory>7803</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodCyan</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingCyan</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodCyan</customBloodEffect>
@@ -559,7 +559,7 @@
 		<iconColor>(60, 68, 169)</iconColor>
 		<displayOrderInCategory>7804</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodBlue</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingBlue</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodBlue</customBloodEffect>
@@ -636,7 +636,7 @@
 		<iconColor>(128, 199, 31)</iconColor>
 		<displayOrderInCategory>7805</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodLime</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingLime</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodLime</customBloodEffect>
@@ -713,7 +713,7 @@
 		<iconColor>(93, 124, 21)</iconColor>
 		<displayOrderInCategory>7806</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodGreen</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingGreen</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodGreen</customBloodEffect>
@@ -790,7 +790,7 @@
 		<iconColor>(255, 216, 61)</iconColor>
 		<displayOrderInCategory>7807</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodYellow</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingYellow</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodYellow</customBloodEffect>
@@ -867,7 +867,7 @@
 		<iconColor>(243, 140, 170)</iconColor>
 		<displayOrderInCategory>7808</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodPink</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingPink</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodPink</customBloodEffect>
@@ -944,7 +944,7 @@
 		<iconColor>(198, 79, 189)</iconColor>
 		<displayOrderInCategory>7809</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodMagenta</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingMagenta</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodMagenta</customBloodEffect>
@@ -1021,7 +1021,7 @@
 		<iconColor>(137, 50, 183)</iconColor>
 		<displayOrderInCategory>7810</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodPurple</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingPurple</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodPurple</customBloodEffect>
@@ -1098,7 +1098,7 @@
 		<iconColor>(130, 84, 5)</iconColor>
 		<displayOrderInCategory>7811</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodBrown</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingBrown</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodBrown</customBloodEffect>
@@ -1175,7 +1175,7 @@
 		<iconColor>(249, 255, 255)</iconColor>
 		<displayOrderInCategory>7812</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<customBloodThingDef>Outland_Filth_BloodWhite</customBloodThingDef>
 				<customBloodIcon>Outland/Medical/BleedingWhite</customBloodIcon>
 				<customBloodEffect>Outland_Damage_BloodWhite</customBloodEffect>
