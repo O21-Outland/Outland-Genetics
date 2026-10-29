@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FurDef>
+		<defName>Outland_ChitinousSkin</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Outland/Genes/Skins/Chitin/Naked_Male</Male>
+			<Female>Outland/Genes/Skins/Chitin/Naked_Female</Female>
+			<Hulk>Outland/Genes/Skins/Chitin/Naked_Hulk</Hulk>
+			<Fat>Outland/Genes/Skins/Chitin/Naked_Fat</Fat>
+			<Thin>Outland/Genes/Skins/Chitin/Naked_Thin</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/Naked_Child</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/Naked_Child</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+	<FurDef>
+		<defName>Outland_ChitinousSkinTinted</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Outland/Genes/Skins/ChitinTinted/Naked_Male</Male>
+			<Female>Outland/Genes/Skins/ChitinTinted/Naked_Female</Female>
+			<Hulk>Outland/Genes/Skins/ChitinTinted/Naked_Hulk</Hulk>
+			<Fat>Outland/Genes/Skins/ChitinTinted/Naked_Fat</Fat>
+			<Thin>Outland/Genes/Skins/ChitinTinted/Naked_Thin</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/Naked_Child</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/Naked_Child</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+</Defs>

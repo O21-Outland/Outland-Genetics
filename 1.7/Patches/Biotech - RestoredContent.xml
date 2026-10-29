@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="OutlandGenes.PatchOperation_SettingActive">
+		<settings>
+			<li>restoredContent</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+				<li Class="OutlandGenes.PatchOperation_SettingActive">
+					<settings>
+						<li>rc_addictionGenes</li>
+					</settings>
+					<inactive Class="PatchOperationRemove">
+						<xpath>/Defs/GeneTemplateDef[defName="Outland_AddictionSensitivity"]</xpath>
+					</inactive>
+				</li>
+				<li Class="OutlandGenes.PatchOperation_SettingActive">
+					<settings>
+						<li>rc_passionGenes</li>
+					</settings>
+					<inactive Class="PatchOperationRemove">
+						<xpath>/Defs/GeneTemplateDef[defName="Outland_PassionDrop" or defName="Outland_PassionAdd"]</xpath>
+					</inactive>
+				</li>
+				<li Class="OutlandGenes.PatchOperation_SettingActive">
+					<settings>
+						<li>rc_resurrectGene</li>
+					</settings>
+					<active Class="OutlandGenes.PatchOperation_SettingActive">
+						<settings>
+							<li>rc_sanguophageRessurect</li>
+						</settings>
+						<active Class="PatchOperationAdd">
+							<xpath>/Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+							<value>
+								<li>Outland_Resurrect</li>
+							</value>
+						</active>
+					</active>
+					<inactive Class="PatchOperationRemove">
+						<xpath>/Defs/GeneDef[defName="Outland_Resurrect"]</xpath>
+					</inactive>
+				</li>
+			</operations>
+		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/GeneTemplateDef[defName="Outland_AddictionSensitivity"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/GeneTemplateDef[defName="Outland_PassionDrop" or defName="Outland_PassionAdd"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/GeneDef[defName="Outland_Resurrect"]</xpath>
+				</li>
+			</operations>
+		</inactive>
+	</Operation>
+
+</Patch>

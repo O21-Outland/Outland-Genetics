@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef>
+		<defName>Outland_LightningSpray</defName>
+		<label>lightning spray</label>
+		<description>Release the build up electromagnetic charge in a specific direction, causing EMP damage to all targets caught in the wave.\n\nThe charge is generated and stored by an organ in the neck.</description>
+		<iconPath>Outland/GeneIcons/Gene_LightningSpray</iconPath>
+		<cooldownTicksRange>300000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>7.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>FireSpew_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="OutlandGenes.CompProperties_AbilitySpray">
+				<compClass>OutlandGenes.CompAbilityEffect_LightningSpray</compClass>
+				<range>9.9</range>
+				<lineWidthEnd>5</lineWidthEnd>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

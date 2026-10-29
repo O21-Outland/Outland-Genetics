@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Head -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneJawBase"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_HeadType</displayCategory>
+		</value>
+	</Operation>
+
+	<!-- Eyes -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneEyeColor"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_Eyes</displayCategory>
+		</value>
+	</Operation>
+
+	<!-- Ears -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneEarsBase"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_Ears</displayCategory>
+		</value>
+	</Operation>
+
+	<!-- Headbones -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneHeadboneBase"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_Headbone</displayCategory>
+		</value>
+	</Operation>
+
+	<!-- Tails -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneTailBase"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_Tails</displayCategory>
+		</value>
+	</Operation>
+
+	<!-- Hands -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneHandsBase"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_HandsAndFeet</displayCategory>
+		</value>
+	</Operation>
+
+	<!-- Voice -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneVoiceBase"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_Voice</displayCategory>
+		</value>
+	</Operation>
+
+	<!-- Renamed Categories-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneCategoryDef[defName="Cosmetic_Body"]/label</xpath>
+		<value>
+			<label>body type</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneCategoryDef[defName="Cosmetic_Skin"]/label</xpath>
+		<value>
+			<label>skin</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneCategoryDef[defName="Cosmetic_Hair"]/label</xpath>
+		<value>
+			<label>hair</label>
+		</value>
+	</Operation>
+
+	<!-- Fix Placements -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[@Name="GeneNoseBase" or defName="Nose_Pig"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_FacialFeatures</displayCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[defName="XenogermReimplanter"]/displayCategory</xpath>
+		<value>
+			<displayCategory>Outland_Implanter</displayCategory>
+		</value>
+	</Operation>
+
+</Patch>

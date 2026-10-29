@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Insect</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Insect/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_InsectHead</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Outland_Termite</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Termite/Blind</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>Outland_TermiteHead</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase" Name="Outland_MothHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>Outland_MothHead</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_MothHeadBase">
+		<defName>Outland_Male_Moth</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Moth/Male_Normal</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="Outland_MothHeadBase">
+		<defName>Outland_Female_Moth</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Moth/Female_Normal</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+</Defs>

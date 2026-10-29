@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FurDef>
+		<defName>Outland_ScaleSkin</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Outland/Genes/Skins/Scaleskin/Naked_Male</Male>
+			<Female>Outland/Genes/Skins/Scaleskin/Naked_Female</Female>
+			<Hulk>Outland/Genes/Skins/Scaleskin/Naked_Hulk</Hulk>
+			<Fat>Outland/Genes/Skins/Scaleskin/Naked_Fat</Fat>
+			<Thin>Outland/Genes/Skins/Scaleskin/Naked_Thin</Thin>
+			<Child>Outland/Genes/Skins/Scaleskin/Naked_Child</Child>
+			<Baby>Outland/Genes/Skins/Scaleskin/Naked_Child</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+</Defs>

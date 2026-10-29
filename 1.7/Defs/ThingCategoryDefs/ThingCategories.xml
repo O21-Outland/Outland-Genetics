@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+	<ThingCategoryDef>
+	  <defName>Outland_HumanoidEggs</defName>
+	  <label>humanoid eggs</label>
+	  <parent>Items</parent>
+	  <iconPath>UI/Icons/ThingCategories/EggsFertilized</iconPath>
+	  <resourceReadoutRoot>true</resourceReadoutRoot>
+	</ThingCategoryDef>
+
+</Defs>
